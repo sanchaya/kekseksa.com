@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+<! -- file created by Lulu 23/02/2013 email: kekseksa@gmail.com -->
+<meta name="keywords" content="">
+<base target="_self">
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Kekseksa? C'est du cinéma</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: #FF9900;
+    background-color: #0000CC;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    background-color: white;
+    max-width: 148px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  nav ul     { display: none;}
+}
+
+article {
+    margin-left: 150px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+li.nb a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+}
+
+.dropleft .dropright {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropleft:hover .dropdown-content {
+    display: block;
+}
+.dropright:hover .dropdown-content2 {
+    display: block;
+}
+div.dropleft {
+    float: left;
+    width: 220px;
+    margin: 15px 20px 0 0;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+div.dropright {
+    float: right;
+    width: 220px;
+    margin:  0 0 15px 20px;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+.bigger:hover {
+width:360;
+height:480;
+}
+input[type='checkbox'] {
+  display: none;
+}
+.lbl-toggle {
+  display: block;
+}
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid red;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.lbl-toggle2::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentcolor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.tab {
+  position: relative;
+  margin: 2px;
+  max-width: 600px;
+}
+.tab input {
+  display: none;
+}
+.tab label {
+  background: #2d5faf;
+  color: #fff;
+  font-weight: bold;	
+  font-size: 8pt;
+  padding: 10px;
+  cursor: pointer;
+}
+.tab input[type=checkbox]:checked + label::after,
+.tab input[type=radio]:checked + label::after {
+  transform: rotate(90deg);
+}
+.tab-content {
+  overflow: hidden;
+  display: none;
+}
+.tab input:checked ~ .tab-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Cinema in the year
+<br><br>1910</h1>
+</header>
+
+
+ <ul class="nb">
+  <li class="nb">1910</li>
+  <li class="nb"><a class="bottom" href="notready.html"><img src="images/backhand.gif" width=40 height=20 border=0 alt="previous">Sport Film</a></li>
+  <li class="nb"><a class="bottom" href="notready.html"><img src="images/backhand.gif" width=20 height=10 border=0 alt="previous">1909</a></li>
+  <li class="nb">Mountain Film</li>
+  <li class="nb"><a class="bottom" href="notready.html">1911&nbsp;<img src="images/forehand.gif" width=20 height=10 border=0 alt="next"></a></li>
+  <li class="nb" style="float:right">1910</li>
+  <li class="nb" style="float:right"><a class="bottom" href="notready.html">Historical Film&nbsp;<img src="images/forehand.gif" width=40 height=20 border=0 alt="next"></a></li>
+  </ul> 
+  
+<nav>
+
+<a href="index.html">
+<table>
+  <caption>&nbsp;accueil</caption>
+  <tr>
+    <th><img class="purple" src="images/posters/bebetac.jpg"  height=36 width=48 border=2 alt="Return to home page" title="Return to home page"></th>
+</tr>
+</table>
+</a>
+<a href="qdn.html"><a href="qdn.html">
+<table>
+  <caption>&nbsp;kwad9</caption>
+  <tr>
+    <th><img class="purple" src="images/stills/conqairprom.png"  height=36 width=48 border=2 alt="Quoi de neuf ?" title="Quoi de neuf ?"></th>
+</tr>
+</table>
+</a>
+	<br>
+  <div class="wrap-collapsible">
+  <input id="collapsible" class="toggle" type="checkbox">
+  <label for="collapsible" class="lbl-toggle"><a href="intro10.html">introduction</a></label> 
+    <div class="collapsible-content">
+    <div class="content-inner">
+       		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="europe10.html">Europe</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="french10.html">France</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ital10.html">Italy</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="danish10.html">Denmark</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="swed10.html">Sweden</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="norw10.html">Norway</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="brit10.html">Britain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="german10.html">Germany</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ost10.html">Austria</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a href="benelux10.html">Benelux</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="span10.html">Spain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="port10.html">Portugal</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="greek10.html">Greece</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="us10.html">US</a>
+		<br>
+   		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="world10.html">The World</a>
+		</div></div></div>
+ 		<div class="wrap-collapsible">
+  		<input id="collapsible2" class="toggle" type="checkbox">
+ 		<label for="collapsible2" class="lbl-toggle2"><a href="int10top.html">newsreel</a>
+        	</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible3" class="toggle" type="checkbox">
+ 	 	<label for="collapsible3" class="lbl-toggle"><a href="int10doc.html">documentary</a></label>
+		<div class="collapsible-content">
+    		<div class="content-inner">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10doc.html#tour">touristic</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10.doc#indus">industrial</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="#colon">colonial</a>
+		</div></div></div>
+    	     	<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a href="int10psc">popular science</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10doc.html#colon">natural history</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible5" class="toggle" type="checkbox">
+ 		<label for="collapsible5" class="lbl-toggle2"><a href="int10disas.html">disaster film</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a.not-active href="int10sport">sport</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10wsm.html">winter sport</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="">mountain film</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10hist.html">historical film</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10comic.html">comic series</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible7" class="toggle2" type="checkbox">
+ 		<label for="collapsible7" class="lbl-toggle2"><a.not-active href="int10west.html">western</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible8" class="toggle2" type="checkbox">
+ 		<label for="collapsible8" class="lbl-toggle2"><a.not-active href="#int10crim.html">crime film</a>
+		</div>
+
+<p>
+<h3><a href="notready.html">Index of films</a></h3>
+</div>
+</nav>
+
+<article>
+<h3><a name="mf">The mountain film</a></h3>
+<br><br>
+<div align="center">
+<table>
+     <caption>1913 Lumière autochrome of Chamonix-Mont Blanc</caption>
+  	<tr>
+    <th><img class="blue" src="images/photos/chamonixmontblanclumac.jpg" height=263 width=427 border=2 alt="Mont Blanc" title="Mont Blanc">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Chamonix in the Haute Savoie had long been a favourite of the European film companies. Antoine Lumière owned a grandiose villa 
+in nearby Évian, which had no doubt encouraged the Lumière operators to film there (1897-1899). Léon Gaumont took a keen personal 
+interest in mountaineering and had personally directed the ambitious, and important (but alas, lost) series of films, <i>Ascension 
+de Mont Blanc</i> filmed there <a.not-active href="int01wsm.html#montblanc">in 1901</a> in association with the Paris journal </i>La 
+Vie au grand air</i> and had been present for the celebrations <a.not-active href="int08wsm.html#montblanc">in 1908</a> of Joseph 
+Vallon's thirtieth ascent of the mountain. Frederick Ormiston-Smith had filmed his ground-breaking <i>The Ascent of Mont Blanc</i> 
+for Charles Urban at the Warwick Trading Company <a.not-active href="int02wsm.html#montblanc">in 1902</a>. Pathé had made another 
+very elaborate and impressive series of films, <i>Ascension au Mont Blanc</i> <a.not-active href="int07wsm.html#montblanc">in 
+1907. 
+<br><br>
+<div align="center">
+<table>
+     <caption>autochrome <i>Paysage de montagne suisse</i> c.1910</caption>
+  	<tr>
+    <th><img class="blue" src="images/photos/montagnesuisselumac.jpg" height=263 width=427 border=2 alt="Suisse" title="Suisse">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Other mountains were of course climbed and filmed (in Europe notably the Jungfrau and the Matterhorn) but Chamonix-Mont Blanc, 
+apart from being on the of the most successful resorts for the ver increasingly popular winter sports and the home of ski-ing (the 
+second concours international de ski had taken place there <a.not-active href="int08wsm.html#ski">in 1908</a>). could also lay 
+claim to being the starting-point for the mountain or "ascension" film. The genre, rich in symbolic significance, had already 
+produced some of the longest and most ambitious of early documentaries and would become more significant still, in both documentary 
+and photoplay, in the next two decades.
+<div align="center">
+<table>
+     <caption><i>La Mer de Glace</i> and <i>Le Mauvais Pas</i> (Gaumont, 1910)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/chamonixgaum1910.jpg" height=240 width=329 border=2 alt="Mer de glace" title="mer de glace">
+    <img class="blue" src="images/stills/chamonixgaum1910b.jpg" height=240 width=320 border=2 alt="mauvais pas" title="mauvais pas">
+</th>
+    </tr>
+</table>
+</div>
+<br><br>
+1910 did not produce anything as spectacular as the film series of 1901, 1902 and 1907 but Gaumont filmed two of the major attractions, 
+<i>La Mer de Glace</i> and <i>Le Mauvais Pas</i>, at Chamonix in the year. Another Gaumont film, <i>Drifts of Snow in Chamonix Valley</i> 
+or <i>Drifts of Snow in Chamonix Vale</i> (French title unknown) was shown in the US in August and was twice noticed by </i>Moving Picture 
+World</i>, the second review being especially commendatory as well as bearing witness to the importance given to "the snow picture" 
+as an exemplar of photographic and ciematographic style:
+<br><br>
+<blockquote>
+High mountains, deep valleys, dense forests, open fields, all covered with so deep a spread of white as would sound ridiculous 
+in a story. In the streets of the village your audience will see snow which reaches to the cornices of the buildings.
+<br><br>
+A beautiful reproduction of snow drifts which really represent snow. The operator performed his part and was followed by the others 
+in turn who produced a film that presents snow with such fidelity to nature that one can appreciate what it means. Often these 
+snow pictures are mere masses of white and black, with none of the delicate shadows and half tones which make pictures of snow 
+so beautiful. In this instance all objections of that character are overcome and the picture shows the huge drifts, shot with 
+all the delicate tones and shadows which make snow beautiful. The picture is worthy of commendation from every standpoint. (27 August 
+1910).
+</blockquote>
+<br><br>
+<div align="center">
+<table>
+     <caption>Lumière autochrome <i>Train d'excursion à la Mer de Glace</i> c. 1910</caption>
+  	<tr>
+    <th><img class="blue" src="images/photos/chamonixtrainlumac.jpg" height=263 width=427 border=2 alt="Mont Blanc" title="Mont Blanc">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+At some time between 1909 and 1914, when the line was closed on account of the war, Gaumont also filmed a ghost ride on the new 
+rack railway from Chamonix to Montenvers, possibly at the time of, or shortly after, its inauguration on 29 May 1909. 
+<br><br>
+<div align="center">
+<table>
+     <caption><i>De Chamonix au Montenvers</i> (Gaumont, 1909-1914)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/chamonixgaum19101920.jpg" height=263 width=427 border=2 alt="Chamonix" title="Chamonix">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+The line ran from Chamonix, to the Hotel de Montenvers station, at the Mer de Glace, at an altitude of 1,913m and wasa huge succes, 
+carrying 47,480 passengers in the first six months alone.
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Le Chemin de fer à la crémaillière de Chamonix</i> and <i>La Gare de Montenvers</i>, postcards</caption>
+  <tr>
+    <th><img class="blue" src="images/pcards/montenvers1.jpg" width="320" height="240" border=2 alt="Venice" title="Venice">
+  <img class="blue" src="images/pcards/montenvers2.jpg" width="320" height="240" border=2 alt="TVenice" title="Venice"</th>
+  </tr>
+</table> 
+</div>
+<br><br>
+President of the Republic Armand de Fallières was in Chamonix to open the new <i>mairie</i> on 7 September 1910 and apparently 
+made the jounrney to Montenvers in great pomp. This Pathé footage is archived as dating from 1912 but it seems probable that it was in fact 
+shot on this occasion in 1910.
+<br><br>
+<div align="center">
+<table>
+     <caption><i>[Fallières à Chamonix]</i> (Gaumont, 1910?)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/chamonixfallierespath1910.jpg" height=263 width=427 border=2 alt="Chamonix" title="Chamonix">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Éclair, the pushiest of the relative newcomers among the French companies, made several mountain films in 1910 although sadly 
+none are known to survive. The two four-minute Alpine views <i>A Trip to Berne</i> (filmed in the Swiss Alps) and <i>Ascending 
+the Sea of Ice</i>, filmed at Chamonix (French titles are not known), both appeared early in the year (they were shown in the 
+US in March). They also filmed <i>Les Grimpeurs des rochers</i> in the Pyrenées. 
+<br><br>
+<div align="center">
+<table>
+     <caption><i>La Frontière franco-italienne</i>, postcard</caption>
+  	<tr>
+    <th><img class="blue" src="images/pcards/frontfrancoital2.jpg" height=263 width=427 border=2 alt="frontière" title="frontière">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+While filming in the Alps, they also made a six-minute documentary, <i>Vie des Chasseurs Alpins aux postes frontières</i> which 
+was part of an occasional series of "exposés" of the lesser known activities of the French army that had been begun <a.not-active href="int08miliy#eclair">way 
+back in 1908</a>. The areas of Haute Savoie that included Chamonix had been seized from the Duchy of Savoy at the time of the 
+Revolution but had only been officially part of France by treaty since 1860. THe ambience was however friendly if distinctly 
+unsophisticated..
+<br><br>
+<div align="center">
+<table>
+     <caption><i>La Frontière franco-italienne: Bersagliers and Chasseurs alpins</i>, postcard</caption>
+  	<tr>
+    <th><img class="blue" src="images/pcards/frontfrancoital.jpg" height=263 width=427 border=2 alt="frontière" title="frontière">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+<h4>Winter Sports</h4>
+<a name="wspo"></a>
+<br><br>
+<div align="center">
+<table>
+     <caption>Francisco Tamagno, poster for the Winter Sports at Chamonix 1910</caption>
+  	<tr>
+    <th><img class="blue" src="images/posters/chamonixsportsdhiver1910.jpg" height=463 width=327 border=2 alt="sports d'hiver" title="sports d'hiver">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Chamonix was as famed for its winter sports as for its mountains and Gaumont was also filming these in 1910. Thse scenes of ski-ing 
+were certainly filmed there at about this time.
+<br><br>
+<div align="center">
+<table>
+     <caption><i>Chamonix, Sports d'Hiver</i>, (Gaumont, 1910)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/chamonixsportsdhiver1910.jpg" height=263 width=427 border=2 alt="Chamonix" title="Chamonix">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+These scenes, too, of ski-ing and bobsleighing, although the place is not specified, may also have been shot there. In the bobsleighing, 
+The competitors departed from the <i>piste</i> after the first turn and one was injured.
+<br><br>
+<div align="center">
+<table>
+     <caption><i>Concours de saut à ski et bobsleigh</i>, (Gaumont, 1910)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/skigaum1910.jpg" height=263 width=427 border=2 alt="Chamonix" title="Chamonix">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Pathé, more enterprisingly, filmed the four-minute <i>Concours de luge et de bobsleigh à Moscou</i>. Ski-ing competitions had begun 
+in Moscow in 1896 but the first all-Russia ski-ing competition took place in 1910. This sled and boblseigh race was apparently held 
+at a venue called the Cakolnique Club. Gaumont would also get to film the winter sports in Moscow <a.not-active href="int11wsm.html#wspo">the 
+following year</a>.
+<br><br>
+Winter films are, in the absence of precise information, very tricky to date; one can never be entirely sure which year one is 
+dealing with. Does a winter film of 1910 related to the winter of 1909/1910 or the winter of 1910/1911? Lucerne in Switzerland 
+was another important resort. A film <i>Sports d'hiver en Suisse</I> is recorded for Pathé in 1912 but a Pathé film entitled 
+<i>Winter Sports at Lucerne</i> appeared in the US on 11 June 1911 and may perhaps be the same film, in which case the film 
+was presumably made during the winter of 1910/1911, although there may of course be wto separate films. No description seems 
+to exist for the film shown in the US but the relatively long (nine-minute) film from the Pathé catalogue is described as follows 
+and certainly sounds like Lucerne:
+<br><br>
+<blockquote>
+C’est au milieu d’un admirable panorama de montagnes de neige et de lacs gelés que nous voyons se dérouler ces sports d’hiver. 
+Voici les courses de skeletons, sortes de petits traîneaux que l’on monte à plat ventre&nbsp;; les courses de bobsleighs&nbsp;; 
+les champions du patinage et du curling&nbsp;; puis le skikjoring, course de chevaux conduits par des «&nbsp;skieurs&nbsp;» 
+et enfin les vertigineux sauts en skis, l’un des plaisirs favoris des amateurs de sports d’hiver, mais aussi l’un des plus 
+difficiles et qui se termine bien souvent par une chute sévère. 
+<br><br>
+<div class="tab">
+      <input id="tab-1" type="checkbox" name="tab">
+      <label for="tab-1">English translation</label>
+      <div class="tab-content">
+<br><br>
+In the midst of an admirable view of snow-covered mountains and frozen lakes, we witness the winter sports, consisting of races 
+of skeletons, small sledges upon which one travels on one's stomach; bobsleigh races; champions of skating and curling; then "skikjoring", 
+a horse-race driven by the "skiers" and finally the vertiginous ski-jumping, one of the favourite pleasurs of the lovers of winter 
+sports, but also one of the most difficult and which often finishes with a severe fall.
+</blockquote>
+<br><br>
+</div></div>
+<br><br>
+<a name="luxem"</a>
+<div align="center">
+<table>
+  <caption><i>Lucerne. Suisse: Glissades en toboggan</i> (Pathé, c. 1911? 1920-22?)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/6JWg15Oxg5A?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+    </th>
+</table>
+</div>
+<br><br>
+Clearly the ambience at Lucerne, like that at St. Moritz (the winter playground of the English) was clearly more oriented towards 
+rumbustious fun than it was towards sporting competition. This item, which appeared on a film made for the Pathé-Baby may have 
+been part of the 1911 film  or may have been filmed at about this time. It was certainly not filmed <a.not-active href="int05wsm#wspo">in 
+1905</a> when Pathé did indeed film toboganning in Switzerland but in St. Moritz, not at Lucerne.Given the emphasis on "close-up", 
+however, it more probably dtes from 1920-22 when Pathé, with newly develepd equipment, was experimenting very determinedly with 
+close-up, slow motion and accelerated film.
+<br><br>
+<blockquote>
+Le long de la pente rapide, les hiverneurs glissent à une vertigineuse allure, sur la neige durcie que racle l'éperon de fer 
+du toboggan. Dans le cadre grandiose, le spectacle est palpitant, car les sportsmen sont parfois violemment projetés... dans 
+les decors&nbsp;! 
+<br><br>
+<div class="tab">
+      <input id="tab-2" type="checkbox" name="tab">
+      <label for="tab-2">English translation</label>
+      <div class="tab-content">
+<br><br>
+Along the rapid chute, the winter vistors slide at a vertiginous speed on the hardened snow scraped by the iron spur of the 
+toboggan. In this close-up view, the spectacle is thrilling, for the sportsmen are sometimes violently flung....into the surrounding 
+scenery.  
+</blockquote>
+<br><br>
+</div></div>
+</article>
+<footer>Copyright &copy; kekseksa.com</footer>
+</div>
+</body>
+</html>

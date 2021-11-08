@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+<! -- file created by Lulu 23/02/2013 email: kekseksa@gmail.com -->
+<meta name="keywords" content="">
+<base target="_self">
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Kekseksa? C'est du cinéma</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: #FF9900;
+    background-color: #0000CC;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    background-color: white;
+    max-width: 148px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+@media (max-width: 960px) {
+  nav ul     { display: none;}
+}
+article {
+    margin-left: 150px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+
+li.nb a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+}
+
+.dropleft .dropright {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropleft:hover .dropdown-content {
+    display: block;
+}
+.dropright:hover .dropdown-content2 {
+    display: block;
+}
+div.dropleft {
+    float: left;
+    width: 260px;
+    margin: 15px 20px 0 0;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+div.dropright {
+    float: right;
+    width: 220px;
+    margin:  0 0 15px 20px;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+.bigger:hover {
+width:360;
+height:480;
+}
+input[type='checkbox'] {
+  display: none;
+}
+.lbl-toggle {
+  display: block;
+}
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid red;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.lbl-toggle2::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentcolor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Cinema in the year
+<br><br>1910</h1>
+</header>
+
+
+ <ul class="nb">
+  <li class="nb">1910</li>
+  <li class="nb"><a class="bottom" href="intro10.html"><img src="images/backhand.gif" width=40 height=20 border=0 alt="previous">introduction</a></li>
+  <li class="nb"><a class="bottom" href="notready.html"><img src="images/backhand.gif" width=20 height=10 border=0 alt="previous">1909</a></li>
+  <li class="nb">The News Film</li>
+  <li class="nb"><a class="bottom" href="notready.html">1911&nbsp;<img src="images/forehand.gif" width=20 height=10 border=0 alt="next"></a></li>
+  <li class="nb" style="float:right">1910</li>
+  <li class="nb" style="float:right"><a class="bottom" href="int10doc.html">documentary&nbsp;<img src="images/forehand.gif" width=40 height=20 border=0 alt="next"></a></li>
+  </ul> 
+  
+<nav>
+
+<a href="index.html">
+<table>
+  <caption>&nbsp;accueil</caption>
+  <tr>
+    <th><img class="purple" src="images/posters/bebetac.jpg"  height=36 width=48 border=2 alt="Return to home page" title="Return to home page"></th>
+</tr>
+</table>
+</a>
+<a href="qdn.html"><a href="qdn.html">
+<table>
+  <caption>&nbsp;kwad9</caption>
+  <tr>
+    <th><img class="purple" src="images/stills/conqairprom.png"  height=36 width=48 border=2 alt="Quoi de neuf ?" title="Quoi de neuf ?"></th>
+</tr>
+</table>
+</a>
+	<br>
+  <div class="wrap-collapsible">
+  <input id="collapsible" class="toggle" type="checkbox">
+  <label for="collapsible" class="lbl-toggle"><a href="intro10.html">introduction</a></label> 
+    <div class="collapsible-content">
+    <div class="content-inner">
+       		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="europe10.html">Europe</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="french10.html">France</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ital10.html">Italy</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="danish10.html">Denmark</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="swed10.html">Sweden</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="norw10.html">Norway</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="brit10.html">Britain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="german10.html">Germany</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ost10.html">Austria</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a href="benelux10.html">Benelux</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="span10.html">Spain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="port10.html">Portugal</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="greek10.html">Greece</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="us10.html">US</a>
+		<br>
+   		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="world10.html">The World</a>
+		</div></div></div>
+ 		<div class="wrap-collapsible">
+  		<input id="collapsible2" class="toggle" type="checkbox">
+ 		<label for="collapsible2" class="lbl-toggle2"><a.not-active href="">newsreel</a>
+        	</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible3" class="toggle" type="checkbox">
+ 	 	<label for="collapsible3" class="lbl-toggle"><a href="int10doc.html">documentary</a></label>
+		<div class="collapsible-content">
+    		<div class="content-inner">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10doc.html#tour">touristic</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="#indus">industrial</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="#colon">colonial</a>
+		</div></div></div>
+    	     	<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a href="int10psc.html">popular science</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10doc.html#colon">natural history</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible5" class="toggle" type="checkbox">
+ 		<label for="collapsible5" class="lbl-toggle2"><a href="int10disas.html">disaster film</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a.not-active href="int10sport.html">sport</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10wsm.html">winter sport</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10wsm.html#mf">mountain film</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10hist.html">historical film</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10cs.html">comic series</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible7" class="toggle2" type="checkbox">
+ 		<label for="collapsible7" class="lbl-toggle2"><a.not-active href="int10west.html">western</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible8" class="toggle2" type="checkbox">
+ 		<label for="collapsible8" class="lbl-toggle2"><a.not-active href="#int10kri.html">crime film</a>
+		</div>
+
+<p>
+<h3><a href="notready.html">Index of films</a></h3>
+</div>
+</nav>
+
+<article>
+<h3><a name="nreel">The news film</a></h3>
+<p>The newsreel did not begin in 1910 but it is the year in which it really took root. Topicalities 
+(<i>actualités</i> in French) had always been a very important part of film-making.  To relay news 
+in the form of moving pictures was simply part of what cinema did (and would continue to do right up 
+until the 1960s when this particular job had very largely been taken over by television.  It was throughout 
+that period a popular and greatly valued service and countless fiction films also bear witness to its 
+importance. 
+<br><br>
+There is plenty of evidence to show that, from the very beginning, the makers of films thought of 
+topicalities in "series" or as part of a programme, rarely as individual stand-alone one-minute films 
+(as was often the case with "composed views" and "fiction films"). When they were in a position to do 
+so, when, that is to say, Pathé and its principal rival Gaumont had gained a large degree of control 
+over distribution and exhibition of films, the newsreel (the programme of topicalities) was a perfectly 
+natural development. The Pathé-Journal had started life in 1908 and Gaumont (Gaumont-Actualités) and 
+the other major French companies soon followed suit.
+<br><br>
+With the creation of Pathé subsidiaries abroad, the newsreel was among the first major import so that 
+Pathé News came both to Britain and to the United States in 1910. The US was slow to take to the newsreel 
+but Britain became its foremost exponent. Even before the full establishment of Pathé in Britain, The 
+Pathé Animated Gazette had been published there from from time to time and Britain already had a dedicated 
+newreel cinema, The Daily Bioscope, which opened on 23 May 1909, but from June 1910 the Animated Gazette 
+appeared regularly every week, watched, as its frontiscard proudly announced, by millions, and from 1912 
+it would start to appear twice a week and later even thrice weekly. British Pathé would remain a much loved 
+(and eventually much mocked) institution in Britain until well into the 1960s. It finally ceased to appear 
+in February 1970.
+<br><br>
+Film historians and critics still too rarely pay any attention to the newsreel, often regarding it 
+(quite wrongly) as a purely peripheral aspect of cinema. In re-asserting the importance of such footage, 
+and examining a little its contents, one realises the complete falsity of the notion that cinema 
+in some manner "progressed" from a "primitive" form of "cinema of the attractions" to something quite 
+different. This totally manufactured theory depends very largely on comparing one kind of film in the 
+early period with completely different kinds of film at the later period (a fairly obvious piece of academic 
+deceit). When one compares like with like (the early topicalities with the newsreel items), what one 
+discovers (unsurprisingly) is exactly the opposite.  Not only do topicalities continue to concern themselves 
+with "attractions" (as indeed they do to this day) but the attractions that they concentrate upon remain 
+remarkably constant.
+<br><br>
+In fact the institution of newsreels tended if anything to increase the "attractions" element by 
+comparison with the mini-documentries produced as stand-alone films (<a href="#docu">see below</a>). 
+In the very short item on the Coupe de Voiturettes in Boulogne, there is no real report of the race.  
+The intention of the film is purely to give an impression of speed. In the zoo film, we see the animals 
+performing tricks and an elephant "shooting the chutes".  We are back in other words with the sort of 
+film made by the US companies in 1896-1897, featuring show stars and attraction parks before the Lumières' 
+rather more austere and artistic approach to the photographic composition of films. 
+<br><br>
+This "attraction" effect is nothing peculiar to cinema. The visual presentation of news has always tended to 
+represent such a trivialisation; it still does to this day. The same tendencies are apparent in photo-journalism 
+and in television news-reporting. It is, however, questionable whether in the age of the sensational or "yellow" 
+press (<i>The Yellow Kid</i>, the cartoon from which the soubriquet derives,  and "fake news" date, like the cinema 
+itself, from the 1890s), the cinema and the television have proved very much worse than the written press in this 
+regard. And there is a strong link between the sensational press and the newsreel. When the form did take hold, 
+a little later, in the US, it was the press baron William Randolph Hearst who completely dominated the field with 
+Hearst Newsreel in 1914, International Newsreel in 1919, MGM News in 1929 and finally Hearst Metrotone News which 
+survived until 1967.
+<br><br>
+Although ostensibly the newsreels published what in French are called <i>actualités</i> and were known in English 
+at the time as "topicalities", their news-reporting, like that of the yellow press, was in practice rather thin 
+and the requirement to produce a constant stream of material at relatively low cost meant that they were full 
+of "magazine" items that are often more in the nature of (hastily) composed views rather than genuine topicalities, 
+<br><br> 
+Since British Pathé has very properly made a wealth of material from its archives publicly available, 
+we are in a position to make the comparison.  These are a range of newsreel items from 1910 and below 
+a comparison between their content and that of the very first topicalities and composed views from 1896-1897.
+<br><br>
+Links here direct to British Pathé films available to all on youtube.  For those interested, 
+British Pathé offers a great deal more on its own web site - <a href="https://www.britishpathe.com/">
+https://www.britishpathe.com/</a>.
+<br>
+<div align="center">
+<a name="sparm"></a>
+<table>
+  <caption>Spanish Army</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/WtfUoa0H5iA?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+<br>
+<a name="zsin"></a>
+<table>
+  <caption>Zoo Scenes</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/DciTTxfACbs?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+<br>
+<a name="mbro"></a>
+<table>
+  <caption>Coupe de Voiturettes, Boulogne-sur-Mer</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/J_JNtXxQ3fk?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+<br><br>
+</div>
+Even before the era of the film star itself, film-makers tended to be attracted by personalites. This was equally true of the 
+news-films which made stars of certain world-leaders and politicians but largely ignored others. Amongst royalty, the Tsar of 
+Russian and the German Kaiser excited a particular interest as did Edward, the fashion-conscious young Prince of Wales. In the 
+US Theodore Roosevelt had a media profile that his protégé and successor as President, William Howard Taft, could not hope to 
+rival. By 1910 a rift was already forming between the two men, but all focus on that was suspended while the film-cameras followed 
+Colonel Roosevelt on his trip around the world. After his safari in Africa in 1909, he was in 1910 to meet the various crowned 
+or uncrowned heads of Europe, a prospect greeted with a certain scepticism but nevertheless a great deal of interest by the US 
+media. A very short early cartoon expressed the scepticism:
+<br><br>
+<div align="center">
+<table>
+  <caption>Cartoon of Theodore Roosevelt's reception by crowned heads of Europe</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/WGR_IM7kct0?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+</div>
+<br><br>
+<div class="dropright"><img class="purple" style="float: right; margin: 5px"  src="images/BD/autocrat.gif" height=180 width=200 border=2 alt="autocrats" title="autocrats"><div class="dropdown-content2">
+<img class="purple" style="float: right; margin: 5px"  src="images/bd/autocrat.gif"  height=320 width=400 border=2 alt="autocrats" title="autocrats"></div></div>
+Roosevelt commenced his European tour in Italy, where, on 4 April, he refused to meet the very conservative Pope Pius X after 
+the latter objected to his planned visit to a Methodist church there. "No self-respecting American could allow his action or 
+his going and coming to be dictated to him by any Pope or King." He then moved on later the same month to Austria-Hungary. Here, 
+and later in Wilhelm II's Germany, the notion of a new-world democratic President amongst the old-world autocracies became an 
+important theme of the tour. The film below presents Emperor Franz Jozef of Austria-Hungary at the time of Roosevelt's visit, 
+although Roosevelt is not seen in the film, described as presiding over "the most autocratic government in Europe." Back in the US 
+some cartoonists (and congressmen) were less sure who best deserved the title. The Democratic press in the US put it this way: 
+"The German people stood for Emperor William's officiousness for a time, but finally got tired of it. Just as the people of this 
+country will some day grow weary of having Theodore Roosevelt forever posing in the limelight and, without waiting to be asked, 
+continually telling them how to raise babies, run the government, trim peekaboo waists, write nature stories, cure bunions, 
+reform our spelling, kill the codlin moth, perfect the solar system, plant corn, beautify the coinage, rid the country of its 
+undesirable citizens, elevate the farmer, raise backdoor campaign subscriptions, and trim your toenail so it will not punch a 
+hole in the sock. In fact, a lot of people are tired of it already." 
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Emperor Francis Joseph of Austria Greeted by his People</i> (1910)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/X6EgdZ0gexM?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+</div>
+<br><br>
+The mysterious absence of Roosevelt from the film is almost certainly because it actualy has nothing to do with his visit at all 
+but is a piece of footage that has simply been dug up and re-used for the occasion. The use of stock footage in this way with 
+added political commentary was becoming more common, <a.not-active href="int09pol.html#russia">as we have seen in the case of films illustrating 
+the evils of Russian autocracy</a>. At the end of April, TR was in France where he behaved himself better, out of respect to France's 
+republican traditions, and had an enthusiastic reception. On 23 April he gave an elegant oration at the Sorbonne entitled “Citizenship 
+in a Republic” (often known as "The Man in the Arena"), which avoided all his characteristic bluster about virility and the strenuous 
+life, or at least found a more graceful manner of expressing those ideas, and which has justly remained one of his most celebrated 
+speeches:
+<br><br>
+<blockquote>
+It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have 
+done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; 
+who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but 
+who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; 
+who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring 
+greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat. 
+</blockquote
+<br><br>
+<div align="center">
+<table>
+  <caption>Theodore Roosevelt at Vincennes in 1910 (photo)</caption>
+  <tr>
+     <th><img class="blue" src="images/photos/vincennes.jpeg" height=263 width=427 border=2 alt="Vincennes" title="Vincennes">
+</tr>
+</table>
+</div>
+<br><br>
+The manly life was not altogether to be forgotten, however, and on 27 April, he attended a military review at Vincennes, not 
+a million miles from where Charles Pathé had his factory and it was a Pathé operator who made the film below, perhaps the most 
+attractive to have been made in connection with the Roosevelt tour. It has something of the curious atmospheric quality one finds 
+<a.not-active href="int15top.html#artois">later in Alfred Machin's wartime short</a> <i>Le Drapeau des chasseurs en Artois</i> (1915).
+<br><br>
+<div align="center">
+<table>
+  <caption>Revue de Vincennes en l'honneur de T. Roosevelt (Pathé, 1910)</caption>
+  <tr>
+    <th><video width="320" height="240" controls>
+  <source src="videos/vincennes.mp4" type="video/mp4">
+  Your browser does not support the video tag.</th>
+</tr>
+</video> 
+</table>
+</div>
+<br><br>
+Roosevelt had, controversially, been awarded the Nobel Peace prize in 1906, ostensibly for his role in negotiating peace in 
+the Russo-Japanese war of 1904-1905. The peace prize, unlike the other Nobels, was awarded, at Nobel's specific request, by 
+the Norwegian rather than the Swedish Committee. Previous peace prizes (1901-1904) had been awarded to peace-activists. The 
+award of the prize to Roosevelt in the same year in which he had talked of wielding "the big stick" in international affairs, 
+was the beginning of a political manipulation of the award that has continued ever since. Norway had dissolved its union with 
+Sweden in 1909 and Swedish newspapers accused the Nobel committee of using the award to win powerful friends rather than to promote 
+the cause of peace in the world as Nobel had intended. Roosevelt's visit to Norway and Denmark, at he beginning of his 1910 European 
+tour was in part to formally accept the prize and the acceptance speech was made in Oslo on 5 May 1910. 
+<br><br>
+In his speech Roosevelt typically rejected pacifism, which he characterised as cowardice and voluptuousness and extolled the "stern 
+and virile virtues" necessary to the existence of a state. On the other hand he supported, as he had always done, the Permanent Court 
+of Arbitration, established at the Hague in 1899, and even called for the formation of a "League of Peace", although, later, in 1919, 
+one of his last public acts would be to vote against US ratification of the League of Nations.The first part of the film below (of 
+unknown provenance and probably in fact a later compilation of footage) shows Roosevelt at the National Theatre in Oslo where his 
+acceptance speech was made. The second part shows his earlier visit to Denmark (2-3 May), his arrival in Copenhagen and visits to the 
+castles of Frederiksborg and Kronborg, where, alas, there is no sign of the ghost of Hamlet Sr.
+<br><br>
+<div align="center">
+<table>
+  <caption>[Theodore Roosevelt in Norway and Denmark] (1910)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/qAG7NzgeaJg?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+</div>
+<br><br>
+In Oslo, the film-camera captures a man with an early Brownie box-camera photographing Roosevelt's ceremonial coach, a reminder 
+that such events were major tourist-attractions. "People gathered at railway stations, in school-houses, and in the village streets," 
+one US journalist observed. "They showered his carriage with flowers, thronged windows of tenement houses, and greeted him with 
+'Viva, viva, viva Roosevelt!'" The celebrity, as we see,  had become adept at the art of hat-tipping to the crowd. The steamer 
+on which he travels from Kronberg back to Copenhagen is <i>The Queen Maud</i>, not the famous polar ship of that name but a cargo 
+ship built in Glasgow in 1909, which passes a Danish naval ship, <i>The Kronborg Castle</i>. More Brownies are in evidence at 
+Copenhagen but this time in the hands of press-photographers.
+<br><br>
+"My political career is ended," Roosevelt had told a journalist in Khartoum. "No man in American public life has ever reached the 
+crest of the wave as I appear to have done without the waves breaking and engulfing him." The general success of his tour, followed 
+by a triumphant welcome home on 18 June 1910, effectively put paid to his pessimism. Doris Kearns Goodwin, in what is admittedly an 
+extremely hagiograhic account, <i>The Bully Pulpit: Theodore Roosevelt, William Howard Taft, and the Golden Age of Journalism</i>, 
+describes the preparations in New York for his return: 
+<br><br>
+<blockquote>
+In the week preceding his arrival in America, tens of thousands of visitors from all over the country had descended upon New York, 
+lending the city's hotels and streets "a holiday appearance." Inbound trains carried a cast of characters "as diversely typical of 
+the American people as Mr. Roosevelt himself...conservationists and cowboys, capitalists and socialists, insurgents and regulars, 
+churchmen and sportsmen, native born and aliens." More than two hundred vessels, including five destroyers, six revenue cutters, 
+and dozens of excursion steamboats, tugs, and ferryboats, all decked with colorful flags and pennants, had sailed into the harbor 
+to take part in an extravagant naval display.
+</blockquote>
+<br><br>
+<div align="center">
+<table>
+  <caption>[Theodore Roosevelt's return to New York, 1910]<br>Part 1</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/FVqBu8Q2H_Q?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+</div>
+<br><br>
+<blockquote>
+An army of construction workers labored to complete the speaker's plat-form and grandstand seating at Battery Park, where Roosevelt 
+would address an overflow crowd of invited guests. Businesses had given their workers a half-holiday so they could join in the festivities. 
+"Flags floated everywhere," an Ohio newspaper reported; "pictures of Roosevelt were hung in thousands of windows and along the line 
+of march, buildings were draped with bunting." 
+<br><br>
+The night before the big day, a dragnet was set to arrest known pickpockets. Five thousand police and dozens of surgeons and nurses 
+were called in for special duty. "The United States of America at the present moment simulates quite the attitude of the small boy 
+who can't go to sleep Christmas Eve for thinking of the next day," the Atlanta Constitution suggested. "And the colonel, returning 
+as rapidly as a lusty steamship can plow the waves, is the 'next day.' It is a remarkable tribute to the man's personality that virtually 
+every element of citizenship in the country should be more or less on tiptoes in the excitement of anticipation." 
+</blockquote>
+<br><br>
+<div align="center">
+<table>
+  <caption>Theodore Roosevelt arriving in New York in 1910 (photo)</caption>
+  <tr>
+     <th><img class="blue" src="images/events/trarrival.jpg" height=263 width=427 border=2 alt="arrival in New York" title="arrival in New York">
+</tr>
+</table>
+</div>
+<br><br>
+Stearns' purple prose may be a trifle hard to stomach but the films broadly bear out her account and there can be no question of 
+the star-appeal of the portly President.  Photographers and cameramen are absolutely everywhere. As Stearns points it in one of her 
+more sick-making flourishes, describing Roosevelt on the tug, coming into harbour, the good old boy still had all his teeth:
+<br><br>
+<blockquote>
+To each familiar face, he nodded his head and smiled broadly, displaying his famous teeth, which appeared "just as prominent and just 
+as white and perfect as when he went away." Then, recognizing the photographers' need to snap his picture, he stopped his hectic motions 
+and stood perfectly still. 
+</blockquote>
+<br><br>
+<div align="center">
+<table>
+  <caption>[Theodore Roosevelt's return to New York, 1910]<br>Part 2</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/aTgFfjY0fWw?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+</div>
+<br><br>
+When it comes to describing the ceremony at Battery Park, Stearns verges on the orgasmic.
+<br><br>
+<blockquote>
+Straightaway, Roosevelt headed from the pier to the speaker's platform. He was in the midst of shaking hands with cabinet members, senators 
+and congressmen, governors and mayors when his daughter Alice cried, "Turn around, father, and look at the crowd." Outspread before him was 
+"one vast expanse of human countenances, all upturned to him, all waiting for him." Beyond the 600 seated guests, 3,500 people stood within 
+the roped enclosure, and beyond them "unnumbered thousands" on the plaza. Still more crammed together on the surrounding streets. It was 
+estimated that at least 100,000 people had come to Battery Park, undeterred by the crushing throngs and the oppressive heat and humidity. 
+From a ninth-floor window of the nearby Washington Building, "a life-size Teddy bear" belted with a green sash was suspended. A large white 
+banner bearing Roosevelt's favorite word, "Delighted," was displayed on the Whitehall Building, where "from street level to skyline every 
+window was open and every sill held as many stenographers and office boys and bosses as the sills could accommodate." 
+</blockquote>
+<br><br>
+<div align="center">
+<table>
+  <caption>[Theodore Roosevelt speaking at the Battery, 1910]</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/tN9PZyGYiuw?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+</div>
+<br><br>
+<div class="dropright"><img class="purple" style="float: right; margin: 5px"  src="images/people/hoxsey.jpg" height=180 width=200 border=2 alt="Arch Hoxsey" title="Arch Hoxsey"><div class="dropdown-content2">
+<img class="purple" style="float: right; margin: 5px"  src="images/people/hoxsey.jpg"  height=360 width=400 border=2 alt="Arch Hoxsey" title="Arch Hoxsey"></div></div>
+Another star of the cinema in 1910 was the aeroplane. In 1910 the Wright brothers, who had promised their father Milton never to do 
+so, flew together for the first and last time. They also took the 82-year-old Milton up for the one and only flight of his liftime. 
+Two film-stars, the Wright aeroplane and Colonel Roosevelt, came together at an air-meet at Kinloch Field in Saint Louis, Missouri 
+on 11 October 1910  while Roosevelt was campaigning for the Congressional elections. Archibald (Arch) Hoxsey (1884-1910), an aviator 
+working for the Wrights, was assigned to take the ex-President aloft. "Bully!" was the colonel's response. Hoxley set a new altitude 
+record (3,497m) later in the year (26 December). Five days later (New Year's Eve), he died in a crash from 2,100m while trying to 
+beat his own record. Not quite so "bully"!
+<br><br>
+<div align="center">
+<table>
+  <caption>[Colonel Roosevelt is invited to fly in Arch Hoxsey's plane at St. Louis, Mo., 1910] (1910)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/NaFulqGGkwk?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+<br><br>
+</div>
+<br><br>
+<summary style="display: none;>
+<div class="dropleft"><img class="purple" style="float: right; margin: 5px"  src="images/people/albert1er1910.jpg" height=250 width=200 border=2 alt="Albert I" title="Albert I"><div class="dropdown-content">
+<img class="purple" style="float: right; margin: 5px"  src="images/people/albert1er1910.jpg"  height=500 width=400 border=2 alt="Albert I" title="Albert I"></div></div>
+THe crowned heads of Europe were also stars of the cinema and the newsreel photographers folowed them around wherever they went. 
+Some had more appeal than others. Albert 1<sup>er</sup>I, King of the Belgians (1875-1934) was not yet the «&nbsp;roi-chevalier&nbsp;» 
+that he would become during the Great War, but he was a relatively young man (still only thirty he unexpectedly became heir to his 
+uncle Leopole II in 1905 (following the pre-decease of both his elder brother Baudouin in 1891 and his father) and only thirty-four 
+when he succeeded to the throne in 1909. He had, earlier that year, already toured the Belgian Congo and recommended reforms in 
+its administration; he was, to all appearances, deeply in love with his wife Elisabeth and the couple were prominent patrons of 
+the arts and sciences, turning their court at Laeken into a kind of cultural salon. On his accession, he also dispensed with an 
+armed royal escort, allowing him to mingle with the crowds. So, although a naturally rather retiring and studious man, it was unsuprising 
+that he should attract the attention of the cameras. In 1910 he renewed the traditional discourse from the throne, suppressed 
+by his unpopular uncle, and, in an early public appearance, was present both at the opening (28 April) and the close (18 October) 
+of the Exposition internationale et universelle de Bruxelles and inaugurated the Musée du Congo belge at Tervuren in Brabant a 
+a fornight later (30 April). 
+<br><br>
+<div align="center">
+<table>
+  <caption>Bruxells, Ouverture des Chambres par sa Majesté le roi Albert 1er (Gaumont, 1910)</caption>
+  <tr>
+     <th><img class="blue" src="images/stills/ouvchambrux1910.jpg" height=263 width=427 border=2 alt="Bruxelles" title="Bruxelles">
+</tr>
+</table>
+</div>
+<br><br>
+In July Albert and Elisabeth visited Paris where they were greeted by President Fallières and filmed by both the Pathé and Gaumont 
+operators at their arrival (12th July) at the station of the Bois de Boulogne>
+<br><br>
+<div align="center">
+<table>
+  <caption>Arrivée des souverains belges à Paris (Gaumont, 1910)</caption>
+  <tr>
+     <th><img class="blue" src="images/stills/sbarrival.jpg" height=263 width=427 border=2 alt="arrival in Paris" title="arrival in Paris">
+</tr>
+</table>
+</div>
+<br><br>
+It is not certain if this inauguration of a «&nbsp;foure communale&nbsp;» was filmed during the same visit. The film exists in 
+the Gaumont archives on a reel which also contains footage of Albert 1<sup>er</sup> on visits to the US and Germany.
+<br><br>
+<div align="center">
+<table>
+  <caption>Le Roi inaugure la foire communales (Pathé, 1910)</caption>
+  <tr>
+     <th><img class="blue" src="images/stills/albertfoirecommunalepath1910.jpg" height=263 width=427 border=2 alt="foire communale" title="foire communale">
+</tr>
+</table>
+</div>
+<br><br>
+Royal personages were not the only celebrities and Pathé seems to have embarked in 1910 on a whole series of films of men and women 
+in the news. Aviators, headed by Louis Blériot, figured prominently:
+<br><br>
+<div align="center">
+<table>
+  <caption>Louis Blériot (Pathé, c. 1910)</caption>
+  <tr>
+     <th><img class="blue" src="images/stills/bleriotpath1910.jpg" height=263 width=427 border=2 alt="Blériot" title="Blériot">
+</tr>
+</table>
+</div>
+<br><br>
+Sportsman included Justinien Clary <i>dit</i> le comte Clary (1860-1933), shooting champion (bronze medallist at the 1900 Olympics) 
+amd «&nbsp;le premier fusil de France&nbsp;». 
+<br><br>
+<div align="center">
+<table>
+  <caption>Comte Clary (Pathé, c. 1910)</caption>
+  <tr>
+     <th><img class="blue" src="images/stills/clarypath1910.jpg" height=263 width=427 border=2 alt="Clary" title="Clary">
+</tr>
+</table>
+</div>
+<br><br>
+These include Vincent Auriol (1884-1906), then a young socialist <i>député</i> but a future Presidentt (1947-1954)
+<br><br>
+<div align="center">
+<table>
+  <caption>Vincent Auriol (Pathé, c. 1910)</caption>
+  <tr>
+     <th><img class="blue" src="images/stills/auriolpath1910.jpg" height=263 width=427 border=2 alt="Auriol" title="Auriol">
+</tr>
+</table>
+</div>
+<br><br>
+An interesting inclusion is the priest and politician from Alsace (still at this time part of Germany), Émile Wetterlé (1861-1931), 
+one of the leaders of the pro-French autonomist movement there and an outspoken critic of Germany.
+<br><br>
+<div align="center">
+<table>
+  <caption>Émile Wtterlé (Pathé, c. 1910)</caption>
+  <tr>
+     <th><img class="blue" src="images/stills/wetterlepath1910.jpg" height=263 width=427 border=2 alt="Wetterlé" title="Wetterlé">
+</tr>
+</table>
+</div>
+<br><br>
+</summary>
+<div class="dropright"><img class="purple" style="float: right; margin: 5px"  src="images/stills/ripo1.png"  height=160 width=170 border=2 alt="Lisbon: palace window" title="window"><div class="dropdown-content2">
+<img class="purple" style="float: right; margin: 5px"  src="images/stills/ripo1.png"  height=320 width=340 border=2 alt="Lisbon: palace window" title="window"></div></div>
+The only moderately serious item I have found concerning the important events of 1910 worldwide, is a report of 
+the Portuguse Revolution. Although also from the British Pathé archive, this is in fact a Gaumont film (one sees 
+the logo very clearly) and is a little more in the nature of a documentary than a newsreel item. It was the army's 
+refusal to fire on the protestors that permitted the Revolution to succeed and in the film one clearly sees the 
+army circulating amongst those who had earlier manned the barricades against them. As with most news reports it 
+is a shade "after the event" and those filmed on the barricades are clearly simply posing for the camera. It is 
+nevertheless a good little film and there is a fine "symbolic" shot of one of the windows of the hastily vacated 
+royal palace as well as footage of the damage incurred by the palace.
+<br><br>
+<div align="center">
+<a name="ripo"></a>
+<table>
+  <caption>Revolution in Portugal</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/tTCHHDLnnPw?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</table>
+<br><br>
+</div>
+<footer>Copyright &copy; kekseksa.com</footer>
+</div>
+</body>
+</html>

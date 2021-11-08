@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<! -- file created by Lulu 23/02/2013 email: kekseksa@gmail.com -->
+<meta name="keywords" content="">
+<base target="_self">
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Kekseksa? C'est du cinéma</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: #FF9900;
+    background-color: #0000CC;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    background-color: white;
+    max-width: 148px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  nav ul     { display: none;}
+}
+
+article {
+    margin-left: 150px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+li.nb a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+}
+
+.dropleft .dropright {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropleft:hover .dropdown-content {
+    display: block;
+}
+.dropright:hover .dropdown-content2 {
+    display: block;
+}
+div.dropleft {
+    float: left;
+    width: 220px;
+    margin: 15px 20px 0 0;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+div.dropright {
+    float: right;
+    width: 220px;
+    margin:  0 0 15px 20px;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+.bigger:hover {
+width:360;
+height:480;
+}
+input[type='checkbox'] {
+  display: none;
+}
+.lbl-toggle {
+  display: block;
+}
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid red;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.lbl-toggle2::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentcolor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.tab {
+  position: relative;
+  margin: 2px;
+  max-width: 600px;
+}
+.tab input {
+  display: none;
+}
+.tab label {
+  background: #2d5faf;
+  color: #fff;
+  font-weight: bold;	
+  font-size: 8pt;
+  padding: 10px;
+  cursor: pointer;
+}
+.tab input[type=checkbox]:checked + label::after,
+.tab input[type=radio]:checked + label::after {
+  transform: rotate(90deg);
+}
+.tab-content {
+  overflow: hidden;
+  display: none;
+}
+.tab input:checked ~ .tab-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Cinema in the year
+<br><br>1910</h1>
+</header>
+
+
+ <ul class="nb">
+  <li class="nb">1910</li>
+  <li class="nb"><a class="bottom" href="int10top.html"><img src="images/backhand.gif" width=40 height=20 border=0 alt="previous">newsreel</a></li>
+  <li class="nb"><a class="bottom" href="notready.html"><img src="images/backhand.gif" width=20 height=10 border=0 alt="previous">1909</a></li>
+  <li class="nb">Documentary Film</li>
+  <li class="nb"><a class="bottom" href="notready.html">1911&nbsp;<img src="images/forehand.gif" width=20 height=10 border=0 alt="next"></a></li>
+  <li class="nb" style="float:right">1910</li>
+  <li class="nb" style="float:right"><a class="bottom" href="notready.html">colonial&nbsp;<img src="images/forehand.gif" width=40 height=20 border=0 alt="next"></a></li>
+  </ul> 
+  
+<nav>
+
+<a href="index.html">
+<table>
+  <caption>&nbsp;accueil</caption>
+  <tr>
+    <th><img class="purple" src="images/posters/bebetac.jpg"  height=36 width=48 border=2 alt="Return to home page" title="Return to home page"></th>
+</tr>
+</table>
+</a>
+<a href="qdn.html"><a href="qdn.html">
+<table>
+  <caption>&nbsp;kwad9</caption>
+  <tr>
+    <th><img class="purple" src="images/stills/conqairprom.png"  height=36 width=48 border=2 alt="Quoi de neuf ?" title="Quoi de neuf ?"></th>
+</tr>
+</table>
+</a>
+	<br>
+  <div class="wrap-collapsible">
+  <input id="collapsible" class="toggle" type="checkbox">
+  <label for="collapsible" class="lbl-toggle"><a href="intro10.html">introduction</a></label> 
+    <div class="collapsible-content">
+    <div class="content-inner">
+       		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="europe10.html">Europe</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="french10.html">France</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ital10.html">Italy</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="danish10.html">Denmark</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="swed10.html">Sweden</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="norw10.html">Norway</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="brit10.html">Britain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="german10.html">Germany</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ost10.html">Austria</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a href="benelux10.html">Benelux</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="span10.html">Spain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="port10.html">Portugal</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="greek10.html">Greece</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="us10.html">US</a>
+		<br>
+   		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="world10.html">The World</a>
+		</div></div></div>
+ 		<div class="wrap-collapsible">
+  		<input id="collapsible2" class="toggle" type="checkbox">
+ 		<label for="collapsible2" class="lbl-toggle2"><a href="int10top.html">newsreel</a>
+        	</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible3" class="toggle" type="checkbox">
+ 	 	<label for="collapsible3" class="lbl-toggle"><a.not-active href="">documentary</a></label>
+		<div class="collapsible-content">
+    		<div class="content-inner">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10doc.html#tour">touristic</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10doc.html#indus">industrial</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10trav.html#colon">colonial</a>
+		</div></div></div>
+    	     	<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a href="int10psc">popular science</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10doc.html#colon">natural history</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible5" class="toggle" type="checkbox">
+ 		<label for="collapsible5" class="lbl-toggle2"><a href="int10disas.html">disaster films</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a.not-active href="int10sport.html">sport</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10wsm.html">winter sport</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10wsm.html#mf">mountains</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10hist.html">historical film</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10comic.html">comic series</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible7" class="toggle2" type="checkbox">
+ 		<label for="collapsible7" class="lbl-toggle2"><a.not-active href="int10west.html">western</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible8" class="toggle2" type="checkbox">
+ 		<label for="collapsible8" class="lbl-toggle2"><a.not-active href="#int10crim.html">crime film</a>
+		</div>
+
+<p>
+<h3><a href="notready.html">Index of films</a></h3>
+</div>
+</nav>
+
+<article>
+<h3><a name="docu">The Documentary</a></h3>
+<p>The popularity of the newsreel tended to further discourage any more serious reportage based on topical news <a href="int10top.html#ripo">The 
+Gaumont film of the Portuguese revolution</a> discussed earlier is actually quite unusual in the interesting "documentary" element 
+it contains. The documentary "view", on the other hand, continued to flourish. For 1910, as for the preceding years, a great many 
+of the Pathé documentaries are known from later home-view Pathé-Baby versions which were produced not on the standard 35mm film but on (uninflammable) 
+9.5mm film and were nearly always much abbreviated versions of the original. Here are some of the Pathé films from 1910 that were 
+re-released in the new format during the 1920s:
+<div align="center">
+<table>
+  <caption><i>Venise, Perle de l'Adriatique: ses mounuments</i> and <i>Venise, perle de l'Adriatique: ses canaux</i> (Pathé-Baby, c. 1922)</caption>
+  <tr>
+    <th>
+	<video width="320" height="240" controls>
+  <source src="videos/venmon.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+	</video>
+  <video width="320" height="240" controls>
+  <source src="videos/vencan.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video></th>
+  </tr>
+</table>
+<br> 
+<table>
+  <caption><i><i>Saint-Malo: antique cité des corsaires</i></i> (Pathé-Baby, c. 1922)</caption>
+  <tr>
+    <th><video width="320" height="240" controls>
+  <source src="videos/stmalo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video></th>
+</tr>
+</table> 
+</div>
+<p>Sad though it is not to have rather more of the films available at their original length or, in many cases, in their original 
+colour, all film-lovers are greatly indebted to the "nine-fivers", who so assiduously collect and make available the home-view 
+versions. These films are available to view in the splendid <a href="https://rbsc.princeton.edu/pathebaby/films?page=2">Princeton 
+collection of Pathé-Baby films</a>.
+<br><br>
+Pathé-Baby films had a worldwide distribution. <i>Venise, Perle de l'Adriatique: ses mounuments</i> and <i>Saint-Malo: antique 
+cité des corsaires</i> both survive in French versions (above) and (below) in those produced by the British subsidiary, Pathéscope, 
+with English intertitles.These films are from the collection of <a href="https://www.youtube.com/user/StephendelRoser/">Stephen 
+del Roser whose invaluable site</a> is a veritable treasure-house of early Pathé documentaries, well presented and frequently with 
+interesting, informed commentary.
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Venice Jewel of the Adriatic: its Canals</i> and <i>Saint-Malo: Ancient City of the Corsairs</i>, (Pathé-Baby, c. 1922)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/Z4bdFcy5Fv4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+	<iframe width="320" height="240" src="http://www.youtube.com/embed/vtUJnBahCPk?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+  </th>
+</table>
+</div>
+<br><br>
+<a name="tour"></a><h4>Touristic Films</h4>
+<a name="venice"></a>
+<div align="center">
+<table>
+  <caption>A. de Falticéni (ed.), <i>Venise, Perle de l'Adriatique: ses mounuments</i> (Pathé-Baby, 1922) (end) and <i>Venise, perle de l'Adriatique: ses canaux</i> (Pathé, 1922) (beginning)</caption>
+  <tr>
+    <th><img class="blue" src="images/stills/ven1910a.png" width="320" height="240" border=2 alt="Venise" title="Venise">
+  <img class="blue" src="images/stills/ven1908a.png" width="320" height="240" border=2 alt="Venise" title="Venise"</th>
+  </tr>
+</table> 
+</div>
+<br><br>
+Since the films were almost invariably renamed for the Baby, it is not always easy to know from which original film the Pathé-Baby 
+versions were taken and they could sometimes include edited footage from more than one film. The two short films shot in Venice, known 
+in French as <i>Venise, Perle de l'Adriatique: ses monuuments</i> and <i>Venise, perle de l'Adriatique: ses canaux</i> (<i>Venice, the 
+Jewel of the Adriatic</i> in the English versions) seem continuous, and the continuity is emphasised by the way in which the film is cut, 
+with the first part leaving us at the quay where the tour by gondola that makes up the second half will begin. This may however just be 
+a trick of editing, because the two films are in rather different styles. The first part is from the seven-minute 1910 film <Venise et ses 
+monuments</>), but the second part may be from <i>Venise&nbsp;: le Grand Canal en gondole</i>, filmed in 1908, but might possibly be the 
+beginning of a different film made in 1910, <i>Venise pittoreque</i>, originally hand-coloured. We do not know the name of the cinematographer 
+of either film, but the first film was edited for the Pathé-Baby by one A. de Falticéni, of whom (although presumably of Romanian descent) 
+nothing further is known. Pathé took more pains than is sometimes appreciated in preparing versions for the "Baby" and it is perfectly 
+possible that a frame from the second film has been transposed to the end of the first to give the impression of continuity. On the other 
+hand, it was not uncommon for such Pathé films to be made as "films of two halves". <i>Venise pittoresque</i> itself began with a tour 
+but ended with a spectacular gondola-race and parade. The uncredited cinematographer of the second film has introduced elements 
+that are both more poetic (with suitable quotations from Alfred de Musset and Julia Daudet, wife of Alphonse, intertitled) and more 
+cinematic (the film is, in part at least, a "ghost ride" with the camera evidently mounted on a gondola). 
+<br><br>
+<div align="center">
+<table>
+     <caption>René Moreau (?), <i>Venise&nbsp;: le Grand Canal en gondole</i> (Pathé, 1908)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/ven1908b.png" height=263 width=427 border=2 alt="Bruges" title="Bruges">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+This more whimsical, less matter-of-fact approach became commoner as the decade progressed. Although Moreau is not credited and 
+even though this time no editor is mentioned, it does seem probable on stylistic grounds that this film (whichever film it may 
+be) was also by him.
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau (?), <i>Venise&nbsp;: le Grand Canal en gondole</i> (Pathé, 1908)</caption>
+  <tr>
+    <th><img class="blue" src="images/stills/ven1908c.png" width="320" height="240" border=2 alt="Venise" title="Venise">
+  <img class="blue" src="images/stills/ven1908d.png" width="320" height="240" border=2 alt="Venise" title="Venise"</th>
+  </tr>
+</table> 
+</div>
+<br><br>
+Pathé-Baby films were usually edited by the original cinematographer (when available) - occasionally credited in the films as 
+«&nbsp;composition et cinégraphies&nbsp;» - and the work of editing usually only given to other photographers or photographic 
+firms when the original cinematographer was, for whatever reason, no longer available (credited just as «&nbsp;composition&nbsp;». 
+The Venice films, especially that of the canals, bear a strong resemblance to <a href="#bruges">a rather similar pairing shot 
+in Bruges</a> by René Moreau. Moreau was one of Pathé's principal (but uncredited) documentarists at this period but left in the 
+early twenties to work for his own independent company (Films René Moreau). There seems therefore a reasonably strong probability 
+that at least one (the second) of these films of Venice is also by him. He would go on to have a reasonably distinguished (albeit 
+still little recognized) career, <a.not-active href="int21trav.html#moreau>making travel films in the Maghreb in the early twenties</a>, 
+filming in Brittany - then making some of <a.non-active href="int23doc.html#cs>the earliest films of Paris that might be characterised 
+as "city symphonies"</a> and subsequently working as a cinematographer for Le Film d'Art (<i>Les Cinq gentlemen maudits</i>). He 
+was a fine photographer, as witness the remarkable series (152 in all) shot in Cameroun, Congo, Tchad and Gabon for a sumptious work 
+produced with writer and journalist Jean D'Esme (le vicomte Jean Marie Henri d’Esmenard), <i>Afrique equatoriale</i>, in 1931. A 
+film of the expedition, <i>Peaux noires, film de l'expédition Jean D'Esme à travers l'Afrique equatoriale française</i>), was 
+directed by Moreau, presumably, since nothing more is heard of him, not long before his death, and appeared in 1932. 
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau, photographs from Jean D'Esme and René Moreau, <i>L'Afrique equatoriale</i> (1931)</caption>
+  <tr>
+    <th><img class="blue" src="images/photos/moreautchad4.jpg" width="320" height="240" border=2 alt="Tchad" title="Tchad">
+  <img class="blue" src="images/photos/moreautchad12.jpg" width="320" height="240" border=2 alt="Tchad" title="Tchad"</th>
+  </tr>
+</table> 
+</div>
+<br><br>
+<blockquote>
+Venise, la Ville de l’eau, émerge triomphante au-dessus de ses lagunes et de ses canaux sillonnés de gondoles, avec ses rues
+ étroites, coupées de degrés d’escaliers et d’arches de pont et son invraisemblable éclosion de clochers, de campaniles, de dômes 
+et de palais. (Pathé catalogue 1910)
+<br><br>
+<div align="center">
+<table>
+     <caption>René Moreau (?), <i>Venise et ses mounuments</i> (Pathé, 1910)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/ven1910b.png" height=263 width=427 border=2 alt="Venice" title="Venice">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Venise, ancienne cite des Doges, ville enchanteresse, se découvre a vos yeux et vous émerveille par la magnificence de ses monuments&nbsp;: 
+le palais des Doges, le lion aillé de Saint-Marc, l'enfilade des Palais sur le canal, etc. (Pathé-Baby Catalogue 1930)
+<br><br>
+<div class="tab">
+      <input id="tab-1" type="checkbox" name="tab">
+      <label for="tab-1">English translation</label>
+      <div class="tab-content">
+<br><br>
+Venice, the city of water, emerges triumphamt above its lakes and canals bristling with gondolas, with its narrow streets, dotted 
+with flights of steps and bridge-arches and its incredible myriad of belfries, chimes, domes and palaces, (Pathé catalogue 1910)
+<br><br>
+Venice, ancient city of the Doges, enchanting city, reveals itself before our eyes marvelling at the magnificence of its monuments:  
+the palace of the Doges, the winged lion of San Marco, the succession of palaces overlooking the canal, etc. (Pathé-Baby Catalogue 1930)
+<br><br>
+</div></div>
+</blockquote>
+<br><br>
+<div align="center">
+<table>
+     <caption>Charles Moisson, <i>Pigeons sur la place Saint-Marc</i> (Lumière, 1896)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/pigeons1896.png" height=263 width=427 border=2 alt="pigeons" title="pigeons">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+</div>
+Venice was as much a favourite of cinematographers as it was of tourists. The Lumières had <a.not-active href=lumiere96.html#venise">very 
+early on</a> shot films of gondolas and of the pigeons in the Piazza San Marco and it was here, in October 1896, that Alexandre 
+Promio had shot his famous <i>Panorama du Grand Canal pris d’un bateau</i> from a moving gondola, <a.not-active href=lumiere96.html#pano">a 
+film often cited, erroneously, as "the first travelling". Pathé had also made an earlier films there in 1905 (<i>Venise en gondole</i>).
+<br><br>
+<div align="center">
+<table>
+  <caption>Reneé Moreau (?),<i>Venise&nbsp;: le Grand Canal en gondole</i> (Pathé, 1908) and <i>Venise en gondole</i> (Éclair, 1914)</caption>
+  <tr>
+    <th><img class="blue" src="images/stills/ven1908e.png" width="320" height="240" border=2 alt="Venice" title="Venice">
+  <img class="blue" src="images/stills/venice1914.png" width="320" height="240" border=2 alt="Venice" title="Venice"</th>
+  </tr>
+</table> 
+</div>
+<br><br>
+<div class="dropleft"><img class="purple" style="float: left; margin: 5px" src="images/places/ventourist1.jpg" height=310 width=200	 border=2 alt="Ricordi" title="Rcordi">
+Ricordi de Venezia (1905)</i><div class="dropdown-content"><img class="purple" style="float: left; margin: 5px" src="images/places/ventourist1.jpg" height=450 width=330 border=2 alt="Ricordi" title="Ricordi"></div></div>
+These films are somewhat in the nature of animated picture-postcards. Tourism was itself another phenomenon of mass-culture that developed 
+in parallel with the cinema. The picture postcard itself had only begun to become really popular in the 1880s and 1890s when private firms 
+<div class="dropright"><img class="purple" style="float: left; margin: 5px" src="images/places/ventourist2.jpg" height=290 width=200 border=2 alt="Ricordi" title="Rcordi">
+The Piazza San Marco from Ricordi de Venezia (1905)</i><div class="dropdown-content2"><img class="purple" style="float: left; margin: 5px" src="images/places/ventourist2.jpg" height=420 width=330 border=2 alt="Ricordi" title="Ricordi"></div></div>
+wrested their production from the national postal services that had previously maintained a closely-guarded monopoly. So the variety of still 
+images to be found at holday resorts and in indivudals' postbags was parellelled very precisely by the variety of moving images people 
+could see on the screen. As tourist guidebooks became common, so contemporary films would often reflect the choice of "sights" they 
+recommended and even attempt to replicate the same settings and angles of view to be found in the postcards and guidebooks. In French 
+the «&nbsp;images d'Épinal&nbsp;» (a series of celebrated popular eighteenth- and nineteenth-century engravings) became (and remain) 
+proverbial for the element of "cliché" involved in such mass-produced visual representtations. In fact the Imprimerie of Jean-Charles 
+Pellerin at Épinal (founded 1796) produced a great variety of extremely attractive material that belie its proverbial reputations. 
+<br><br>
+<div align="center">
+<table>
+     <caption>«&nbsp;Image d'Épinal&nbsp;» in more senses than one, rue Léopold Bourg in Épinal itself</caption>
+  	<tr>
+    <th><img class="blue" src="images/BD/epinal.jpg" height=263 width=427 border=2 alt="Épinal" title="Épinal">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+In French the word «&nbsp;cliché&nbsp;» is itself commonly used as a synonym for "photograph" (a little like the English slang term 
+"snap"), but even postcards in practice were of a bewildering variety. 
+<br><br>
+<div align="center">
+<table>
+  <caption>Contemporary postcards of Venice</caption>
+  <tr>
+    <th><img class="blue" src="images/pcards/venice1.jpg" width="320" height="240" border=2 alt="Venice" title="Venice">
+  <img class="blue" src="images/pcards/venice2.jpg" width="320" height="240" border=2 alt="TVenice" title="Venice"</th>
+  </tr>
+</table> 
+</div>
+<br><br>
+Nevertheless films, like postcards and guidebooks, did serve to some extent to reinforce the increasingly stereotyped images 
+that people had of the world, particularly of those places at home or abroad that had already become, or, in the case of the great 
+Italian cities, had already long been, favoured destinations for tourists. Before dismissing such stuff too lightly, one should 
+however bear in mind that the "serious" art of the period reproduced images that were little different from those in the picture-postcards 
+and the films. Giovanni Canal <i>dit</i> Canaletto (1697-1768) and his contemporary Franceso Guardi (1712-1793) were churning 
+out "stereotypical" <i>vedute</i> of Venice not long after the invention of the sterotype itself (c.1700-1725) but long before 
+films or postcards even existed.
+<br><br>
+<div align="center">
+<table>
+     <caption>Francesco Guardi, <i>Ponte dei Tre Archi</i> (1765-1770)</caption>
+  	<tr>
+    <th><img class="blue" src="images/paintings/guardi.jpg" height=263 width=427 border=2 alt="Épinal" title="Épinal">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Three other films were made in Italy during the year, <i>Florence</i>, where Gaumont also filmed, and <i>Das la baie de Naples</i> as 
+well as <i>Ça et là en Sicile</i>, shot in what the catalogue describes rather tweely as «&nbsp;ce riant pays&nbsp;» ("this laughing country").
+<br><br>
+<div align="center">
+<table>
+     <caption><i>Florence</i> (Gaumont, 1910)</caption>
+    <tr>
+    <th><img class="blue" src="images/stills/florencegaum1910.jpg" height=263 width=427 border=2 alt="Florence" title="Florence">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br> 
+Apart from such obvious tourist locations, the Pathé films toured France and the world (very much following the pattern set by the Lumières 
+in the pioneering years 1896-1900).  In 1910 Pathé operators were filming in Boulogne, Brittany, Normandy, the Pyrenees, Nice and the 
+Côte d'Azur, the Ariège, the Aveyron, the Landes but also in the Channel Islands (Jersey), in Antwerp and Bruges, Naples and Sicily, 
+Germany, Switzerland, Austria, the Netherlands, Scotland, Norway, Finland, Russia, Australia, Tasmania and the Pacific Ocean, Egypt, 
+China, Japan, Chile and even the Arctic. in various parts of the French Empire (the Maghreb and sub-Saharan Africa, French Indo-China). 
+Imperial borders were no bar to the cameras and films were also made in British India, Burma, Malaya and Singapore, and the Dutch 
+East Indies.
+<br><br>
+<div align="center">
+<table>
+  <caption>Jean Nédelec, <i>À travers les fjords norvégiens</i> (Pathé, 1910)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/eGG6d086gJA?mute=1feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+  </th>
+</table>
+</div>
+<br><br>
+Another of the rare Pathé operators making documentary films whose name has come down to us was Jean Nédelec who worked for the 
+company 1909-1914 and seems to have acted as their man with the movie camera in Scandinavia. Amongst several films that he made 
+in 1910, the six-minute <i>À travers les fjords norvégiens</i>, originally hand-coloured, survives in an abridged form, not this 
+time in a 9.5mm copy made for the Pathé-Baby but in a 28mm film made for the Baby's predecessor, the Pathé Kok, which was first 
+marketed in 1912. This copy appears on another very useful youtube site specialising in films made for home-view projectors, <a href="https://www.youtube.com/channel/UC9ureZgJ6T-KkYsS_fK7Zgg/feed>«&nbsp;">THE 
+SILENT MAN projecting into the past</a>, where it is spliced with another Kok film, <i>Barcelona and Its Park</i>, edited highlights 
+from <a.not-active href="int12doc.html#tour">Segundo de Chomón's <i>Barcelone, principale ville de la Catalogne</i> 
+(1912)</a>:
+<br><br>
+<div align="center">
+<table>
+     <caption>Jean Nédelec, <i>À travers les fjords norvégiens</i> (Pathé, 1910)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/fjord1910.png" height=263 width=427 border=2 alt="fjords" title="fjords">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+<a name="bruges"></a>
+Pathé-Baby released two companion films of the city of Bruges (<i>Bruges-la-Morte (les monuments)</i> and <i>Bruges-la-Morte (les 
+canaux)</i>.  The two are seemingly drawn from different originals shot in different years. The first, the eight-minute <i>Bruges-la-Morte</i> 
+was shot in 1910 and the second, <i>Les Canaux de Bruges-la-Morte</i>, a six-minute film originally hand-coloured. in 1915. Both 
+are the work of René Moreau (credited as cinematographer for both Pathé-Baby films) and in reality both probably do in fact derive 
+from the same original film of 1910. There was seemingly a third film called simply <i>Bruges</i> in 1917 but this would appear 
+from the descriptions to be simply a slightly shorter (six-minute) hand-coloured version of the 1910 film, remade presumably because 
+of its popularity but also to make a symmetrical pairing with the 1915 film, which included those scenes from the original film 
+devoted specifically to the canals. 
+<br><br>
+<div align="center">
+<table>
+     <caption>René Moreau, <i>Bruges-la-Morte</i> (Pathé, 1910-1917)</caption>
+    <tr>
+    <th><img class="blue" src="images/stills/bruges1910a.png" height=263 width=427 border=2 alt="Bruges" title="Bruges">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+For the popularity of the 1910 film the notices in <i>Moving Picture World</i> when the film appeared in the US are eloquent 
+even if the first is essentially publicity and largely just translated the description in the Pathé catalogue:
+<br><br>
+<div align="center">
+<table>
+     <caption>René Moreau, <i>Bruges-la-Morte</i> (Pathé, 1910-1917)</caption>
+    <tr>
+    <th><img class="blue" src="images/stills/bruges1910e.png" height=263 width=427 border=2 alt="Bruges" title="Bruges">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+<blockquote>
+Quaint old Bruges is one of the Dead Cities of Belgium, and after the canals the mediaeval aspect of the town is its most striking feature. 
+Interesting specimens of Flemish architecture of the Middle Ages are to be met with at every turn. The canals, which both surround and intersect 
+the town, are always picturesque and interesting, and often very beautiful. The Minnewater or Lac d'Amour, a beautiful sheet of water, upon whose 
+scarcely rippled surface the reflection of the bridge which spans it is always clearly outlined, is well known to tourists, as also is the Belfry 
+with its famous chimes. Other objects of interest are the Beguinage Bridge, the Hotel de Ville or Town hall, the old King's Palace, and the Maison 
+du France. A picture of one of the weekly markets held in the Grande Place beneath the shadow of the Belfry is included in the film, the lack of 
+animation displayed being characteristic of the whole life of the town. The last picture of the film is a typical one of pillow lace-makers at 
+their doors busily manipulating their bobbins in the manufacture of Bruges' lace. 
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau, <i>Bruges-la-Morte</i> (Pathé, 1910-1917)</caption>
+  <tr>
+    <th><img class="blue" src="images/stills/bruges1910d.png" height=263 width=427 border=2 alt="Bruges" title="Bruges">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+A leisurely trip around this old city, delightful in its semi-calm and offering no end of picturesque opportunities for the tourist who cares for 
+memories of the past. Some of the more important bridges are shown and there are glimpses along its canals which are attractive pictures. Another 
+view is of the market place, reproducing the slow movements which are characteristic of the inhabitants of Bruges. It is one of the most delightful 
+reproductions of city scenes which has come from any studio in months. The serenity of the people and the quiet of all the scenes are alike attractive 
+and charming. Conditions in this city are so different from what they are in ordinary cities that it acquires additional charm. The work is well 
+done and the selection of view points by the operator was admirably made. The picture will linger long in the memory. (5 November 1910)
+</blockquote>
+<br><br>
+These are the French catalogue descriptions for the 1915 and 1917 films respectively. It seems from these that the 1917 film simply 
+omitted scenes of the canals (used for the 1915 film) and added scenes of the fortifications, not mentioned in the earlier description.:
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau, <i>Bruges-la-Morte</i> (Pathé, 1910-1917)</caption>
+  <tr>
+    <th><img class="blue" src="images/stills/bruges1910f.png" height=263 width=427 border=2 alt="Bruges" title="Bruges">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+<blockquote>
+Bruges, avec la physionomie du Moyen Âge qu’elle a gardée, présente des aspects très pittoresques et surtout des trésors artistiques 
+qui lui donnent le plus haut intérêt. Parmi ses monuments, remarquons les Halles, le plus ancien monument de la puissance commerciale 
+de Bruges et qui datent du XIII<sup>e</sup> siècle. Sur le milieu de la façade principale s’élève le beffroi qui, haut de 80 mètres, renferme un 
+beau carillon&nbsp;; l’Hôtel de ville, reconstruit en 1376&nbsp;; le Palais de Justice, bâti en 1722, sur l’emplacement de l’ancien hôtel 
+du Franc de Bruges etc. L’industrie la plus active est celle de la dentelle, dont on enseigne la fabrication dans une douzaine d’écoles 
+spéciales. (1910)
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau, <i>Bruges-la-Morte</i> (Pathé, 1910-1917)</caption>
+  <tr>
+    <th><img class="blue" src="images/stills/bruges1910c.png" height=263 width=427 border=2 alt="Bruges" title="Bruges">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Bruges est la ville de Belgique qui a le mieux conservé la physionomie caractéristique du moyen âge. On y rencontre presque à 
+chaque pas de vieilles demeures féodales couvertes de sculptures d’une bizarrerie charmante. Ses rues propres, étroites, irrégulières, 
+sont bordées de maisons de bois et de maisons dites «&nbsp;à l’espagnole&nbsp;»,ayant pignon sur rue et pignon à gradins&nbsp;; 
+les édifices anciens que l’on rencontre çà et là sont remarquables et communiquent à la ville un cachet archaïque très pittoresque 
+mieux caractérisé encore par les fortifications, entourées de fossés datant du X<sup>e</sup> siècle. Les bords du canal de Bruges 
+offrent de jolis points de vue par les pittoresques constructions qui se mirent dans ses eaux. L’industrie la plus florissante 
+est la dentelle, universellement renommée, dont on enseigne la fabrication dans une douzaine d’écoles spéciales. (1917)
+<br><br>
+<div class="tab">
+      <input id="tab-2" type="checkbox" name="tab">
+      <label for="tab-2">English translation</label>
+      <div class="tab-content">
+<br><br>
+Bruges, with the medieval look that it has retained, presents very picturesque aspects and above all artistic treasures that make 
+it especially interesting, Amongst the sites, we notice les Halles (the market), the oldest reminder of the commercial power of 
+Bruges, whose main façade is surmounted by the belfry, 80 metres high, containing the beautiful <i>carillon</i>; the town-hall, 
+rebuilt in 1376; the Palais de Justice, built in 1722, on the site of the  former mansion of Franc de Bruges etc. The most active 
+industry is that of lace, the making of which is taught in some dozen special schools. (1910)
+<br><br>
+Bruges is the Belgian town that has most retained the characteristic look of the Middle Ages. Nearly At every turn one encounters 
+old feudal mannsions, adorned with charmingly bizarre sculptures. Its streets, clean but narrow and irregular are lined with wooden 
+houses and with houses in the style known as “à l’espagnole”, with gabled rooves overlooking the street and crow-stepped gables; the ancient 
+buildings one encounters here and there are remarkable and give the town a very picturesque archaic feel, even better demonstarted by 
+the fortifications, surrounded by moats, dating from the tenth century. The banks of the canal in Bruges offer attrative vantage-points 
+for observing the picturesque buildings reflected in the water. The most flourishing industry is that of lace, for which it is 
+universally renowned, and the making of which is taught in some dozen special schools. (1916)
+</div></div>
+</blockquote>
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau, <i>Bruges-la-Morte</i> (Pathé, 1910-1917)</caption>
+  <tr>
+    <th><img class="blue" src="images/stills/bruges1910g.png" height=263 width=427 border=2 alt="Bruges" title="Bruges">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+The strategy pursued in linking the two films in the 1920s is exactly the same as in the case of the two films shot in Venice. 
+The object of dividing films in this way was in part to give the customer a choice of viewing them together or separately as they 
+wished.  The first clip below has the two films combined as a "two-part" film while the second, although announcing still that it 
+is a two-part film, has just the second part. The second part, like >the  film of the Venice canals, highlights the poetic, evoking 
+the work Georges Rodenbach (specifically mentioned in the catalogue), the symbolist poet and novelist whose 1892 novel <i>Bruges-la-Morte</i> 
+is the origin of the town's nickname used in the title of the film.  It is also entirely conceived as a "ghost ride" aboard a boat 
+(«&nbsp;parasseusement entrainés&nbsp;», "lazily carried along", as the catalogue has it). 
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau, <i>Bruges-la-Morte</i> (Pathé, 1910-1917)</caption>
+  <tr>
+    <th><img class="blue" src="images/stills/bruges1910h.png" height=263 width=427 border=2 alt="Bruges" title="Bruges">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+The title and the evocation of Rodenbach mean also that this film has a certain political significance that is not obvious to 
+a modern viewer. Rodenbach's novel was a passionate defence of the traditional and the <i>identitaire</i> against the tide of 
+urban development and "cosmopolitanism" (a word frequently, but not invariably, used during the period as a racist, normally anti-semitic, 
+euphemism, news being the most conspicuous representatives of a specifically urban - if scarcely altogether modern - population that 
+could be seen as both alien and parasitic). Rodenbach had strongly opposed the building of the new town of Zeebrugge (Bruges-sur-Mer) 
+and his novel remained an influential symbol of such resistance to change. <a.not-active href="russ15.html#bauer">In the same year 
+that this film was made (1915)</a>, the Russian director Yevgeny Bauer produced his film <i>Gryozy</i> (<i>Daydreams</i>) based, partly 
+at least, upon the Rodenbach novel. 
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Zeebrugge - La plage - het strand</i>, contemporary postcards of Zeebrugge</caption>
+  <tr>
+  <th><img class="blue" src="images/pcards/zeebrugge1.jpg" width="320" height="240" border=2 alt="Zeebrugge" title="Zeebrugge">
+  <img class="blue" src="images/pcards/zeebrugge2.jpg" width="320" height="240" border=2 alt="Zeebrugge" title="Zeebrugge"</th>
+  </tr>
+</table>
+</div>
+<br><br>
+Pathé in its documentaries pursued two seemingly, but only seemingly, contradictory "politics" - one of "modernity" (associated 
+particularly with modern farms, modern factories etc) and one of nostalgia (which is actually itself a kind of disguised modernity 
+because of its association with tourism). In this film, there is a very deliberate pursuit of the nostalgic (and I would not be at 
+all surprised if it involved a certain amount of fakery à la Flaherty). This nostalgic, politically reactionary aspect is often 
+present in the more touristic films, contrasting with the reverse (the emphasis on machination and technological innovation) 
+that is a marked component of <a href="#indus">the "industrial" films</a>. This ambiguity about progress and social diversity 
+(still of course very much with us today) is a constant subtext of virtually all documentary film-making, as it is equally of 
+so many of the fictional photoplays, of the period. <a.not-active href="int22doc.html#quimp">A film later (1922) shot by Moreau 
+in Quimperlé in Brittany</a> is another splendid example of this aesthetics of nostalgia. 
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau, <i>Quimperlé</i> (Films René Moreau, 1922) (my circling)</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/quimp1922a.png" height=300 width=180 border=2 alt="Quimperlé" title="Quimperlé">
+  <img class="blue" src="images/stills/quimp1922b.png" height=300 width=240 border=2 alt="Quimperlé" title="Quimperlé">
+  <img class="blue" src="images/stills/quimp1922c.png" height=300 width=240 border=2 alt="Quimperlé" title="Quimperlé"></th>
+  </tr>
+</table>
+</div>
+<br><br>
+There is a third Pathé-Baby film extant, <a.not-active href="int22doc.html#indus"><i>Les Dentellières (Bruges)</i></a> but this 
+cannot be identified as any catalogued Pathé film. Although the Moreau film of 1910-1916 mentions the well-known lace industry 
+there, it clearly does not show it in any detail (simply one brief shot at the end of the film). Even this brief shot does not 
+appear in either of the Pathé-Baby films, omitted presumably because they knew they had another whole film available on that 
+subject. This film is moreover a little different in style (more "magazine" in feel, more "close-up" in framing) and was probably 
+made in the 1920s for <i>Pathé Revue</i> or <i>Pathé Magazine</i>, two regular film-compilations contemporaneous with the Pathé-Baby 
+and then subsequently released, as was frequently the case with such films, as a separate short film on 9.5mm. The two Moreau 
+films were also published in <i>Pathé Revue</i>, one for some reason in black and white and the other in colour, 
+in July 1924.
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau, <i>Les Dentellières (Bruges)</i> (Pathé, c. 1921-22)</caption>
+  <tr>
+    <th><img class="blue" src="images/stills/brugdent1921.png" height=263 width=427 border=2 alt="Quimperlé" title="Quimperlé">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Pathé was not the only company making films in Bruges at around this time. Gaumont, Pathé's benign shadow, made a similar pair 
+of films there in 1911-1912, <i>Bruges</i> (1911), shown in the US as <i>Panorama of Bruges</i> the following February. This was 
+"a dainty, delicate-tinted series of Flemish views", according to <i>Moving Picture World</i> "showing the principal sights of 
+the ancient town of Bruges. Views of the picturesque canals, the lace workers, milk maids and men with their dog-driven mini-carts 
+make this picture educationally valuable". A second Gaumont film, whose original title is unknown, appeared in the US in October 
+1912 as <i>Bruges, the Venice of the North</i> ("This film treats of the island city whose pretty canals and deep azure of its 
+skies, rival the queen of the Mediterranean". The Italian company Cines also made a film there in 1914, shown in the US in 1915 
+(27 February), the same year as the 1915 Pathé film appeared there (13 September), distributed by The Photocolor Film Company 
+(a Pathé front-company) as <i>The Waterways of Bruges</i>. 
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau, <i>Bruges-la-Morte</i> (Pathé, 1910-1917)</caption>
+  <tr>
+    <th><img class="blue" src="images/stills/bruges1910b.png" height=263 width=427 border=2 alt="Bruges" title="Bruges">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+<i>Bruges, Before the War</i>, shown in the US on 20 January 1918 by Pathé Exchange in Pathécolor (simply a renaming of the familiar 
+hand-colour/stencil process), is almost certainly yet another re-edition of the Moreau film(s), presumably the 1916 version, released 
+on a split reel with one of Pathé's more sentimental natural history films <i>In Blossom Time</i>. The nostalgia was presumably 
+rendered even more poignant by the horrors of the intervening war (in which Zeebrugge had played an important role). The recently-founded 
+(1916) Educational Films Corporation of America's <i>People of Old Bruges</i> (1921-1922) presumably exploited the same rich vein, 
+very possibly just recycling the French footage available. In 1920 the <i>wunderkind</i> Austrian composer Erich Korngold (1897-1957) 
+adapted the Rodenbach novel as an opera, <i>Die tote Stadt</i> with text by his father Julius (under the name Paul Schott). To complete 
+the cycle Belgian film-maker Paul Flon made a morbidly sentimental photoplay set in the town, <a.not-active href="europe1924#belg"><i>Dans 
+Bruges-la-morte</i>, in 1924</a>.
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Coiffures et types de Hollande</i> (Pathé, 1910)</caption>
+  <tr>
+    <th><video width="320" height="240" controls>
+  <source src="videos/coiffes.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video></th>
+</tr>
+</table> 
+</div>
+<br><br>
+<div class="dropright"><img class="purple" style="float: right; margin: 5px" src="images/places/volendam2.jpg" height=270 width=200 border=2 alt="Volendam" title="Volendam"><div class="dropdown-content2"><img class="purple" style="float: right; margin: 5px" src="images/places/volendam2.jpg" height=400 width=320 border=2 alt="Volendam" title="Volendam"></div></div>
+On the principle that headgear, as much as clothes in general, makes the man (or woman), a notion truer during the <i>belle 
+époque</i> than it is today, «&nbsp;Coiffures et types&nbsp;» («&nbsp;Coiffes et types&nbsp;» in the Pathé-Baby version) was 
+a favourite Pathé rubric. This film of Dutch girls in traditional costume playing ring-a-ring-a-roses is typical and the Dutch 
+particularly were represented <i>ad nauseam</i> in this manner, despite, or perhaps because of, the fact that the Netherlands 
+was one of the most rapidly urbanising countries in Europe. Two other films (<i>En Hollande, le port de Volendam</i> and <i>Enfants 
+de Hollande</i> (childen beating their way to school in wooden clogs and even using them as toy-boats) were shot in this particularly 
+scenic little port-town as well as another film, <i>Une journée à l’île de Marken</i> in what the Pathé catalogue describes as 
+«&nbsp;un pimpant petit village&nbsp;». Vollendam, as can be seen from these contemporary photographs, was already well-known 
+to tourists in search of kitsch reminders of a vanishing past. It is another example of how desperately Europeans clung to an 
+"identity", an <i>image d'Épinal</i> that in practice was already something in the nature of a picturesque myth. Volendam was 
+filmed over and over again by different companies and seems to have been kept "frozen in time" for the purposes of tourism, a 
+fact that was no doubt often as tiresome as it was profitable for the local populace. The original film was about five minutes 
+long and hand-coloured. At least in this abbreviated version we are spared the windmill and the tulips promised by the catalogue 
+although the tulips would seem to have been put back for a colour version made (exceptionally) for Pathé-Baby in 1923 as a later 
+Pathé-Baby catalogue refers gaily to "fields of multicoloured tulips." 
+<br><br>
+<div align="center">
+<table>
+    <tr>
+    <th><img class="blue" src="images/places/volendam1.jpg" height=263 width=427 border=2 alt="Volendam" title="Volendamp">
+    </th>
+    </tr>
+</table>
+</div>
+<br>
+<div align="center">
+<table>
+    <tr>
+    <th><img class="blue" src="images/places/volendam3.jpg" height=263 width=427 border=2 alt="Volendam" title="Volendam">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+The colour version of this film has apparently been "restored" - it sounds to me more like a tulipless, colourised version of the 
+black and white copy - and been ascribed it to Alfred Machin, presumably on the rather slender basis that Machin would later 
+make films for Pathé in the Netherlands but Machin, who had just returned from filming in Africa, was then sent by Pathé to 
+shoot comedies involving animals he had collected there at Pathé's Comica studios on the Côte d'Azur in company with Roméo Bosetti.  He 
+did make a film in Belgium <a.not-active href="europe1909.html#belg">in 1909</a>, between his two African trips, but may have had 
+another motive for making a visit there (a Belgian film-maker who had also been working in Africa in 1908) and there is no doubt 
+from the style that the film in question, <i>Le Moulin maudit</i> is by him, but there is no evidence that he went to the Netherlands 
+until the end of 1911. This fine <i>cinéaste</i> produced a great variety of films during his career but "ring-a-ring-a-tulips" was 
+not really his thing.
+<br><br>
+<div align="center">
+<table>
+    <caption><i>Dutch Types</i> (<a not-active href="int15doc.html#dutch">British Gaumont, 1914-15)</a></caption>
+   <tr>
+    <th><img class="blue" src="images/stills/dutchzeeland.png" height=263 width=427 border=2 alt="Zeeland" title="Zeeland">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Zeeland, where this British Gaumont film was shot, was another happy hunting ground for the film-makers. Handomesly hand-coloured, 
+it shows another batch of pretty clog-shoon Dutch schoolgirls. The war, far from from cooling the ardour for such nostalgia, seems, 
+if anything, to have fanned its flames. Pathé was also filming both in Volendam (again) and Zeeland <a.not-active href=int15doc.html#dutch>in 
+1915</a>.
+<a name="luxem"</a>
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Le Grand-Duché de Luxembourg</i> (Pathé, c. 1910?)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/aGjVZYfl-8A?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+    </th>
+</table>
+</div>
+<br><br>
+There is no certainty when this film in Luxemburg was shot. It appeared in <i>Pathé Revue</i> in 1922 and then on 9.5mm for the 
+Pathé-Baby but is may well originally be a pre-war film and there is some reason to suppose it might have been shot in or around 
+1910. Whereupon hangs a tale that is quite revealing of the importance not only tourist documentaries but any film shot in a particular 
+locale might have for the community there. Tourism was fast changing the world and the revenue it generated could transform the 
+economy of any place, however insignificant or remote. The Grand-Duché de Luxembourg had a population fo 250, 000 in 1910, the town 
+itself a population of just over 20,000. It was largely rural and not by any means the wealthy enclave that it is today. Its first 
+permanent cinema had been established <a.not-active href="benelux07.html#luxem">in 1907</a> by hotelier Nicolas Medinger-Kohner 
+and his son Felix at the Hôtel de Luxembourg under the aeges of The Royal Bio Comp H. Hirdt (founded the same year by the travelling 
+showman H. Hirdt). This cinema, Cinéma moderne, seated 350 but was rebuilt <a href="benelux10.html#luxem">in 1910</a> as the 600-seater 
+Kinematograph-Theater. Another Pathé film, not known from the catalogue, <i>Sur les remparts de Luxembourg</i> exists and has been 
+restored, although I have not seen a copy, and, assuming this is a separate film from <i>Le Grand-Duché de Luxembourg</i>, the two 
+may have been made at the same time, either in 1910-1912 (for reasons we shall now consider) or possibly during the war,<a.not-active href="benelux15.html#luxem"in 
+1915, when the Cinéma Pathé opened in the Grand Duchy, a venue useful, apart from anything else, for the propagation in a largely 
+German-speaking enclave of cautiously anti-German propaganda.
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Le Grand-Duché de Luxembourg</i> (Pathé, 1910?)</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/lux1910b.png" height=210 width=350 border=2 alt="Luxemburg" title="Luxemburg"></th>
+</tr>
+</table> 
+</div>
+<br><br>
+<div class="dropright"><img class="purple" style="float: right; margin: 5px" src="images/posters/guide1910.jpg" height=270 width=200 border=2 alt="Le Guide" title="Le Guide">
+<div class="dropdown-content2"><img class="purple" style="float: right; margin: 5px" src="images/posters/guide1910.jpg" height=400 width=320 border=2 alt="Le Guide" title="Le Guide"></div></div>
+In March 1910 a Pathé film-team of about fifteen people arrived in the Grand Duchy, not however to film a tourist documentary but 
+<div class="dropleft"><img class="purple" style="float: left; margin: 5px" src="images/places/volkhaus.jpg" height=270 width=200 border=2 alt="Volkhaus" title="Volkhaus">
+The famous Volkshaus catholique</div><div class="dropdown-content2"><img class="purple" style="float: right; margin: 5px" src="images/places/volkhaus.jpg" height=400 width=320 border=2 alt="Volkhaus" title="Volkhaus"></div></div>
+to make a series of four photoplays on and around «&nbsp;les ponts les plus pittoresques de Luxembourg&nbsp;». Director Charles 
+Decroix, who, being from Alsace, spoke perfect German, could address himself to the local population in both languages and evidently 
+spent a good deal of time sweet-talking the luxembourgeois and persuading them that these films would be a most splendid advertisement 
+(«&nbsp;reklame&nbsp;» for the town and duchy, and «&nbsp;excellente réclame pour notre pays, hélas peu connu des touristes&nbsp;»,  
+as one francophone newspaper put it, «&nbsp;la maison Pathé qui possède une renommée mondiale n'aurait pu rendre un service plus 
+précieux à notre ville dans l'intérêt de la réclame&nbsp;». Decroix enthused about the unspoilt natural beauty (<i>Naturschönheiten</i>) 
+of the place, something, according to him, increasingly diffiult to find in Europe («&nbsp;ist in Europa nicht mehr zu finden.&nbsp;»). 
+The films, he assured them, would be seen «&nbsp;dans le monde entier&nbsp;» and bring international attention to the «&nbsp;Schönheiten 
+dieses Landes&nbsp;» and would ensure an influx of foreign tourists.
+<br><br>
+After all this soft soap, when the four films were shown at the Royal Bio Comp. at the Hôtel Luxembourg in September-October, probably 
+the swank new 600-seater Kinematograph-Theater built <a href="benelux1910.html#luxem">that same year</a> by the Medinger-Kohler, they 
+proved something of a disppointment to the asembled luxembourgeois. 
+<br><br>
+<div align="center">
+<table>
+  <caption>The Royal Bio Comp. Kinematograph-Theater, Hôtel de Luxembourg</caption>
+  <tr>
+  <th><img class="blue" src="images/places/royalbio1913.jpg" height=210 width=350 border=2 alt="Royal Bio" title="Royal Bio"></th>
+</tr>
+</table> 
+</div>
+<br><br>
+Decroix and his unit had already long gone and the films were already on general release, although, curiously, all but one under 
+different titles from those by which they were known in the Grand-Duchy. The luxembourgeois were pleased enough to see familiar landmarks 
+on show in the films but dismayed to discover that there was no way by which the potential foreign tourists could know where it 
+was that the films were set. One (<i>Le Guide</i> or <i>Der Fremdenführer</i>) was even supposed to be set in the Swiss Tyrolean 
+Alps). <i>Le Séducteur</i> (actually released as <i>Haine implacable</i>) had been filmed in the most picturesque spots in the 
+suburbs of Grund and Pfaffenthal;<i>Le Tronc</i> or <i>Die Baumhöhle</i> (actually released as <i>Affaire d'honneur</i> had been 
+filmed in the fish-market, in the Trois Glands (a park and fort), in Pfaffenthal, by the river Alzette and around the <i>très pittoresque</i> 
+chapelle de Saint-Quirin; <i>Le Guide</i>, the mountain murder-mystery set in Switzerland, had been filmed in the region of Müllerthal, 
+on the place de Glacis, by the entry to the Volkhaus (a Catholic church), at those Trois Gands again and on the rocks of the Côte 
+<div class="dropright"><img class="purple" style="float: right; margin: 5px" src="images/posters/nwinter.jpg" height=300 width=200 border=2 alt="Nick Winter" title="Nick Winter"><div class="dropdown-content2"><img class="purple" style="float: right; margin: 5px" src="images/posters/nwinter.jpg" height=400 width=320 border=2 alt="Nick Winter" title="Nick Winter"></div></div>
+d'Eich. The press now talked a little mournfully in the conditional. It "would have been" (<i>es wäre</i>) a wonderful <i>Riesenreklame</i>, 
+if only everybody in the whole world knew that it was made in Luxemburg.
+<br><br>
+Rather the same thing occurred in September 1913 when another Pathé film-unit came to shoot an epsiode in the Nick Winter detective 
+series entitled <i>Nick Winter et le mystère de la Tamise</i>, shot this time in the towns of Bollendorf and Asembourg, at the château 
+de Dommeldange and in the garden of the spa of Mondorf. It was enthusiastically received when shown in Luxemburg in December and 
+the press waxed lyrical once more about its publicity-worthiness («&nbsp;Reklamewert für die Naturschönheiten unseres Landes&nbsp;» 
+but could not there be some indication that these places were in Luxemburg?  The film company pointed out, perhaps a shade tartly, that 
+this might detract somewhat from the desired illusion that he film was set in England.
+<br><br>
+<div class="dropleft"><img src="images/people/wmarzen.png" height=240 width=180 border=2 alt="Marzen" title="Marzen">
+<br>Wendel Marzen<div class="dropdown-content"><img src="images/people/wmarzen.png" height=400 width=300 border=2 alt="Marzen" title="Marzen"></div></div>
+I rather doubt if either Decroix' film-crew or that presumably under Paul Garbagni, who directed the Nick Winter series, would 
+have shot this particular film; that would have been a derogation from the strict director-unit system in operation at Pathé. 
+But it does seem conceivable that another team was sent at this time as a means of smoothing the ruffled feathers of the luxembourgeois 
+(and ensuring that future film-teams would be welcome). It is also perfectly possible that the film was the work of a local 
+cinematographer bought in, an increasingly common practice, particularly for material to be included in the Pathé Revue (often 
+also subsequently released on 9.5mm). In that case, there are at least two possible candidates, one Wendel Marzen, who had been 
+making films in Luxemburg since at least 1902, and the son of the hotelier and cinema proprietor, Felix Medinger, who would go 
+on make <i>Das malerische Luxemburg</i>, a very handsome five-minute tourist-portrait of the Duchy <a.not-active href="europe1912.html#lux">and other films in 1912</a>. 
+All his films were made for Royal Bio Comp., which had shown the Decroix films in 1910 but frankly this Pathé documentary has 
+little of the elegance - painterly as the title implies - of Medinger's known work. 
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Le Grand-Duché de Luxembourg</i> (Pathé, 1910?) and Felix Medinger, <i>Das malerische Luxemburg</i> (The Royal Bio Comp., 1912)</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/lux1910a.png" height=240 width=300 border=2 alt="Luxemburg" title="Luxemburg">
+    <img class="blue" src="images/stills/medinger1912b.jpg" height=240 width=300 border=2 alt="Luxemburg" title="Luxemburg"></th>
+</tr>
+</table> 
+</div>
+<br><br>
+Within France itself, Brittany was a favourite focus for such touristic films. <a.not-active href="int09doc.html#britt">In 1908</a> 
+Pathé operators had filmed a traditional Breton wedding and the very touristic festival of «&nbsp;les pardons&nbsp;», part religious 
+ceremony and part agricultural fair, and <a.not-active href="int09doc.html#britt">in 1909</a> they shot <i>Fillettes de Bretagne</i>, 
+a particularly emetic concoction (or, as the Pathé catalogue puts it «&nbsp;une délicieuse série de tableaux animés&nbsp;» featuring 
+clogs, babies, windmills and bagpipes that (the film is not known to survive) must have almost made the 1910 films in Volendam look 
+like hard-nosed <i>reportage</i>. In 1910, they contented themselves with a film of the port of Saint Malo, although a further film 
+was shot at Mont St. Michel in adjoining Normandy, where a horse-fair was also filmed. The Pyrénées were another similar focus with 
+a film being shot during the year of the <i>funiculaire</i> between Lourdes and Gavarnie.
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau (?), <i>Saint-Malo</i> (Pathé, 1910)</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/stmalo1910a.png" height=263 width=427 border=2 alt="Saint-Malo" title="Saint-Malo"></th>
+    </tr>
+</table> 
+</div>
+<br><br>
+The film of Saint-Malo is especially interesting. It is not really a touristic film in quite the same manner as those considered 
+above. It has, certainly, touristic elements but it differs in two important ways. For one thing it contains footage of working life 
+(fishing, sculpture), a brief shot of naval installations and it contains a little story of sorts concerning a local sailor who has 
+returned from working in the cod-fisheries of Newfoundland to settle down with his sweetheart. The film in other words aims at giving 
+a picture of the town - and the original film was twice the length - as well as mingling fact with semi-fiction. It also personalises 
+(from the implied point of view of the two lovers) and subjectivises the viewpoint (as far as the viewer is concerned) by presenting 
+«&nbsp;panorama&nbsp» - a series of shots in a kind of "binocular" oval iris, as though viewed through «&nbsp;une jumelle marine&nbsp;» 
+("skipper's spyglass" in the English).
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau (?), <i>Saint-Malo</i> (Pathé, 1910)</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/stmalo1910b.png" height=263 width=427 border=2 alt="Saint Malo" title="Saint Malo"></th>
+      </th>
+</tr>
+</table> 
+</div>
+<br><br>
+Here in effect we have an early example in miniature of what might be called "a city symphony", albeit somewhat whimsical and 
+sentimentalised and on a much smaller scale, a genre that would become one of the most typical and most dynamic forms of the 
+documentary film at the height of its glory in the 1920s. There are some signs that the 1910 film, although, at just five minutes, 
+fairly short even for that date, was regarded as having some importance. As early as about 1912, it had already appeared separately 
+as a 28mm film for the earlier Pathé home-view system, the Pathé Kok, probably at its original length, since Koks were a shade 
+longer than the later Babies and for the Pathé-Baby in the twenties it was retitled <i>Saint-Malo: antique cité des corsaires</i>. 
+This title does not really reflect the film - which makes no mention of corsairs - but is probably more to do with the fact that 
+the Pathé-Baby catalogue also contained, at least by the 1930s, <i>Surcouf</i>, the <a.not-active ref="int25feuil.html"cinerom">1925 
+Luitz-Morat serial-film</a> (only just over an hour on the Baby but nearly eight hours long originally) about the famous corsair 
+Robert Surcouf (1773-1827), who was born in Saint-Malo and, along with the writer and politician François-René de Chateaubriand (1768-1848) 
+and the explorer Jacques Cartier (1491-1557), who are both cited in the film, was one of the town's most famous sons. 
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau (?), <i>Saint-Malo</i> (Pathé, 1910): the sailor calls for his sweetheart</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/stmalo1910c.png" height=263 width=427 border=2 alt="Saint-Malo" title="Saint-Malo"></th>
+      </th>
+</tr>
+</table> 
+</div>
+<br><br>
+None of the various accounts of the film, not even that in the Pathé-Baby catalogue, describes its unusual narrative element; 
+precedence is given everywhere to the touristic aspects - the fortifications, the castle, "the quaint little houses" (US Pathécope 
+catalogue) and the narrow streets of «&nbsp;la vieille Bretagne bretonnante&nbsp;» ("unadulterated old Brittany" in the English 
+version). The 1918 Pathéscope catalogue (this was the US subsidiary that distributed the 28mm films, not the later British company 
+of the same name that distributed the 9.5mm films) does however highlight the "panorama viewed through a field glass" but, in what 
+would seem almost like a contradiction in terms, claims that this contributes to making the film "a genuine old world picture", 
+whatever on earth that might be. Since the Kok had very definite educational ambitions, viewers are also directed to volume 20 of 
+the <i>New International</i> for further reading about the French seaport.
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau (?), <i>Saint-Malo</i> (Pathé, 1910): the sailor and his sweetheart walk the strand</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/stmalo1910d.png" height=263 width=427 border=2 alt="Saint-Malo" title="Saint-Malo"></th>
+      </th>
+</tr>
+</table> 
+</div>
+<br><br>
+The cinematographer is unknown but this is another example of a film that was farmed out for editing in the absence of it original 
+maker - in this case to Mlle G. Jousset, who ran a camera and phototographic company and did a great deal of editing work for the 
+Pathé-Babies. Since René Moreau was evidently something of the man of the year at Pathé, and since we know he was no longer with 
+Pathé after 1921, it is tempting to ascribe this film to him as well. The film starts with a quotation from Chateaubriad (born 
+in the town), which is typical enough of a Moreau film and contains several of the nostalgic references to which he was prone. 
+He also filmed in Brittany on his own account in the twenties and, although his name is not Breton, he may conceivably have been 
+a native or more probably, like other later film-makers - Jean Epstein springs to mind - simply had a cinematographer's love affair 
+with the place. On the other hand, this may be the work of yet another "unsung hero", or, who knows, "unsung heroine", of early film 
+of whom we know nothing. 
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau (?), <i>Saint-Malo</i> (Pathé, 1910)</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/stmalo1910f.png" height=263 width=427 border=2 alt="Saint-Malo" title="Saint-Malo"></th>
+      </th>
+</tr>
+</table> 
+</div>
+<br><br>
+This was not by any means the first film to be shot in Saint-Malo; Pathé had made films of boats coming and going <a.not-active href=int97doc.html#pathe">in 
+1897</a> and of the famous «&nbsp;pont roulant&nbsp;» (rolling bridge) <a.not-active href=int98doc.html#pathe">in 1898 nor was 
+Pathé the only firm to film the Breton seaport. The British company Cricks and Martin filmed <i>St. Malo and the Shrimpers of the 
+Emerald Coast</i> in 1909 and Gaumont, faithfully following in Pathé's footsteps, also shot a film in Saint-Malo that appeared in 
+the US in 1911 as <i>St. Malo and the English Channel</i> and was described by Moving Picture World in fulsome terms: "An excellent 
+travelogue presenting scenes familiar to most tourists to the British Isles and France. It is a picturesque French seaport town on 
+the channel, situated on a granite island which is connected by a narrow causeway to the mainland of France." Neither of these films 
+is known to survive.
+<br><br>
+<div align="center">
+<table>
+  <caption>René Moreau (?), <i>Saint-Malo</i>, Pathé, 1910</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/stmalo1910e.png" height=263 width=427 border=2 alt="Saint-Malo" title="Saint-Malo"></th>
+      </th>
+</tr>
+</table> 
+</div>
+<br><br>
+<summary style="display: none;">
+Pathé was of course far from the only company producing such touristic documentaries. Gaumont filmed during the year in Florence, 
+Berlin, 
+<br><br>
+There was a tendency for the various film crews to follow each other around, trying to outdo each other in rendering the best 
+version of tourist destinations that were in vogue. Éclair sems to have been the first to film the castles of the Rhine in January 
+1910, a seven-minute film that appeared in the US in February as <i>Castles on the Rhine from Bingen to Coblenz</i> on a split-reel 
+with <i>Nick Carter acrobate</i>. The description in <i>Moving Picture World</i> was suitably lyrical:  
+<br><br>
+<blockquote>
+We have all listened on sundry occasions to the legends and tales of the wonderful Rhine. How enchanting the tradition of the 
+beautiful Lorelei and how thrilling the innumerable stories of the iron willed Barons, and their honor of horrors, "Round Towers 
+on the Rhine." We view, as we gaze, the strange blending together of one grand panorama, and the magnitude of the changeless beauty 
+of old nature, and the glories find picturesque, yet transient splendor of the handiwork of man.
+</blockquote>
+<br><br>
+The six-minute film <i>The Falls of the Rhine</i> (known only by its English title) was probably made at the same time. This 
+view, filmed at Schaffhouse (Schaffhausen) in Switzerland, has a historical interest because it was here that what is probably 
+the first Lumière panorama from a boat had been filmed, by Constant Girel, <a.not-active href="int96doc.html#girel">pn 29 September 
+1896</a>.
+<br><br>
+Pathé cameramen made the same trip in February, producing the eight-minute <i>Le Rhin de Cologne à Bingen</i>, a film released 
+in colour and described in the catalogue as making the Rhine appear as described in the poems of Victor Hugo «&nbsp;avec sa vallée 
+sinueuse et profonde couronnée des deux côtés par ses pittoresques vieux burgs, ses ruines et ses châteaux&nbsp;» (its deep, winding 
+valley crowned on both sides by ancient townships, ruins and castles). This too appeared in the US the same month, released on a split-reel 
+with <i>The Runaway Dog</i> and was described in similar terms:
+<br><br>
+<blockquote>
+This film takes you past all the most famous castles, each of which is the subject of hundreds of legends. First, we see Koenigswinter 
+and the crumbling ruins of the Dragon's Rock. In quick succession follow Linz, Anderach and the Fortress of Ehren-breitstein. Next comes 
+one of the most famous sights of the Rhine, the monument to Emperor William. And then the Lorelei, the Oberweisel, and the ruins of Schonburg, 
+and, passing through the Rhine Palatine, we come upon Kaub and the Castle of Gutenfels. Amongst others we see the famous Rheinstein and 
+Sonneck castles, and, finally, at Bingen itself, the Mouse, or Hatto's, Tower, and the vineyards of Redesheim. This film is pregnant with 
+interest, giving a true representation of the splendid scenery of this magnificent and incomparable river, and calling to mind the innumerable 
+tales and myths of quaint old German folklore, which spreads its misty veil upon the dark and mysterious waters.
+</blockquote>
+<br><br>
+Urban-Éclipse, now a French company, extended the journey to Coblenz in a film that appeared in English as <i>A Trip Along the 
+Rhine</i>. The US, which produced hardly any films of this kind itself, seems to ave had an inexhausible appetite for such views 
+and this appeared there, released on yet another split-reel with <i>The Country Schoolmaster</i>, in March 1910, just a month 
+after the other two films, although it does not seem to have come out in France as <i>Le Rhin (de Cologne à Cobllenz)</i> until 
+the autumn of 1912. It is this French version, translated into Dutch, that survives in part in the Desmet Collection in Holland, 
+featuring just the trip from Bingen to Coblenz:
+<br><br>
+<div align="center">
+<table>
+  <caption><i>A Trip Along the Rhine</i> (Urban-éclipse, 1910, 1912)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/PynIDcSMqA0?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+    </th>
+</table>
+</div>
+<br><br>
+The French company Éclair made relatively few documentaries but made an attempt to choose subjects that were a little different 
+and had more dramatic potential. This is most clearly seen in <a href="int10trav.html#eclair">their travel films</a> but Éclair 
+was also begining to eye the "education" market, doubtless fully in the knowledge that this was an area that Pathé was keen to 
+exploit. When the four-minute Alpine view <i>A Trip to Berne</i>, appeared in the US in March (on a split-reel with the 
+drama <i>Le trésor de Loie</i>), it was described in the notice in <i>Moving Picture World</i> as "one of the Éclair educational 
+gems". The Pathé-Éclair rivalry in this regard would become more pronounced in 1911-1912 as the moment approached fro the launch 
+of Pathé's 28mm home-view system the KOK, a challenge that Éclair had no intention of letting pass without a response. Another 
+Alpine view, the four-minute <i>Ascending the Sea of Ice</i> (also released in the US in March, coupled with another drama, <i>Love, 
+the Conqueror</i>), which was filmed at Chamonix and was a tourist-attraction once greatly favoured by the Lumière operators, 
+Antoine Lumière having a villa in the region but equally prized by Gaumont, where Léon Gaumont took a very personal interest in 
+mountaineering films, and which made more than one film there <a href="int10wsm.html">in 1910</a> and by Pathé who had made the 
+important <a.not-active href="int07wsm.html#montblanc">1907 documentary</a> <i>L'Ascension de Mont Blanc</i> there.
+<br><br>
+It is worth noting that, relatively sparse though the Éclair production of documentary views might be compared to that of its 
+two mighty rivals, there is a strong sense of connection between the films. While filming in the Alps, the operators also made 
+the six-minute <i>Vie des Chasseurs Alpins aux postes frontières</i> (part of the series of "exposés" of the lesser known activities 
+of the French army that had been begun <a.not-active href="int08miliy#eclair">way back in 1908</a>. The ten-minute drama <i>Le Trésor 
+de Loie</i>, although it has no relation whatever to the film with which it was coupled, is also of interest in illustrating the 
+co-ordinated manner in which the Éclair camera-teams worked. Éclair, no less than Pathé, had interested itself in the dramatically 
+beautiful scenery of Brittany. A notably successful documentary short <a.not-active href="int09doc.html#eclair">of the previous 
+year</a> had been <i>La Bretagne brettonante</i> (shown in the US as <i>The Real Brittany</i>) and a further documentary was made 
+in Sprin 1910 during the annual «&bsp;caravane&nbsp;» or wild oyster harvest at Cancale on the Côte Émeraude in Ille-et-Vilaine. 
+But Éclair had seemingly improved on these occasions to prepare the way for various short dramas of 1909-1910 set amongst fisher-folk. 
+<i>Pretty Fisher-Woman</i> (1909), <i>Le Trésor de Loie</i> (specified as Brittany) and <i>La Sorcière de la grève</i> (both 1910). 
+It seems likely too that the <i>Morgan le pirate</i> serial (1909 with a spin-off drama <i>Le Cage</i> in 1910) also made us of the 
+Breton landscape. A more lightweight, integrated structure and a greater awareness of the docufictional possiblities of its documentary-making 
+made this a much easier strategy for Éclair to deploy (as to some extent did Feuillade at Gaumont) than was the case at Pathé where 
+a more compartmentalised structure (with each team of operators assigned to a different director) led to jealouises that made such 
+co-operation more difficult.
+<br><br>
+These Alpine scenes and the <i>Les Grimpeurs des rochers</i> (filmed in the Pyrenées). the four-minute <i>Lugano et son lac</i>
+Even more striking examples of this same co-ordination and this same interest in docufiction can be seen in the case of "colonial" 
+films made by Éclair <a.not-active href="int10trav.html#eclaircol">in the same year</a> in North Africa.
+</summary>
+<a name="indus"></a><h4>Industrial films</h4>
+<p>In 1908 Pathé had decided to devote an entire section of its catalogue to «&nbsp;arts et industries&nbsp;» and the films 
+are basically of two sorts - those dealing with more traditional pursuits (fishing. butter-making and so on) and those devoted to more 
+modern industry. As one might expect, the tone of the former tend somewhat to resemble the touristic films (even when the intertitles 
+are relatively matter-of-fact, the Pathé catalogue indulges in lyrical flourishes) while the latter are more orientated towards technological 
+innovation, mechanisation and mass-production. The "traditional" films normally included some reference to the economic importance 
+of the activity concerned and, in the "modern" films Pathé was quite prepared to slip in a fairly overt "advertising" element. 
+As regards local firms, which rapidly saw the potential of such films, such films were often quite straightforwardly made to 
+commission and this "advertising" element became the main focus.  This alliance between film documentary and advertising very soon 
+became, and has remained, crucial, gradually evolving towards the typical modern situation where commercial sponsorship is the main 
+source of funding for documentary film-makers.
+<br><br>
+<div align="center">
+<table>
+  <caption>La Pêche aux harengs</i> (Pathé, 1907, 1910)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/nLWrHmNBAMw?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+  </th>
+</table>
+</div>
+<br><br>
+Herring-fishing seems to have been an early Spring favourite. This Pathé-Baby film, shot at Boulogne-sur-Mer may be the 1910 film 
+<i>La Pêche aux harengs à Boulogne</i> but there had been an almost identical film, the ten-minute <i>La Pêche aux harengs</i> released 
+in 1907 and, to judge by the descriptions of the two films, the two may simply be the same film released, possibly already in a slightly 
+abridged version, as part of the «&nbsp;Arts et Industries&nbsp;» section. This is reflected in the pointed, if vague, economic references 
+one finds at the end also of the Pathé-Baby film.
+<br><br>
+<div align="center">
+<table>
+  <caption><i>La Pêche aux harengs</i> (Pathé, 1910)</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/hareng1910a.png" height=263 width=427 border=2 alt="harengs" title="harengs"></th>
+    </tr>
+</table> 
+</div>
+<br><br>
+<i>La Pêche aux harengs</i> was produced on 28mm for the Pathé Kok. Known as <i>Herring Fishing</i>, it was described in the 
+1918 Pathéscope catalogue, which empasises the "close-up" view of the fisherman, a technical effect already becoming relatively 
+common in documentary films, both in touristic films (where the concept of "types" tended to privilge a concentration of the 
+camera on the faces of its subjects) and in "industrials" where the desirability of concentrating on hands at work was very 
+obvious. The film reappeared in <i>Pathé Revue</i> in 1923 as well as on Pathé-Baby.
+<br><br>
+<div align="center">
+<table>
+  <caption><i>La Pêche aux harengs</i> (Pathé, 1910)</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/hareng1910b.png" height=240 width=300 border=2 alt="harengs" title="harengs">
+  <img class="blue" src="images/stills/hareng1910d.png" height=240 width=150 border=2 alt="harengs" title="harengs">
+  <img class="blue" src="images/stills/hareng1910c.png" height=240 width=300 border=2 alt="harengs" title="harengs"></th>
+    </tr>
+</table> 
+</div>
+<br><br>
+Pathé made several films of deep-sea fishing between 1905 and 1911. There had been a film <i>Pêche en pleine mer</i> in 1905, 
+the earlier film of herring-fishing, <i>La Pêche aux harengs</i> in 1907, <i>La Pêche au chalut</i> in 1910, very possibly a reprise 
+of the 1905 film, the second herring-fishing film, <i>La Pêche aux harengs à Boulogne</i> also in 1910, and probably, as we have 
+seen, a reprise of the 1907 film, <i>La Pêche au thon en Sicile</i>, also 1910 and <i>Pêche à la morue à la ligne de fond en Islande</i>
+and <i>Pêche à la morue en Islande au chalut</i>, both in 1911. Another five-minute film that survives, although I have not seen 
+a copy, <i>Pêche à la morue sur les côtes du Groenland</i> is of uncertain date. The Pathé-Baby film <i>La Pêche en mer</i> is 
+clearly a composite film, made c. 1922 for the Pathé-Baby «&nbsp;Série instructive&nbsp;» (intended for use in schools) and 
+incorporating footage from several of the earlier films. 
+<br><br>
+<div align="center">
+<table>
+  <caption>La Pêche en mer</i> (Pathé, 1922 compilation 1907-1911)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/tePbcymYQMM?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+  </th>
+</table>
+</div>
+<summary style="display: none;">
+Le chalutier Marc-Marie, immatriculé à Arcachon, se dirige vers la zone de pêche. Le chalut formé de filets à poche est jeté à l'eau par les pêcheurs et y reste pendant la marée. Il est ensuite retiré de l'eau et amené à bord par le treuil, la poche est ouverte et le poisson se répand à profusion, la morue inonde le pont. Un homme présente la morue qui subit sur le bateau une première préparation et les morutiers s'activent sur la chaîne de découpe. Le travail terminé, les hommes se lavent sur le pont à la lance à eau.
+Pêche à la morue sur les côtes du Groenland
+<br><br>
+</summary>
+<br><br>
+<i>La Pêche au thon en Sicile</i> was very much an "industrial" film, one of three produced that year in Sicily. It appeared in 
+28mm  on the Pathé Kok and was known in the US as <i>Catching and Canning Tunny in Sicily</i> and the 1918 Pathéscope catalogue 
+places as much emphasis on the second aspect as the first. Tinned tuna was evidently not quite the banal product that it is today.
+<br><br>
+<blockquote>
+The tunny fish, or tuna, is very large and sometimes weighs as much as 1500 lbs. The fishermen show great skil in landing the catch. 
+A view of the canning factory depicts the method of cooking and packing the fish in tins.
+</blockquote>
+<br><br>
+<a name="sicily></a>
+The other films in Sicily, apart from the purely touristic <i>Ça et là en Sicile</i>, were <i>Fabrication des charrettes siciliennes</i> 
+and <i>La Récolte des citrons en Sicile</i>. A Pathé crew was also present to film <a href="int10disas.html#etna">the eruption of Etna 
+in March</a>. A further film <i>La Moisson en Sicilie</i> was made in 1911. It rather looks as though Pathé had a cinematographer stationed 
+for a time in the island, since further films were made there in 1912-1913. 
+<br><br>
+<div align="center">
+<table>
+  <caption>John Grierson, <i>Drifters</i> (John Grierson, 1929)</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/drifters1929.jpg" height=263 width=427 border=2 alt="Drifters" title="Drifters"></th>
+    </tr>
+</table> 
+</div>
+<br><br>
+Films of deep-sea fishing have a very special importance in the history of cinema, in the development of the documentary film (think for a 
+moment of <a.not-active href="int29doc.html#grierson">John Grierson's influential 1929 film <i>Drifters</i></a> and equally in the 
+development of a naturalistic style of cinematography that would also serve to enrich the photoplay or fictional film (think, perhaps, 
+of the remarkable scene of tuna-fishing in Roberto Rosselini's 1950 film <i>Stromboli, terra di Dio</i>. An absurdly lop-sided 
+regard has been favoured by critics (from a surprisingly early period), privileging "fiction" over "non-fiction" and consistently 
+relegating documentary, both as a genre and as a component of style, to a secondary role. The "Hollywood" myth seems to have required 
+an unshakeable belief in the superiority of fictional (and generally escapist) entertainment, however trivial and uninteresting its 
+actual content might often be, while documentary came somehow to be seen as a thing apart (which it is not), and as peripheral if 
+not inferior, however impressive and interesting its actual content might often be. Anyone who has followed the history of cinema 
+from its earliest days with attention, knows, or should know, how utterly false this perspective is, that fiction is not necessarily 
+"the manifest destiny" of cinema, that documentary is, and has always been, absolutely integral to its existence, that it occupies 
+a central role in its development and might reasonably be regarded as the real motor of the industry, the crucible of visual (and 
+aural) ideas, the training-ground of cinemtographers, the prior source of nearly all technical innovation and the arena where <i>cineastes</i> 
+have most earnestly tried to debate, understand and refine the complex relationship that the seventh art has with the real world.
+<br><br>
+<div align="center">
+<table>
+  <caption>Roberto Rosselini, <i>Stromboli, terra di Dio</i> (RKO Pictures, 1950)</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/stromboli.jpg" height=263 width=427 border=2 alt="Stromboli" title="Stromboli"></th>
+    </tr>
+</table> 
+</div>
+<br><br>
+If we wish to identify a clear predecessor to the work of Grierson and of Otello Martelli (cinematographer for <i>Stromboli</i>), 
+that man is surely Jean Nédelec, although he would not have made the film shot in Sicily in 1910. Nédelec, as we have seen, was 
+Pathé's operator in Scandinavia. In that capacity he not only made touristic films amongst the fjords but was almost certainly also 
+responsible for a film of polar bear hunting, urgently required by Pathé <a.not-active href="int07hunt.html#polar">for reasons 
+explained elsewhere</a>, but he was, to judge by his name, a Breton and therefore surely had the sea in his blood.
+<summary style="display: none;">
+<br><br>
+<i>La Pêche au thon en Sicile</i> was very much an "industrial" film, one of three prodcued that year in Sicily. It appeared in 
+28mm  on the Pathé Kok and was known in the US as <i>Catching and Canning Tunny in Sicily</i> and the 1918 Pathéscope catalogue 
+places as much emphasis on the second aspect as the first. Tinned tuna was evidently not quite the banal product that it is today.
+<br><br>Pêcheries de thon en Sicile (1907)
+<blockquote>
+The tunny fish, or tuna, is very large and sometimes weighs as much as 1500 lbs. The fishermen show great skil in landing the catch. 
+A view of the canning factory depicts the method of cooking and packing the fish in tins.
+</blockquote>
+<br><br>
+Amongst other «&nbsp;arts et industries&nbsp;» filmed in the year one finds trout-fishing, losbster-fishing, manufacture of sugar, 
+metallurgy and coal-mining («&nbsp;le royaume du Fer et du Feu&nbsp;» according to the catalogue), the cork industry, a marble 
+quarry.
+<br><br>
+Watterson R. Rothacker founded the Industrial Moving Picture Company with Carl Laemmle of the Independent Moving Picture Company 
+and R. H. Cochrane of the Cochrane Advertising Company in Chicago c. May 1910 (1909-1910). 
+</summary>
+</article>
+<footer>Copyright &copy; kekseksa.com</footer>
+</div>
+</body>
+</html>

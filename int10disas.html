@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+<! -- file created by Lulu 23/02/2013 email: kekseksa@gmail.com -->
+<meta name="keywords" content="">
+<base target="_self">
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Kekseksa? C'est du cinéma</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: #FF9900;
+    background-color: #0000CC;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    background-color: white;
+    max-width: 148px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  nav ul     { display: none;}
+}
+
+article {
+    margin-left: 150px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+li.nb a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+}
+
+.dropleft .dropright {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropleft:hover .dropdown-content {
+    display: block;
+}
+.dropright:hover .dropdown-content2 {
+    display: block;
+}
+div.dropleft {
+    float: left;
+    width: 220px;
+    margin: 15px 20px 0 0;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+div.dropright {
+    float: right;
+    width: 220px;
+    margin:  0 0 15px 20px;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+.bigger:hover {
+width:360;
+height:480;
+}
+input[type='checkbox'] {
+  display: none;
+}
+.lbl-toggle {
+  display: block;
+}
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid red;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.lbl-toggle2::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentcolor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.tab {
+  position: relative;
+  margin: 2px;
+  max-width: 600px;
+}
+.tab input {
+  display: none;
+}
+.tab label {
+  background: #2d5faf;
+  color: #fff;
+  font-weight: bold;	
+  font-size: 8pt;
+  padding: 10px;
+  cursor: pointer;
+}
+.tab input[type=checkbox]:checked + label::after,
+.tab input[type=radio]:checked + label::after {
+  transform: rotate(90deg);
+}
+.tab-content {
+  overflow: hidden;
+  display: none;
+}
+.tab input:checked ~ .tab-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Cinema in the year
+<br><br>1910</h1>
+</header>
+
+
+ <ul class="nb">
+  <li class="nb">1910</li>
+  <li class="nb"><a class="bottom" href="notready.html"><img src="images/backhand.gif" width=40 height=20 border=0 alt="previous">Colonial Films</a></li>
+  <li class="nb"><a class="bottom" href="notready.html"><img src="images/backhand.gif" width=20 height=10 border=0 alt="previous">1909</a></li>
+  <li class="nb">Disaster Films</li>
+  <li class="nb"><a class="bottom" href="notready.html">1911&nbsp;<img src="images/forehand.gif" width=20 height=10 border=0 alt="next"></a></li>
+  <li class="nb" style="float:right">1910</li>
+  <li class="nb" style="float:right"><a class="bottom" href="inst10psc.html">sport&nbsp;<img src="images/forehand.gif" width=40 height=20 border=0 alt="next"></a></li>
+  </ul> 
+  
+<nav>
+
+<a href="index.html">
+<table>
+  <caption>&nbsp;accueil</caption>
+  <tr>
+    <th><img class="purple" src="images/posters/bebetac.jpg"  height=36 width=48 border=2 alt="Return to home page" title="Return to home page"></th>
+</tr>
+</table>
+</a>
+<a href="qdn.html"><a href="qdn.html">
+<table>
+  <caption>&nbsp;kwad9</caption>
+  <tr>
+    <th><img class="purple" src="images/stills/conqairprom.png"  height=36 width=48 border=2 alt="Quoi de neuf ?" title="Quoi de neuf ?"></th>
+</tr>
+</table>
+</a>
+	<br>
+  <div class="wrap-collapsible">
+  <input id="collapsible" class="toggle" type="checkbox">
+  <label for="collapsible" class="lbl-toggle"><a href="intro10.html">introduction</a></label> 
+    <div class="collapsible-content">
+    <div class="content-inner">
+       		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="europe10.html">Europe</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="french10.html">France</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ital10.html">Italy</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="danish10.html">Denmark</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="swed10.html">Sweden</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="norw10.html">Norway</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="brit10.html">Britain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="german10.html">Germany</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ost10.html">Austria</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a href="benelux10.html">Benelux</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="span10.html">Spain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="port10.html">Portugal</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="greek10.html">Greece</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="us10.html">US</a>
+		<br>
+   		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="world10.html">The World</a>
+		</div></div></div>
+ 		<div class="wrap-collapsible">
+  		<input id="collapsible2" class="toggle" type="checkbox">
+ 		<label for="collapsible2" class="lbl-toggle2"><a href="int10top.html">newsreel</a>
+        	</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible3" class="toggle" type="checkbox">
+ 	 	<label for="collapsible3" class="lbl-toggle"><a href="int10doc.html">documentary</a></label>
+		<div class="collapsible-content">
+    		<div class="content-inner">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10doc.html#tour">touristic</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10doc.html#indus">industrial</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="#colon">colonial</a>
+		</div></div></div>
+    	     	<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a href="int10psc.html">popular science</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10doc.html#colon">natural history</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible5" class="toggle" type="checkbox">
+ 		<label for="collapsible5" class="lbl-toggle2"><a.not-active href="">disaster film</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a.not-active href="int10sport.html">sport</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10wsm.html">winter sport</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10wsm.html#mf">mountains</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10hist.html">historical film</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10cs.html">comic series</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible7" class="toggle2" type="checkbox">
+ 		<label for="collapsible7" class="lbl-toggle2"><a.not-active href="int10west.html">western</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible8" class="toggle2" type="checkbox">
+ 		<label for="collapsible8" class="lbl-toggle2"><a.not-active href="#int10kri.html">crime film</a>
+		</div>
+
+<p>
+<h3><a href="notready.html">Index of films</a></h3>
+</div>
+</nav>
+
+<article>
+<h3><a name="disas">The disaster film</a></h3>
+<div align="center">
+<table>
+  <caption>Le Zouave du pont d'Alma during the mild «&nbsp;crue&nbsp;» of 1912 ad the next severe «&nbsp;crue&nbsp;» in 1924</caption>
+  <tr>
+    <th><img class="blue" src="images/events/zouave1912.jpg" width="120" height="240" border=2 alt="zouave" title="zouave">
+  <img class="blue" src="images/events/zouave1924.jpg" width="320" height="240" border=2 alt="zouave" title="zouave"</th>
+  </tr>
+</table> 
+</div>
+<br><br>
+<div align="center">
+<table>
+     <caption>Albert Chevojon <i>Le Pont de l’Alma. Vue prise vers le nord en janvier 1910</i>, photograph</caption>
+  	<tr>
+    <th><img class="blue" src="images/events/pontalma1910.jpg" height=263 width=427 border=2 alt="Alma" title="Alma">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+<br><br><p>In January 1910, «&nbsp;la crue de la Seine&nbsp;» led to the worst floods that Paris and the surrounding region had known 
+since 1658, reaching its highpoint on the 28th of the month. George Diebolt's statue of the Zouave by the pont de l'Alma, a traditional measure 
+of the height of a «&nbsp;crue&nbsp;» was submerged up to his shoulders. Stations were flooded and public transport unusable.
+<br><br>
+<div align="center">
+<table>
+     <caption><i>Gare Saint Lazare en 1910</i> and <i>Station Carrefour de l'Odéon en 1910</caption>
+  	<tr>
+    <th><img class="blue" src="images/events/garestlazare1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+<img class="blue" src="images/events/odeon1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+The <i>députés</i> had to make their way to the <i>Assemblée</i> by boat. On 20 January navigation of the river had to be stopped 
+because of blockages under the bridges. On 21 January the machines at the Société Urbaine d'Air Comprimé in the XII<sup>e</sup> 
+<i>arrondissement</i> ceased to work, which stopped all public clocks and lifts in the city. There were cases of typhus and scarlatina 
+and the damage caused by the flooding was extensive and costly. 20,000 blocks of flats in the capital itself were flooded and 30, 000 
+houses in the region around Paris. A vinegar factory at Ivry-sur-Seine, Pagès Camus, exploded and was totally destroyed in the 
+resulting conflagration.
+<br><br>
+<div align="center">
+<table>
+     <caption><i>Les Inondations de Paris</i> and <i>Inondations de Paris et sa banlieue en 1910</i> (Pathé, 1910)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/inondationpath1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+<img class="blue" src="images/stills/inondationpath1910b.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Both Pathé and Gaumont filmed the floods, but, to judge from the surviving material, Gaumont typically made the more thorough 
+job. Films were often relatively long; Pathé's <i>Les Inondations de Paris</i> ran some fifteen minutes.
+<br><br>
+<div align="center">
+<table>
+     <caption><i>La Crue de le Seine en 1910</i>(Gaumont, 1910)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/cruegaum1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+<img class="blue" src="images/stills/cruegaum1910b.jpg" height=240 width=320 border=2 alt="inondations" title="inondations"><br><br>
+<img class="blue" src="images/stills/crueseinegaum1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations"><br><br>
+    </th>
+    </tr>
+</table>
+<table>
+     <caption><i>Inondations à Paris en 1910</i>, <i>Inondations à Paris le 22, 23, 24 Janvieret sa banlieue en 1910</i>, <i>Paris inondé</i> and <i>Paris sous les eaux</i> (Gaumont, 1910)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/inondationsparisgaum1910c.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+<img class="blue" src="images/stills/inondationsparisgaum1910d.jpg" height=240 width=320 border=2 alt="inondations" title="inondations"><br><br>
+<img class="blue" src="images/stills/inondationsparisgaum1910e.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br> 
+Gaumont continued to interest itself rather later (there was further flooding in November). Pathé too had produced an eight-minute 
+film, <i>Après les inondations, le désastre</i> in February.
+<br><br>
+<div align="center">
+<table>
+     <caption><<i>Inondations à Paris le 29 Janvier 1910</i>, <i>Paris après les inondations de 1910</i>,  and <i>Panorama des inondations depuis le pont de Solferino le 11 Novembre 1910</i></caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/inondationsparisgaum1910b.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+<img class="blue" src="images/stills/inondationsparisgaum1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations"><br><br>
+<img class="blue" src="images/stills/inondationsparisgaum1910f.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br> 
+If there is such a thing as "inondomania", Gaumont would seem by this time to have been affected by it. THe operators took to 
+photographing floods all over France, in Nancy (also November), Nantes (in December) and the Touraine (also December). In November 
+too they were filming floods (or their results) as far afield as Italy. There seem, however, to have been no films of the severe 
+flooding that also took place during the year in Alsace (then still part of Germany).
+<br><br>
+<div align="center">
+<table>
+     <caption><i>Inondations à Nancy. La Meurthe rompt les digues</i>, <i>Nantes et ses environs inondés<i>, <i>Inondations en Touraine. La Digue de St Sauveur rompue</i> and <i>Dégats causés par les inondations en italie le 25 Novembre 1910</i></caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/inondationsnancygaum1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+	<img class="blue" src="images/stills/inondationsnantesgaum1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations"><br><br>
+	<img class="blue" src="images/stills/inondationstourainegaum1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+	<img class="blue" src="images/stills/inondationsitalygaum1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br> 
+It has to be said, whatever the damage, cost and inconenience caused, Paris has rarely looked so beautiful as it did during the floods. 
+Photographers too had a field day.
+<br><br>
+<div align="center">
+<table>
+     <caption>Étienne Neuredin, <i>Quai de Grenelle en 1910</i> and <i>Avenue Ledru-Rollin, Janvier 1910</i>, photographs</i></caption>
+  	<tr>
+    <th><img class="blue" src="images/events/grenelle1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+	<img class="blue" src="images/events/ledrurollin1910.jpg" height=240 width=320 border=2 alt="inondations" title="inondations">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+As for the films, this is a compilation but includes some footage that is clearly from the Gaumont films.
+<br><br>
+<div align="center">
+<table>
+  <caption>La Crue de 1910 à Paris (compilation of footage)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/POz6F4MTsvw?mute=1feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+  </th>
+</table>
+</div>
+<br><br>
+This video, a piece of propaganda dedicated to a militant royalist organisation active at the period known as «&nbsp;Les Camelots 
+du roi&nbsp; (La Fédération nationale des Camelots du roi) associated with the right-wing Action franèaise, also has some interesting 
+footage of the floods. The organisation's founder, Maurice Pujo, was among those involved in duels <a href="intspo1911.html#fencing">the 
+following year</a> after violent anti-semitic attacks on the playwright Henri Bernstein. They were, on the other hand, in a vague 
+alliance with the left at this period and social action in favour of the «&nbsp;sinistrés&nbsp;» of the floods was not untypical 
+of the organisation's less ugly aspects.
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Les Camelots du Roi et les inondations de 1910</i></caption>
+  <tr>
+    <th>
+	<video width="320" height="240" controls>
+  	<source src="videos/camelots.mp4" type="video/mp4">
+  	Your browser does not support the video tag.
+	</video> 
+  </th>
+</table>
+<br><br>
+<table>
+     <caption>Boulevard Saint-Germain en 1910, photograph</caption>
+  	<tr>
+    <th><img class="blue" src="images/events/saintgermain1910.jpg" height=263 width=427 border=2 alt="Bruges" title="Bruges">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Grotesquely, Henri Desfontaines produced a comedy/trick film in July 1910, <i>Le Mouchoir enchanté</i>, for Gaumont the same year in which 
+a group of people are obliged to protect themselves from «&nbsp;inondations&nbsp; de morve&nbsp;».  I shall refrain from translating 
+that but the CNC description of the film makes the situation clear enough:
+<br><br>
+<blockquote>
+Lors d'une soirée, un bourgeois est pris d'une crise d'éternuement. Il sort son mouchoir, mais ce dernier prend la taille d'une 
+nappe, qu'il est bien difficile de faire rentrer dans la poche du pantalon. Soudain, le nez du protagoniste se met à couler à 
+un débit de robinet grand ouvert. Ne pouvant maîtriser seul la situation, les convives décident de l'aider en lui sortant le mouchoir 
+qui n'a plus de fin, au point d'être obligé d'évacuer le tissu par la fenêtre. Une heure après, tout le monde s'est assis en hauteur 
+pour se protéger de l'inondation. 
+<br><br>
+<div class="tab">
+      <input id="tab-1" type="checkbox" name="tab">
+      <label for="tab-1">English translation</label>
+      <div class="tab-content">
+<br><br>
+During the course of a party, a <i>bourgeois</i> is seized by a fit of sneezing. He takes out his handkerchief, but it assumes 
+the size of a tablecloth, which is very difficult for him to get back in his pocket. Suddnely the man's nose starts to run like 
+a fully open tap. Since he is unabble to control the situation himself, the guests decide to help hiim by getting the handkerchief 
+away from him but thre is no end to it, at shich oint they are obliged to throw it out the window. An hour later, everyone is perched 
+up high to protect themselves from the flood.
+</div></div>
+</blockquote>
+<br><br>
+The dykes, it seems, were breaking everywhere!
+<br><br>
+<div align="center">
+<table>
+     <caption>photograph of the eruption of Etna in 1910</caption>
+  	<tr>
+    <th><img class="blue" src="images/events/etna1910c.jpg" height=263 width=427 border=2 alt="Etna" title="Etna">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+<a name="etna"></a>
+A more spectacular disaster was the eruption of the Volcano Etna in Sicily that took place on On 23rd March 1910 when a large fissure 
+formed, which extended for two kilometres. Over twenty craters formed over the next few days, which, as the Pathé-Baby catalogue has 
+it, "vomited" lava and together with clouds of steam and ash. On 24th March, lava from the highest point of the fissure erupted, forming 
+a river 1,500 feet wide, which flowed at the rate of sixty or more feet per hour for a distance of two kilometres. Later lava flowed 
+mostly from the lower craters (about 7,000 feet altitude) and formed a river of molten rock one hundred and fifty feet wide. The lava 
+flowed southward until it reached the eastern side of Monte Faggi, two kilometers below, and formed a magnificent cascade thirty-five 
+feet wide and seventy high. By the 31st March the lava flows had destroyed many gardens, vineyards, and woodlands near the affected 
+villages. The town of Cavaliere was covered with ash and the fertile region of Cisterna Regina was destroyed. The eruption lasted 
+in all twenty-nine days.
+<br><br>
+<div align="center">
+<table>
+     <caption>Photographs of the eruptions of Etna of 1892 and 1910</i></caption>
+  	<tr>
+    <th><img class="blue" src="images/events/etna1892.jpg" height=240 width=320 border=2 alt="Etna" title="Etna">
+	<img class="blue" src="images/events/etna1910a.jpg" height=240 width=320 border=2 alt="Etna" title="Etna">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+Since 1470 BC (approximate date of the first recorded eruption), such eruptions had oaccurred at fairly regulat intervals, the 
+last being in 1886 and in 1892, when the lava had advanced at great speed as far as the outskirts of the post of Nicolisi. This 
+was, howver, the first eruption at which a camera-crew had been present.
+<br><br>
+<div align="center">
+<table>
+     <caption>photograph of the filming of Etna in 1910</caption>
+  	<tr>
+    <th><img class="blue" src="images/events/etna1910b.jpg" height=263 width=427 border=2 alt="Bruges" title="Bruges">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+The film made by the Pathé operators, presumably those seen in the photograph above, has survived in at least three different 
+versions. The original film was about nine minutes long. The first film below has a good deal of footage that does not appear 
+in the other two and, if run at the right speed, might well be nearly the entire film. THe cineamtographer is not know but Pathé 
+produced several other films shot in Sicily <a href-"int10doc.html#sicily">during the year</a> and seems to have had someone posted 
+there, perhaps a local cinematographer, throughout the period 1910-1913. The film was shown in the US as <i>Mt. Etna in Eruption</i> 
+in May, released on a rather inappropriate split-reel with the comedy <i>Amour et fromage</i>.
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Éruption de l'Etna (Pathé, 1910)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/jAqcErDAP6k?mute=1feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+  </th>
+</table>
+</div>
+<br><br>
+All three versions are evidently extracted from the same film (some footage is common to all). 
+<br><br>
+<div align="center">
+<table>
+     <caption><i>Éruption de l'Etna</i> (Pathé, 1910)</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/etna1.png" height=240 width=320 border=2 alt="Etna" title="Etna">
+	<img class="blue" src="images/stills/etna2.png" height=240 width=320 border=2 alt="Etna" title="Etna">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+The second was produced for the Pathé KOK (the 28mm home-view projector brought out in 1912). This has the advantage of being 
+tinted a dramatic red but tends as a result to  concentrate largely on those scenes that appear suitably "infernal". 
+<br><br>
+<div align="center">
+<table>
+     <caption><i>Éruption de l'Etna</i> (Pathé, 1910), 28mm version</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/etna3.png" height=240 width=320 border=2 alt="Etna" title="Etna">
+	<img class="blue" src="images/stills/etna4.png" height=240 width=320 border=2 alt="Etna" title="Etna">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+The film is described in a US Pathéscope catalogue of 1918:
+<br><br>
+<blockquote>
+The crater, 3600 meters in height; boiling lava running down the crater results in the destruction of cultivated fields and dwelling 
+places; the superstition entertained by the natives regarding their patron saint, Anthony Padua.
+</blockquote> 
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Éruption de l'Etna (Pathé, 1910), 28mm version</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/MUMFnSLahUo?mute=1feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+  </th>
+</table>
+</div>
+<br><br>
+As was typical for the KOK, the catalogue also recommends further reading on the subject, in this case James Dwight Dana's <i>Characteristics 
+of Volcanoes</i> (1813) and the relevant volume of the <i>Encylcopedia Britannica</i>.
+<br><br>
+<div align="center">
+<table>
+  <caption><i>Éruption de l'Etna (Pathé, 1910), 9.5mm version</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/D1Z0dcvHbes?mute=1feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+  </th>
+</table>
+</div>
+<br><br>
+The film was also re-edited for the 9.5mm Pathé-Baby home-viewer and was among the rare films produced for it in a hand-cooured 
+version. 
+<br><br>
+<blockquote>
+À nouveau, le volcan sicilien s'est reveillà et a vomi sa lave sur de nombreux villages qu'il a complètement detruits. C'est une 
+puissante impression de cette formidable force de la nature.
+<br><br>
+<div class="tab">
+      <input id="tab-2" type="checkbox" name="tab">
+      <label for="tab-2">English translation</label>
+      <div class="tab-content">
+<br><br>
+Once more, the Sicilian volcano has awoken and vomited its lava over numerous villages which it has completely destroyed. It gives 
+a powerful impression of this formidable force of nature
+</div></div>
+</blockquote>
+<br><br>
+<div align="center">
+<table>
+     <caption><i>Éruption de l'Etna</i> (Pathé, 1910), 9.5mm version</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/etna5.png" height=240 width=320 border=2 alt="Etna" title="Etna">
+	<img class="blue" src="images/stills/etna6.png" height=240 width=320 border=2 alt="Etna" title="Etna">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+The surviving Pathé-Baby film is, however, in black and white but ends, like the KOK version, with footage of the victims and 
+their attempts to deal with the disaster, including the scenes where they invoke the aid of Santo António de Pádua, patron saint 
+for the recovery of lost items.
+<br><br>
+<div align="center">
+<table>
+     <caption>Éruption de l'Etna (Pathé, 1910), 9.5mm version</caption>
+  	<tr>
+    <th><img class="blue" src="images/stills/etnavictims.png" height=263 width=427 border=2 alt="victims" title="victims">
+    </th>
+    </tr>
+</table>
+</div>
+<br><br>
+</article>
+<footer>Copyright &copy; kekseksa.com</footer>
+</div>
+</body>
+</html>

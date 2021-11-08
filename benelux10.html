@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<! -- file created by Lulu 23/02/2013 email: kekseksa@gmail.com -->
+<meta name="keywords" content="">
+<base target="_self">
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Kekseksa? C'est du cinéma</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: #FF9900;
+    background-color: #0000CC;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    background-color: white;
+    max-width: 148px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  nav ul     { display: none;}
+}
+
+article {
+    margin-left: 150px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+li.nb a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+}
+
+.dropleft .dropright {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropleft:hover .dropdown-content {
+    display: block;
+}
+.dropright:hover .dropdown-content2 {
+    display: block;
+}
+div.dropleft {
+    float: left;
+    width: 220px;
+    margin: 15px 20px 0 0;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+div.dropright {
+    float: right;
+    width: 210px;
+    margin:  0 0 15px 20px;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+.bigger:hover {
+width:360;
+height:480;
+}
+input[type='checkbox'] {
+  display: none;
+}
+.lbl-toggle {
+  display: block;
+}
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid red;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.lbl-toggle2::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentcolor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Cinema in the year
+<br><br>1910</h1>
+</header>
+
+<ul class="nb">
+  <li class="nb">1910</li>
+  <li class="nb"><a class="bottom" href="notready.html"><img src="images/backhand.gif" width=40 height=20 border=0 alt="previous">Austrian Cinema</a></li>
+  <li class="nb"><a class="bottom" href="notready.html"><img src="images/backhand.gif" width=20 height=10 border=0 alt="previous">1909</a></li>
+  <li class="nb">Benelux</li>
+  <li class="nb"><a class="bottom" href="notready.html">1911&nbsp;<img src="images/forehand.gif" width=20 height=10 border=0 alt="next"></a></li>
+  <li class="nb" style="float:right">1910</li>
+  <li class="nb"style="float:right"><a class="bottom" href="notready.html">Spanish Cinema<img src="images/forehand.gif" width=40 height=20 border=0 alt="next"></a></li>
+  </ul> 
+  
+<nav>
+
+<a href="index.html">
+<table>
+  <caption>&nbsp;accueil</caption>
+  <tr>
+    <th><img class="purple" src="images/posters/bebetac.jpg"  height=36 width=48 border=2 alt="Return to home page" title="Return to home page"></th>
+</tr>
+</table>
+</a>
+<a href="qdn.html"><a href="qdn.html">
+<table>
+  <caption>&nbsp;kwad9</caption>
+  <tr>
+    <th><img class="purple" src="images/stills/conqairprom.png"  height=36 width=48 border=2 alt="Quoi de neuf ?" title="Quoi de neuf ?"></th>
+</tr>
+</table>
+</a>
+	<br>
+  <div class="wrap-collapsible">
+  <input id="collapsible" class="toggle" type="checkbox">
+  <label for="collapsible" class="lbl-toggle"><a href="intro10.html">introduction</a></label> 
+    <div class="collapsible-content">
+    <div class="content-inner">
+       		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="europe10.html">Europe</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="french10.html">France</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ital20.html">Italy</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="danish20.html">Denmark</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="swed10.html">Sweden</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="norw10.html">Norway</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="brit10.html">Britain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="german10.html">Germany</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ost10.html">Austria</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="">Benelux</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="span10.html">Spain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="port10.html">Portugal</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="greek10.html">Greece</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="us10.html">US</a>
+		<br>
+   		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="world10.html">The World</a>
+		</div></div></div>
+ 		<div class="wrap-collapsible">
+  		<input id="collapsible2" class="toggle" type="checkbox">
+ 		<label for="collapsible2" class="lbl-toggle2"><a href="int10top.html">newsreel</a>
+        	</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible3" class="toggle" type="checkbox">
+ 	 	<label for="collapsible3" class="lbl-toggle"><a href="int10doc.html">documentary</a></label>
+		<div class="collapsible-content">
+    		<div class="content-inner">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10doc.html#tour">touristic</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10doc#indus">industrial</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10trav#colon">colonial</a>
+		</div></div></div>
+    	     	<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a href="int10psc">popular science</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int07doc.html#colon">natural history</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible5" class="toggle" type="checkbox">
+ 		<label for="collapsible5" class="lbl-toggle2"><a href="int10disas.html">disaster film</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a.not-active href="int10sport">sport</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10wsm.html">winter sport</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10wsm.html#mf">mountains</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10hist.html">historical film</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10comic.html">comic series</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible7" class="toggle2" type="checkbox">
+ 		<label for="collapsible7" class="lbl-toggle2"><a.not-active href="int10west.html">western</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible8" class="toggle2" type="checkbox">
+ 		<label for="collapsible8" class="lbl-toggle2"><a.not-active href="#int10kri.html">crime film</a>
+		</div>
+
+<p>
+<h3><a href="notready.html">Index of films</a></h3>
+</div>
+</nav>
+
+<article>
+
+<a name="luxem"></a><h3>Luxembourgeois Cinema</h3>
+Hotelier Nicolas Medinger-Kohner and his son Felix Medinger were now firmly in charge of The Royal Bio Comp. (<a.not-active href="benelux07.html@luxem">founded 
+1907 by showman H. Hirdt</a> and, to replace the 350-seater Cinéma moderne of 1907, Felix Medinger built the new 600-seater Kinematograph-Theatre, 
+still at the family hotel, the Hôtel de Luxembourg. 
+<br><br>
+<div align="center">
+<table>
+  <caption>The Royal Bio Comp. Kinematograph-Theater, Hôtel de Luxembourg</caption>
+  <tr>
+  <th><img class="blue" src="images/places/royalbio1913.jpg" height=210 width=350 border=2 alt="Royal Bio" title="Royal Bio"></th>
+</tr>
+</table> 
+</div>
+<br><br>
+<div class="dropright"><img class="purple" style="float: right; margin: 5px" src="images/posters/guide1910.jpg" height=270 width=200 border=2 alt="Le Guide" title="Le Guide">
+<div class="dropdown-content2"><img class="purple" style="float: right; margin: 5px" src="images/posters/guide1910.jpg" height=400 width=320 border=2 alt="Le Guide" title="Le Guide"></div></div>
+A Pathé film-unit of about fifteen people, under artistic director Charles Decroix, was in the Grand Duchy to shoot a series of 
+photoplays in 1910, <a href="int10doc.html#luxem">the story of which is related elsewhere</a> and the films were shown at the 
+Royal Bio Comp. in September-October of that year. The luxembourgeois were a shade disappointed at the fact that these dramas, though 
+certainly filmed at the most picturesque spots in the town and in the Duchy, were not anywhere stated explicitly to be in Luxemburg, 
+so that they might prove to be the important lure for tourists that the director Decroix, who was from Alsace and could speak perfect 
+German, had disingenuously promised them. It is possible that two documentaries filmed in Luxemburg were intended, at least in part, 
+to compensate for this. One, <i>Le Grand-Duché de Luxembourg</i> is known from a 9.5mm Pathé-Baby produced for the Pathé home-view 
+system in the early twenties and was also published in <i>Pathé Revue</i> in December 1923 («&nbsp;Ce film nous montre quelques aspects 
+de cette capitale qui ne manque pas de pittoresque&nbsp;» This film shows us some aspects of the capital - ie the town of Luxembourg 
+- which are not lacking in the picturesque). The second film, <i>Sur les remparts</i>, survives and has been restored but I have 
+not seen a copy. It is possible that they are in practice the same film (although the title suggests not) or that the two films 
+were made there at around the same time (this film supposedly dates from the pre-war period). They may, however, have been made 
+later, even during the war, when a Cinéma Pathé opened in Luxemburg (1915) and when the Grand Duchy had assumed a certain importance 
+as a largely German-speaking enclave where cautious anti-German propaganda could be diffused.
+<br><br>
+<div align="center">
+<table>
+  <caption>Charles Thies' Cinéma Pathé, Diekirch, Luxemburg, 1915.</caption>
+  <tr>
+  <th><img class="blue" src="images/posters/luxpathe1915b.jpg" height=263 width=427 border=2 alt="Cinéma Pathé" title="Cinéma Pathé"></th>
+    </tr>
+</table> 
+</div>
+<br><br>
+In the meantime, Felix Medinger would himself take matters in hand, <a.not-active href="benelux12.html@luxem">making three films 
+for the Royal Bio Comp. in 1912</a>, of which one, <i>Das malerische Luxemburg</i>, also known as <i>Luxembourg pittoresque</i> 
+and <i>Picturesque Luxemburg</i>, was very specifically designed to make the world aware of the Duchy's tourist potential.
+<br><br>
+<div align="center">
+<table>
+  <caption>Felix Medinger, <i>Das malerische Luxemburg</i> (The Royal Bio Comp., 1910)</caption>
+  <tr>
+  <th><img class="blue" src="images/stills/medinger1912a.jpg" height=263 width=427 border=2 alt="Luxemburg" title="Luxemburg"></th>
+    </tr>
+</table> 
+</div>
+<br><br>
+</article>
+<footer>Copyright &copy; kekseksa.com</footer>
+</div>
+</body>
+</html>

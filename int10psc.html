@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+<head>
+<! -- file created by Lulu 23/02/2013 email: kekseksa@gmail.com -->
+<meta name="keywords" content="">
+<base target="_self">
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Kekseksa? C'est du cinéma</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: #FF9900;
+    background-color: #0000CC;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    background-color: white;
+    max-width: 148px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  nav ul     { display: none;}
+}
+
+article {
+    margin-left: 150px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+li.nb a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+}
+
+.dropleft .dropright {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropleft:hover .dropdown-content {
+    display: block;
+}
+.dropright:hover .dropdown-content2 {
+    display: block;
+}
+div.dropleft {
+    float: left;
+    width: 200px;
+    margin: 15px 20px 0 0;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+div.dropright {
+    float: right;
+    width: 200px;
+    margin:  0 0 15px 20px;
+    padding: 15px;
+    background-color: gray;
+    border: 1px solid red;
+    color: white;
+    text-align: center;
+}
+.bigger:hover {
+width:360;
+height:480;
+}
+input[type='checkbox'] {
+  display: none;
+}
+.lbl-toggle {
+  display: block;
+}
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid red;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.lbl-toggle2::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentcolor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.tab {
+  position: relative;
+  margin: 2px;
+  max-width: 600px;
+}
+.tab input {
+  display: none;
+}
+.tab label {
+  background: #2d5faf;
+  color: #fff;
+  font-weight: bold;	
+  font-size: 8pt;
+  padding: 10px;
+  cursor: pointer;
+}
+.tab input[type=checkbox]:checked + label::after,
+.tab input[type=radio]:checked + label::after {
+  transform: rotate(90deg);
+}
+.tab-content {
+  overflow: hidden;
+  display: none;
+}
+.tab input:checked ~ .tab-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Cinema in the year
+<br><br>1910</h1>
+</header>
+
+ <ul class="nb">
+  <li class="nb">1910</li>
+  <li class="nb"><a class="bottom" href="not.ready.html"><img src="images/backhand.gif" width=40 height=20 border=0 alt="previous">&nbsp;Colonial Films</a></li>
+  <li class="nb"><a class="bottom" href="not.ready.html"><img src="images/backhand.gif" width=20 height=10 border=0 alt="previous">1909</a>
+  <li class="nb">Popular Science</li>
+  <li class="nb"><a class="bottom" href="not.ready.html">1911&nbsp;<img src="images/forehand.gif" width=20 height=10 border=0 alt="next"></a></li>
+  <li class="nb" style="float:right">1910</li>
+  <li class="nb"style="float:right"><a class="bottom" href="int10disas.html">Disaster Films&nbsp;<img src="images/forehand.gif" width=40 height=20 border=0 alt="next"></a></li>
+  </ul> 
+
+<nav>
+  
+<a href="index.html">
+<table>
+  <caption>&nbsp;accueil</caption>
+  <tr>
+    <th><img class="purple" src="images/posters/bebetac.jpg"  height=36 width=48 border=2 alt="Return to home page" title="Return to home page"></th>
+</tr>
+</table>
+</a>
+<a href="qdn.html"><a href="qdn.html">
+<table>
+  <caption>&nbsp;kwad9</caption>
+  <tr>
+    <th><img class="purple" src="images/stills/conqairprom.png"  height=36 width=48 border=2 alt="Quoi de neuf ?" title="Quoi de neuf ?"></th>
+</tr>
+</table>
+</a>
+	<br>
+  <div class="wrap-collapsible">
+  <input id="collapsible" class="toggle" type="checkbox">
+  <label for="collapsible" class="lbl-toggle"><a href="intro10.html">introduction</a></label> 
+    <div class="collapsible-content">
+    <div class="content-inner">
+       		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="europe10.html">Europe</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="french10.html">France</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ital10.html">Italy</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="danish10.html">Denmark</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="swed10.html">Sweden</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="norw10.html">Norway</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="brit10.html">Britain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="german10.html">Germany</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="ost10.html">Austria</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a href="benelux10.html">Benelux</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="span10.html">Spain</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="port10.html">Portugal</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xbb;<a.not-active href="greek10.html">Greece</a>
+    		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="us10.html">US</a>
+		<br>
+   		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="world10.html">The World</a>
+		</div></div></div>
+ 		<div class="wrap-collapsible">
+  		<input id="collapsible2" class="toggle" type="checkbox">
+ 		<label for="collapsible2" class="lbl-toggle2"><a href="int10top.html">newsreel</a>
+        	</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible3" class="toggle" type="checkbox">
+ 	 	<label for="collapsible3" class="lbl-toggle"><a href="int10doc.html">documentary</a></label>
+		<div class="collapsible-content">
+    		<div class="content-inner">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10doc.html#tour">touristic</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10doc.html#indus">industrial</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10trav.html#colon">colonial</a>
+		</div></div></div>
+    	     	<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a.not-active href="">popular science</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10doc.html#colon">natural history</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible5" class="toggle" type="checkbox">
+ 		<label for="collapsible5" class="lbl-toggle2"><a href="int10disas.html">disaster films</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible4" class="toggle" type="checkbox">
+ 		<label for="collapsible4" class="lbl-toggle2"><a.not-active href="int10sport.html">sport</a>
+		<div class="collapsible-content">
+    		<div class="content-inner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a.not-active href="int10wsm.html">winter sport</a>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;<a href="int10wsm.html#mf">mountains</a>
+		</div></div></div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10hist.html">historical film</a>
+		</div>
+		<div class="wrap-collapsible">
+  		<input id="collapsible6" class="toggle" type="checkbox">
+ 		<label for="collapsible6" class="lbl-toggle2"><a.not-active href="int10cs.html">comic series</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible7" class="toggle2" type="checkbox">
+ 		<label for="collapsible7" class="lbl-toggle2"><a.not-active href="int10west.html">western</a>
+		</div>
+     		<div class="wrap-collapsible">
+  		<input id="collapsible8" class="toggle2" type="checkbox">
+ 		<label for="collapsible8" class="lbl-toggle2"><a.not-active href="#int10kri.html">crime film</a>
+		</div>
+
+<p>
+<h3><a href="notready.html">Index of films</a></h3>
+</div>
+</nav>
+
+<article>
+<a name="psci"></a><h3>Popular Science</h3>
+<p>
+<br><br>
+<div align="center">
+<table>
+    <tr>
+    <th><img class="blue" src="images/stills/flycartoon.jpg" height=263 width=427 border=2 alt="Le Troubadour" title="Le Troubadour">
+    <caption><i>The Acrobatic Fly</i> (1910 US cartoon)</caption></th>
+    </tr>
+</table>
+</div>
+<br><br>
+1910 was the year in which the Charles Urban and Percy Smith films <i>The Acrobatic Fly</i>, <i>Flies Feeding</i> and <i>The Fly 
+Pest</i> were first shown in the US. <i>The Acrobatic Fly</i> was even the subject of a cartoon. Urban also released <i>Microscopical 
+Curiosities</i> in January, a compilation of the work of F. Martin Duncan 1903-1908, <a.not-active href=int03psc.html">including <i>The Cheese 
+Mites</i> (1903)</a>.
+<br><br>
+<div align="center">
+<table>
+    <tr>
+    <th><img class="blue" src="images/events/comandonlondon1910b.jpg" height=500 width=427 border=2 alt="Comandon" title="Comandon	">
+    <caption>screening of Jean Comandon's films at the King's College Hospital Medical Society from <i>Illustrated London News</i> (5 November 1910)</caption></th>
+    </tr>
+</table>
+</div>
+<br><br>
+Pathé's microcinematographic expert Dr. Jean Comandon was also touring his films in France and Britain. A special Pathé brochure was issued 
+in July 1910 for the new Comandon series «&nbsp;Cinématographie ultramicroscopique&nbsp;».
+<br><br>
+<blockquote>
+Cinématographie ultramicroscopique - vues prises sous la direction scientifique de M. le Docteur J. Comandon avec cet avant-propos&nbsp;: 
+Le vif intérêt suscité dans le monde scientifique par la Cinématographie des Infiniment Petits est suffisamment notoire pour que nous 
+nous dispensions d’en faire un plus ample éloge. Les vues de cette catégorie, dont nous disposons à l’heure présente, ainsi que celles 
+que nous éditerons ultérieurement, intéresseront, à notre avis, non seulement les Facultés et les Écoles Supérieures, mais trouveront 
+leur place à tous les degrés de l’Enseignement. Il s’en dégage, en effet, une leçon de choses ayant son utilité même pour les profanes 
+et dont les conséquences d’ordre social peuvent être envisagées dès à présent.
+<br><br>
+<div class="tab">
+      <input id="tab-1" type="checkbox" name="tab">
+      <label for="tab-1">English translation</label>
+      <div class="tab-content">
+<br><br>
+Ultramiscosopic cinematography - views taken under the direction of Dr. Jean Comandon with this preface: The lively interest aroused 
+in the scientific world by the cinematography of the Infinitely Small is sufficiently notorious for us to dispense with making 
+a more fulsome eulogy. The views in this category at present available, and which we shall subsequently make available, will, 
+in our opinion, interest not only the Faculties and the Schools of Higher Education, but will find their place at every level of 
+the educational system. They provide, in effect, a lesson in things useful even to the layman and of which the consequences of a social 
+order are now being envisaged.
+<div></div>
+</blockquote>
+<br><br>
+<div class="dropleft"><img class="purple" style="float: right; margin: 5px" src="images/stills/diatomees1910.jpg" height=250 width=180 border=2 alt="diatomées" title="diatomées">
+Dr. Jean Comandon, <i>Diatomées</i> (Pathé, 1910)<div class="dropdown-content"><img class="purple" style="float: right; margin: 5px" src="images/stills/diatomees1910.jpg" height=485 width=300 border=2 alt="diatomées" title="diatomées"></div></div>
+The series included <a.not-active href="int09psc.html#comandon">old favourites</a> such as <i>Spirocheot pallida (de la syphilis)</i>, <i>Spirocheota 
+gallinarum</i>, <i>Agglutination de spirocheota gallinarum</i>, <i>Spirochetes de Vincent</i>, <i>Mouvement ambiboide d'un leucocyte</i>, 
+<i>Sang humain</i> and <i>Fièvre recurrente</i>. Others include <i>Microbes contenus dans l'intestin d'un souris</i>, <i>Coeur 
+d'embryon de truite</i>, <i>Sang d'ovipare</i>, <i>Saprologénée</i> (a fungus causing a disease of aquarium fish known as «&nbsp;mousse&nbsp;»), 
+<i>Filaria</i> (microfibres in the blood), <i>Circulation du sang</i>, <i>Hemokenes</i> (also known as <i>Poussière de sang</i>), 
+<i>Action de l'eau sur le sang</i>,<i>Spirogyra</I> (green freshwater algae), <i>Mouvements de protoplasme dans les cellules de characées</i>, 
+<i>Mouvements de protoplasme dans les cellules d'Elodea canadensis</i> (algae and waterweed), <i>Mouvements de protoplasme dans les 
+poils staminaix de Tradescantia</i>. <i>Éclosion de kystes d'infusoires ciliés</i> (microscopic creatures found in stagnant water), 
+<i>Bacilles d'Eberth</i> (salmonella), <i>Anguillula aceti</i> (an eelworm to be found in vinegar), <i>Le Ver de la farine (Tenebrio 
+Molitor)</i> (mealworm) and <i>Amibes dysentriques</i> (a protozoan inducing gastro-enteritis). <i>Acariens</i> (mites and tocjs), 
+<i>Les Poux</i> (fleas), <i>Bryzoaires d'eau douce</i> (freshwater parasites) and <i>Diatomées</i> (microscopic brown algae). 
+Altogether a splendid evening's entertainment no doubt but not a bundle of laughs!
+<br><br>
+Many of these films, including <i>Filaria</i>, <i>Spirogyra</i>, <i>Saprologénée</i>, <i>Éclosion de kystes d'infusoires ciliés</i>, 
+<i>Bacilles d'Eberth</i>. <i>Anguillula aceti</i>, <i>Le Ver de la farine (Tenebrio Molitor)</i>, <i>Amibes dysnetriques</i>, <i>Acariens</i>, 
+<i>Les Poux</i>, <i>Bryzoaires d'eau douce</i>, <i>Diatomées</i> and the various films illustrating «&nbsp;mouvements de protoplasme&nbsp;» 
+all survive in the Gaumont/CNC archives. A series of particularly interesting items that also appear in this collection, in addition to 
+<i>Trypanosoma Brucei</i> and <i>Trypanosoma Lewisi</i>, which had already been part of Comandon's <a.not-active href="int09psc.html#comandon">1909 
+repertoire</a>, and which also survive in the archives, were <i>Trypanosoma de la genouille</i>, <i>Mécanisme de la phagocytose 
+des trypanosomes, phénomène d'accolement</i> and, above all, <i>Trypanosoma gambiense</i>, analysis of the agent of the illness 
+known as "sleeping sickness", carried by the tsé-tsé fly, an illness at that time rife in Africa. There had been a series of outbreaks 
+1898-1900, culminating in the worst epidemic of all in Uganda in 1901 that is said to have killed a quarter of a million people (half 
+the population of the region).
+<br><br>
+<div align="center">
+<table>
+  <caption>‘Sleeping sickness patients, 1902: all died’. plate of patients at Mengo hospital from Sir Albert Cook, <i>Uganda Memories 1897-1940</i> (1945)</caption>
+  <tr>
+    <th><img class="blue" src="images/photos/alldied1902.jpeg" width="320" height="240" border=2 alt="nagana" title="nagana">
+  </tr>
+</table> 
+</div>
+<br><br>
+<div class="dropright"><img class="purple" style="float: right; margin: 5px" src="images/people/bruce.jpg" height=250 width=180 border=2 alt="David Bruce" title="David Bruce">
+Sir David Bruce<div class="dropdown-content2"><img class="purple" style="float: right; margin: 5px" src="images/people/bruce.jpg" height=485 width=300 border=2 alt="David Bruce" title="David Bruce"></div></div>
+Comandon had already shown interest in 1909 in diseases that appeared to specifically affect "the negro race".  his <i>Fièvre 
+recurrente</i>, rather than following any vague general use of the term, had concentrated specfically on infections carried by tics, 
+fleas and other animal pests (brucelloisis or borélliosis), common certainly in Africa in a particularly virulent and life-threatening 
+form but not in any way restricted solely to that Continent or the peoples inhabiting it as Comandon claimed. His interest in trypanosomes, 
+another form of disease-carrying parasite which was specific to Africa, was a natural corollary of that work since certain recurrent 
+fevers had been discovered in the first years of the century to be due to one of the most unpleasant carriers of parasites (trypanosomes), 
+<div class="dropleft"><img class="purple" style="float: right; margin: 5px" src="images/people/dutton.jpg" height=250 width=180 border=2 alt="Joseph Everett Dutton" title="Joseph Everett Dutton">
+Joseph Everett Dutton<div class="dropdown-content2"><img class="purple" style="float: right; margin: 5px" src="images/people/dutton.jpg" height=485 width=300 border=2 alt="Joseph Everett Dutton" title="Joseph Everett Dutton"></div></div>
+the tsé-tsé fly. These trypanosomes had first been identified in the previous century as attacking trout and frogs, hence the 
+importance of Comandon's  <i>Coeur d'embryon de truite</i> and another new film in the series <i>Trypanasomes de la grenouille</i>, 
+films which also survive in the Gaumont/CNC archives. 
+<br><br>
+Scottish pathologist David Bruce (1855-1932), who had as early as 1895, identified trypansomes carried by the tsé-tsé as causing 
+a feverish, lethargic condition («&nbsp;nagana&nbsp;») in cattle (Trypanosoma Brucei), now (1903) established, based on the work 
+in the field of the surgeon Robert Michael Forde (1861-1948) and parasitologist Joseph Evertt Dutton (1874-1905), that the same 
+vector and the same (or similar) parasites were responsible for the so-called "sleeping sickness" (also known, amongst many other 
+names, as «&nbsp;nagana&nbsp;» or, today, as African trypanosomiasis) suffered by humans (Trypanosoma gambiensi). The trypanosomes 
+injected by the fly pass from the lymph in the blood to the liver and thence to the brain, which, if not treated, nearly always 
+results in death in about three or four months or in a year or two, depending on the strain. Bruce was knighted in 1908 but both 
+Forde and Dutton were infected by the disease, the latter dying from its effects. His funeral in Kasongo in 1905 was attended by 
+over a thousand people, mostly locals whom he had treated during his time there.
+<br><br>
+<div align="center">
+<table>
+  <caption>1977 photograph of a sufferer from "sleeping sickness"</caption>
+  <tr>
+    <th><img class="blue" src="images/photos/nagana1977.jpg" width="320" height="240" border=2 alt="nagana" title="nagana"></th>
+  </tr>
+</table> 
+</div>
+<br><br>
+From a cinematic point of view, the "sleeping sickness" had the great virtue of being both extremely dramatic and deeply mysterious, 
+the very stuff of all medical "scares" and all pleassantly terrifying tales of horror. For Europeans, the fact that it was only found 
+in Africa might be the cause not only of horror and concern but also of a certain comfort; they could sleep safely in their beds at 
+night. For them too the disease, before it was formally recognized as an illness and its causes understood and explained, the lethargic 
+condition induced had sometimes seemed to be little more than a dramatic exaggeration of the characteristics (idlenes and lethargy) 
+that European habitually attributed to Africans. There is a description of the illness from as early as 17345 by a British naval surgeon 
+and slaver, John Atkins (1685-1757), who believed the illness to derive from "a natural weakness" of the African brain:
+<br><br>
+<blockquote>
+The Sleepy Distemper (common among the Negroes) gives no other previous Notice, than a want of Appetite 2 or 3 days before; their 
+sleeps are sound, and Sense and Feeling very little; for pulling, drubbing or whipping will scarce stir up Sense and Power enough 
+to move; and the Moment you cease beating the smart is forgot, and down they fall again into a state of Insensibility, drivling 
+constantly from the Mouth as in deep salivation; breathe slowly, but not unequally nor snort. Young people are more subject to it 
+than the old; and the Judgement generally pronounced is Death, the Prognostik seldom failing. If now and then one of them recovers, 
+he certainly loses the little Reason he had, and turns Ideot...
+<br><br>
+John Atkins, Appendix to <i>The Navy Surgeon</i> (1734)
+</blockquote>
+<br><br>
+<div class="dropright"><img class="purple" style="float: right; margin: 5px" src="images/people/winterbottom.jpg" height=170 width=200 border=2 alt="Thomas Winterbottom" title="Thomas Winterbottom">
+Robinson Elliott, Thomas Masterman Winterbottom<div class="dropdown-content2"><img class="purple" style="float: right; margin: 5px" src="images/people/winterbottom.jpg" height=300 width=400 border=2 alt="Thomas Winterbottom" title="Thomas Winterbottom"></div></div>
+In 1803 another surgeon (but abolitionist) Thomas Masterman Winterbottom (1766-1859) produced a somewhat more measured judgement 
+although he also noted that the slavers, for whom he had nothing but contempt, regarded symptoms of the disease as indicating a 
+natural proneness to lethargy. For Winterbottom, who carefully observed the symptoms, it was clearly a disesase.
+<br><br>
+<blockquote>
+The Africans are very subject to a species of lethargy which they are much afraid of, as it proves fatal in every instance. The 
+disposition to sleep is so strong, as scarcely to leave a sufficient respite for the taking of food; even the application of a whip, 
+a remedy which has been frequently used, is hardly sufficient to keep the poor wretch awake.… the disease, under every mode of treatment, 
+usually proves fatal within three or four months.
+<br><br>
+Thomas Winterbottom, <i>An account of the native Africans in the neighbourhood of Sierra Leone</i> (2 vols., 1803)
+</blockquote>
+<br><br>
+<div align="center">
+<table>
+  <caption>photographs of fly-catching strategies by the Uganda and Nyasaland Sleeping Sickness Commission 1908-1913 (Wellcome Trust)</caption>
+  <tr>
+    <th><img class="blue" src="images/photos/nagana2.jpg" width="320" height="240" border=2 alt="nagana" title="nagana">
+  <img class="blue" src="images/photos/nagana3.jpg" width="320" height="240" border=2 alt="nagana" title="nagana"></th>
+  </tr>
+</table> 
+</div>
+<br><br>
+A modern description (from <i>Encyclopedia Britannica</i> is less brutal than the slaver's account but hardly any more comforting:
+<br><br>
+<blockquote>
+After an incubation period in humans lasting one to two weeks, the trypanosomes are found in significant numbers in the circulating 
+blood. Next the lymph nodes and spleen are invaded, becoming swollen, soft, and tender. The marked enlargement of the lymph nodes 
+at the back of the neck (known as Winterbottom’s sign) is a common sign of the disease. Irregular fever and delayed sensation to pain 
+are also characteristic symptoms at this stage. In the more severe East African (or Rhodesian) form of sleeping sickness, T. brucei 
+rhodesiense infection, toxemia becomes so profound that the patient dies within months. In the West African (or Gambian) type, T. 
+brucei gambiense infection, there is a delay of one or more years before the trypanosomes proceed to invade the brain and spinal 
+cord. The resulting neurological symptoms include severe headache, mental dullness and apathy, a weary shuffling gait, tremors, 
+spastic or flaccid paralysis, chorea, and a profound sleepiness that develops during a meal or when the patient is standing or 
+walking. These symptoms are followed by increasing emaciation, coma, and death. The West African form of sleeping sickness usually 
+causes death in two or three years; in some cases, the patient develops a tolerance to the infection and may continue to live for 
+many years as a carrier of the parasites.
+</blockquote>
+<br><br>
+This is a Wellcome Trust film of 1988:
+<br><br>
+<div align="center">
+<table>
+  <caption><i>African Sleeping Sickness</i> (Wellcome Trust, 1988)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/GizVxlT8S3w?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+</div>
+<br><br>
+Comandon's earliest films (<i>Trypanosome Brucei</i> and <i>Trypanosome Lewisi</i>) had observed the effects of the microebs on 
+mice and rats while <i>Trypanosome de la grenouille</i> looked at frogs and <i>Mécanisme de la phagocytose des trypanosomes, phénomène 
+d'accolement</i> was purely concerned with microscopy. <i>Trypanosoma gambiense</i> was, on the face of it, the first of the series 
+to be clearly concerned with human beings. Peter J. Bloom, who discusses the four-minute film at length in his <i>Conlonial Documentary: 
+Mythologies of Humanitarianism</i> (2008), describes the film as follows:
+<br><br>
+<blockquote>
+<div class="dropleft"><img class="purple" style="float: right; margin: 5px" src="images/stills/trypanosome.jpg" height=250 width=180 border=2 alt="trypanosome" title="trypanosome">
+Dr. Jean Comandon, <i>Trypanosoma gambiense</i> (Pathé, 1910)<div class="dropdown-content"><img class="purple" style="float: right; margin: 5px" src="images/stills/trypanosome.jpg" height=485 width=300 border=2 alt="diatomées" title="diatomées"></div></div>
+It begins with a medium long shot of an African "patient"...an African man, breathing heavily outisde of a hut...an intertitle 
+informs us that the man is afflicted with sleeping sickness....A still image of the <i>glossa palpalis</i> species of the tsetse 
+fly dangles on the end of a needle...The film then cuts to an entomological photo of the fly, affixed by a pin to a white backdrop 
+with its antennae, sensor, proboscis, and stinger labeled as part of an anatomical demonstration with the aid of a pointer...In 
+the final and longest segment of th film, the camera moves into the cellular universe of the microscopic sample. At first normal 
+circular blood cells with lymphocytes appear, but a further magnified view detects the telltale, wormlike strands of the microorganism 
+that causes Gambian sleeping sickness. The invading organism is identified, like the fly itself, as a series of component parts 
+with a nucleus, flagellum, and undulating membrane. On contact with the parasites, normal circular-shaped blood cells mutate into 
+octagon-shaped cells at the microscopic level, recombining in a quilted pattern.
+</blockquote>
+<br><br>
+<div align="center">
+<table>
+  <caption>Dr. Jean Comandon, <i>Trypanosoma gambiense</i> (Pathé, 1910</caption>
+     <tr>
+    <th><img class="blue" src="images/stills/trypangambpath1910.jpg" height=263 width=427 border=2 alt="nagana" title="nagana"</th>
+</tr>
+</table>
+</div>
+<br><br>
+The long-shot of the man with which the film starts was evidently added afterwards. The blood shown under the microscope is, 
+as in the other «&nbsp;trypanosome&nbsp;» films, not that of a human but is blood from a rat). This fact was empasised when 
+the film was re-edited in 9.5mm for the Pathé-Baby home-viewer in the 1920s as <i>Trypanosome et maladie de sommeil</i>, 
+which evidently also included material from other «&nbsp;trypanosome&nbsp;» films. The Pathé-Baby catalogue describes it 
+as follows:
+<br><br>
+<blockquote>
+Dans l'Afrique Centrale, des contrées entières ont été dépeuplées par la maladie du sommeil. Cette maladie est due à un trypanosome, 
+inoculé par une mouche tsé-tsé. Dans ce film, nous montrons à l'ultramicroscope ce trypanosome et d'autres microbes voisins, s'attaquant 
+aux animaux. 
+<br><br>
+<div class="tab">
+      <input id="tab-2" type="checkbox" name="tab">
+      <label for="tab-2">English translation</label>
+      <div class="tab-content">
+<br><br>
+In Central Africa, entire regions have been depopulated by sleeping sickness. Tis disease is caused by a trypanosome innoculated 
+ny a tsé-tsé fly.  In this film, we shall show this trypansome under the ultramicroscope along with other related microbes.
+<br><br>
+<div></div>
+</blockquote>
+<br><br>
+THe film had not been amongst those produced for Pathé's original 28mm home-projector, the Pathé KOK in 1912, although some of 
+Comandon's other microcinematographic films had, nor was it among the first films to be produced for the Baby (it is not in the 
+1923 catalogue). Its later inclusion came almost certainly at a time in the mid-1920s when Pathé was attemting to increase its 
+educational profile (the «&nbsp;Pathé-Baby educateur&nbsp;» and «&nbsp;Pathé-Baby scolaire&nbsp;» series) and was also working 
+closely with the Ministry of Agriculture to diffuse such educational films in rural areas. 
+<br><br>
+<div align="center">
+<table>
+  <caption>Dr. Jean Comandon, <i>Trypanosoma Brucei</i> (Pathé, 1909)</caption>
+     <tr>
+    <th><img class="blue" src="images/stills/tsetse.jpg" height=263 width=427 border=2 alt="nagana" title="nagana"</th>
+</tr>
+</table>
+</div>
+<br><br>
+<div class="dropleft"><img class="purple" style="float: right; margin: 5px" src="images/stills/trypanosome2.jpg" height=250 width=180 border=2 alt="trypanosome" title="trypanosome">
+[Natural history compilation] (Gaumont, 1920)<div class="dropdown-content"><img class="purple" style="float: right; margin: 5px" src="images/stills/trypanosome2.jpg" height=485 width=300 border=2 alt="diatomées" title="diatomées"></div></div>
+This re-edited version is almost certainly the one described by Bloom. He dates it plausibly to 1924 and descrives "an <i>art nouveau</i> 
+silhouette" as appearing before the film; such illustrated frontiscards were very typical of the Pathé-Baby films of this period. 
+The image of the "pinned fly" is in fact from the 1909 film <i>Trypanosoma Brucei</i>.
+<br><br>
+In the interim Gaumont had also produced a series of films on the circulation of blood. In a compilation produced in 1920, the films 
+are described by the CNC as follows:
+<br><br>
+<blockquote>
+Le sang. Les mouvements du coeur de la grenouille. Vues microcinématographiques nous initiant aux mystères de la vie des éléments 
+du sang. Les spirilles de la poule. <b>Les trypanosomes du sang de rat</b>. Circulation, vaisseaux capillaires, examen microscopique du 
+sang, globules rouges, leucocytes, parasites du sang. [<i>my emphasis</i>]
+<br><br>
+<div class="tab">
+      <input id="tab-3" type="checkbox" name="tab">
+      <label for="tab-3">English translation</label>
+      <div class="tab-content">
+<br><br>
+The blood. The movements of the heart of the frog. Microcinematographic views initiating us into the mysteries of the life of elements 
+in the blood. The spirals of the hen. <b>The trypanosomes in the blood of a rat</b>. Circulation, capillary vessels, microscopic 
+examination of the blood, rd globules, leucoctyes, parasites of the blood. [<i>my emphasis</i>]
+</div></div>
+</blockquote>
+<br><br>
+<div class="dropright"><img class="purple" style="float: right; margin: 5px" src="images/people/blanchard2.jpg" height=250 width=180 border=2 alt="Raphaël Blanchard" title="Raphaël Blanchard">
+Raphaël Blanchard<div class="dropdown-content2"><img class="purple" style="float: right; margin: 5px" src="images/people/blanchard2.jpg" height=485 width=300 border=2 alt="Raphaël Blanchard" title="Raphaël Blanchard"></div></div>
+These films seems to have played a role in what Kirk Arden Hoppe, in <i>Lord of the Fly: Sleeping Sickness Control in British 
+East Africa 1900-1960</i> (2003), describes as a “circus” of professional interest in sleeping sickness that followed the discovery 
+of its cause as well as in the development in France of an "anti-fly" campaign analogous to that already existing in the US that 
+Charles Urban sought to exploit in his publicity for F. Percy Smith's "fly films". According to Peter Bloom, the French doctor 
+and naturalist Raphaël Blanchard was a key figure in both respects.
+<br><br>
+Raphaël Anatole Émile Blanchard (1857-1919) had made something of a name for himself on both fronts. He was the founder of the 
+Société française d’histoire de la médecine (1902) and a member of the Société de pathologie exotique (1909). He had already been 
+the moving spirit behind a French sleeping sickness survey expedition to the French Congo in 1903. in 1910, he showed Comandon's 
+"trypanosome films" at the French Psychiatry Convention in Brussels in 1910 as evidence that the lethargic pathology was an illness 
+(and therefore treatable) and not, as had often been assumed, endemic to he nature of the colonised African.
+<br><br>
+In fact, following the identification of the trypanosomes responsible for the disease, all the colonial powers concerned (the British, 
+the Portuguese and the Belgians as well as the French, dispatched expeditions and commissions to fight the disease (Arden Hoppe's 
+"circus"). This had no doubt much to do with economic self-interest and the need for fit and active manpower (Bloom talks of the 
+all-imporant rubber trade). But, while it is easy, and fashionable, to mock the men in pith helmets, like the one pictured below 
+indulging in a very comfortable European form of lethargy, the fact is that a sounder knowledge of the cause of "sleeping sickness" 
+did contribute to a better undertstanding of the people who suffered from it and a more sympathetic attitude towards them. The  
+"circus" (especially the fly-catching, for prevention was more effective than cure) was also crucial in controlling the epidemic 
+and in saving many hundreds, perhaps thousands, of lives.
+<br><br>
+<div align="center">
+<table>
+  <caption>photographs of fly-catching strategies by the Uganda and Nyasaland Sleeping Sickness Commission 1908-1913 (Wellcome Trust)</caption>
+  <tr>
+    <th><img class="blue" src="images/photos/nagana1.jpg" width="320" height="240" border=2 alt="nagana" title="nagana">
+  <img class="blue" src="images/photos/nagana4.jpg" width="320" height="240" border=2 alt="magana" title="nagana"></th>
+  </tr>
+</table> 
+</div>
+<br><br>
+Blanchard had also written extensively on insects and insect-borne infection in a non-African context, <i>Les Moustiques&nbsp;: Histoire 
+naturelle et médicale</i> (1905) and <i>L’insecte et l’infection&nbsp;: Histoire naturelle et médicale des arthropodes pathogènes</i> 
+(1909) and would found in 1914 La Ligue sanitaire française contre la mouche et le rat (LSF). The first frame of this film showing 
+the sick African before his hut (preceded by the "<i>art nouveau</i> silhouette" and followed by the dramatic first intertitle 
+"Negro suffers from sleeping sickness") did not fundamentally change the rather drily academic nature of the material but was a move 
+by Comandon towards the more proactive role he would later play both in the "anti-fly" campaign in France <a.not-active	 href="int17psc.html#mouche">in 
+1917</a> and then in the anti-tuberculosis campaign <a.not-active href="int19psc.html#tb">in the immediate post-war period</a>. 
+<br><br>
+As for the tsé-tsé, loathesome vector of the disease, it was a suitable addition to the rogues' gallery of nature's monsters that 
+had begun with F. Martin Duncan's squids and tarantulas back <a.not-active href="int03psc.html>in 1903</a> and F. Percy Smith's acrobatic 
+house-fly <a.not-active href="int08psc.html>of 1908</a>.
+<br><br>
+<div align="center">
+<table>
+  <caption>photograph (International Atomic Energy Agency)</caption>
+  <tr>
+    <th><img class="blue" src="images/photos/tsetse.jpg" width="320" height="240" border=2 alt="tsé-tsé" title="tsé-tsé"></th>
+  </tr>
+</table> 
+</div>
+<br><br>
+Another film in the series, <i>Faites bouillir votre eau</i>, first shown in December that year, is an even more obvious examples 
+of the shift towards envisagin "the consequences of a social order" of the utltramicroscopic studies as promised in the Pathé brochure. 
+In addition to the more proactive approach, it stands out as distinctly more accessible to the average person than the other films. 
+It is also, at over twelve minutes, nearly three times as long. Here there is a clear attempt, as in the case of F. Percy Smith's 
+<i>The Acrobatic Fly</i> (1908) and <i>The Fly Pest</i> (1909), to move away from the strictly scientific domain into the more 
+popular "health-scare" market, an area where Comandon would later have a particularly important role to play. The film had also 
+appeared on the earlier home-view system, the 28mm Pathé KOK and appears in a 1918 US Pathéscope catalogue under the title "Why 
+Water Should be Boiled":
+<br><br>
+<blockquote>
+A most interesting scientific subject, showing the microbes in a drop of stagnant water in motion, the rapid development in a 
+few days' time including bacilli and infusoria; specimens of typhoid germs and infusoria magnified thousands of times. The boiling 
+of the water to kill such germs and many other interesting facts regarding water purification.
+</blockquote>
+<br><br>
+The original is a particularly long film for the time. What survives is just a three-minute Pathé-Baby version retitled <i>Une 
+goutte d’eau vue au microscope</i>. The original film apparently had as its concluding intertitle «&nbsp;Faites bouillr votre 
+eau ou buvez de l'eau minérale&nbsp;» and even showed a bottle of Badoit mineral water against a black background.  The second 
+part of this admonition - which rather smacks of advertising - is lacking in the surviving Pathé-Baby version.
+<div align="center">
+<br><br>
+<table>
+  <caption>Dr. Jean Comandon, <i>Faites Bouillir votre eau</i> (Pathé, 1910)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/nM3Y5f0_Keg?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+</div>
+<br><br>
+In this film, Comandon as following very much in the footsteps of the Charles Urban film-makers. F. Martin Duncan had produced 
+his famous <i.The Cheese Mites</i> <a.not-active href="int03psc.html">as early as 1903</a> but has also produced other films examining the 
+content of a drop of water while F. Percy Smith's <a.not-active href="int09psc.html"><i>The Fly Pest</i> (1909)</a> had very firmly ventured 
+into the "health-scare" domain even if this was to some extent a device on the part of producer Charles Urban to ensure that the 
+film would appear in the US.
+<br><br>
+A distinctly atypical "scientific" film that is not certainly the work of Comandon himself although it would seem to be associated 
+with his film <i>Coeur d'embryon de truite</i> which appeared separately, and it reflects a demand that would become increasingly 
+important for "educative" films to also fulfil a useful social and economic purpose in boosting enterprise and industry - in 
+effect, very often, to be a species of advertising film. <i>Pisciscultre pratique – la Truite</i> first appeared in August-September 
+1910 and was significantly the first film to be included in a new catalogue section reserved for "scientific" films - «&nbsp;Scénes 
+de vulgarisation scientifiques&nbsp;». The original five-minute film would also seem to have been remade or reworked as the slightly 
+longer <i>Truite, hôte de nos torrents</i> in August 1913. There is a substantial catalogue description for the 1913 version.
+<br><br>
+<blockquote>
+L’élevage de la truite, ce poisson recherché par les gourmets, fait dans certaines régions de nos pays l’objet de toute une 
+industrie. C’est au milieu d’un prospère établissement d’élevage de ces salmonidés que nous nous transportons aujourd’hui. Là, 
+bien à l’abri de tous les parasites, de tous les ennemis qui leur font une guerre acharnée, dans des bassins et viviers à eau 
+courante, nous assistons au développement de ces excellents poissons. Nous assistons donc avec le plus grand intérêt à tous 
+les travaux minutieux que nécessite l’élevage délicat de ce poisson. Entretenus dans des viviers à eau courante, nous voyons 
+les poissons reproducteurs être repêchés au moment du frai&nbsp;; les œufs de femelles extraits de leur corps par simple pression 
+sont fécondés sous nos yeux par la laitance du mâle extraite par le même procédé. Puis, plein d’admiration et d’étonnement, 
+nous assistons à l’éclosion même de quelques-uns de ces œufs&nbsp;; les jeunes alevins s’agitent dans leur frêle coque&nbsp;; 
+subitement, elle se déchire et les voilà lancés dans la vie. Puis nous voyons quelques spécimens adultes à 6 mois, un an et 18 
+mois, âge où nous commençons à les apprécier. 
+<br><br>
+<div class="tab">
+      <input id="tab-4" type="checkbox" name="tab">
+      <label for="tab-4">English translation</label>
+      <div class="tab-content">
+<br><br>
+The breeding of trout, a fish much sought after by gourmets,is, in certain regions of France, the object of an entire industry and it is 
+to the heart of such a prosperous breeding establishment devoted to these fish of the salmon family that shall take yu today. There, 
+well protected from all parasites, and from all enemies that wage a pitiless war, in the reservoirs of running water, we witness 
+the development of these excellent fish. We are present with the greatest interest at all the meticulous work necessary in the 
+delicate breeding of this fish. Maintained in reservoirs of runing water, the reproducing fish can be seen being removed at the 
+precise moment of fertilisation; the eggs of the females, extracted from their body by simple pressure, are fertilised before our 
+eyes by the male sperm extracted in the same fashion. Then, to our astonishment and admiration, we eevn see the hatchig of some of 
+these eggs. The young alevins move around in their shell, then suddenly break through and begin their lives. Then we see some adult 
+specimens of six months old, one year and eighteen months, the age at which we really begin to appreciate them.
+<br><br>
+</div></div>
+</blockquote>
+<br><br>
+The characteristic French humour of the last line puts me irresistably in mind of one of my favourite comic songs. 
+<br><br>
+<blockquote>
+La maman des poissons elle a l'oil tout rond<br>
+On ne la voit jamais froncer les sourcils<br>
+Ses petits l'aiment bien, elle est bien gentille<br>
+Et moi je l'aime bien avec du citron<br>
+</blockquote>
+<br><br>
+<div align="center">
+<table>
+  <caption>Boby La Pointe, <i>La Maman des poissons</i> (1969)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/uhGf2WzAS84?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+</div>
+<br><br>
+<i>Pisciscultre pratique – la Truite</i> would be included amongst films produced for the 28mm KOK home-viewer from 1912 onwards 
+and amongst films produced for the later 9.5mm Pathé-Baby system in the twenties. It survives in a much-abbreviated British Pathéscope 
+version entitled <i>The Raising of Trout</i> (<i>Élevage de truite</i> in the French version).
+<div align="center">
+<br><br>
+<table>
+  <caption>Dr. Jean Comandon (?), <i>Pisciscultre pratique – la Truite</i (Pathé, 1910-1913)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/EpdgzHuW8uQ?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+</div>
+<br><br>
+Another Comandon films to appear in 1910 was the four-minute <i>Examen de l'estomac par les rayons X</i> (<i>Examination of the Stomach by X Rays</i>) (in October and on 1 December 1911 in the US), made in conjunction 
+with radiographer Dr. A. Loman. 
+<br><br>
+<blockquote>
+Ce film marque une grande avancée dans l’obtention de vues scientifiques valables par le moyen du cinémato­graphe. Il consiste 
+en un certain nombre de vues de l’estomac avant et après que le patient ait avalé une solution bismuthée. L’estomac est en 
+mouvement au moment de la prise de vue. Ce sujet est d’un intérêt certain et d’une grande valeur scientifique. 
+<div class="tab">
+      <input id="tab-5" type="checkbox" name="tab">
+      <label for="tab-5">English translation</label>
+      <div class="tab-content">
+<br><br> 
+This film marks a great advance in obtaining scientific views by means of the cinematograph. It consists in part of views of the 
+stomach before and after the patients has swallowed a solution of bismuth. The stomach is in motion at the time of the filming. 
+This subject is of a certain inteerst and of a great scientific value.
+</div></div>
+</blockquote>
+<br><br>
+The four-minute <i>Comment jouent les muscles dans un athlète</i>, a physiological study in the tradition of the work of Étienne-Jules 
+Marey, recalling the long association betwen cinematography and physical culture, appeared in December 1910 and was another very 
+early inclusion under the «&nbsp;Scénes de vulgarisation scientifiques&nbsp;» rubric.
+<br><br>
+<blockquote>
+Nous voyons tour à tour en jeu dans cette bande, les muscles du bras : le biceps, qui sert à la flexion du bras ; le deltoïde, 
+reliant les muscles du bras à l’omoplate ; le triceps, extenseur du bras&nbsp;; l’ensemble des muscles du dos ; le grand dentelé, 
+placé en diagonale sur les côtes&nbsp;; les muscles du cou, du ventre, des épaules… Le travail des muscles, développés par la 
+culture physique, nous apparaît ici très nettement et nous permet une intéressante étude de la structure superficielle du corps 
+humain.
+<br><br>
+<div class="tab">
+      <input id="tab-6" type="checkbox" name="tab">
+      <label for="tab-6">English translation</label>
+      <div class="tab-content">
+<br><br> 
+We see by turns in this reel, the muscles f the arm, the biceps which serve to flexx he arm,te detoids joining the arms to the 
+shoulder-blade, the tricops, extension of the arm, the entire musculature of the back, the serratus anterior muscle diagonal to 
+the ribcage, the neck muscles, the belly, the shoulders...the working of the muscles, developed by physical culture, is shown 
+very clearly and permits an interesting study of the superficial structure of the body.  
+</div></div> 
+</blockquote>
+<br><br>
+<a name="nhis"></a><h3>Natural History</h3>
+The Natural Colour Kinematograph Company produced another "flower" film, <i>Choice Bouquets</i> and <i>Barnyard Pets</i> in October.
+<br><br>
+For Kineto F. Percy Smith made his <i>Birth of a Flower</i> and for Kinemacolor, the two Smiths made <i>The Birth of Spring Flowers</i> 
+and <i>From Bud to Blossom</i> <i>Birth of a Flower</i> was in fact completed by April 1910 and shown in Britain in November but 
+its US release was delayed until 9 March 1911 so that that the Kinemacolor film, which was essentially the same (only more costly) 
+could be released first. These films made sensational use of time-lapse photography and would enjoy a very considerable success 
+on their release.
+<br><br>
+A film called <i>Curious Caterpillars</i>, featuring the Cynthia silk moth, Tortoise-shell Cyntheronia, also appeared as an Urban 
+film in the US on 8 January 1910 and is probably by Smith, perhaps one of many reprints of his <a.not-active href="int08psc.html#nh"><i>The 
+Story of a Silk Moth</i> (1908)</a>. Similarly <i>Familiar Reptiles</i> which appeared in the US on 10 March probably just reprises 
+<a.not-active href-"int06psc.html#nh">an earlier F. Martin Duncan film, <i>Amongst the Reptiles</i> (1906)</a>.
+<br><br>
+The arrival of British bird photographer, Oliver Pike <a.not-active href="int09psc#nhis">at Pathé in 1909</a> was as important as the arrival 
+of Dr. Jean Comandon. Previous to this date, Pathé had produced virtually no natural history films whatsoever. Virtually the only 
+animals filmed outside zoos, were farmyard animals except where they may have strayed (donkeys, camels, elephants etc) into travel 
+films. Pathé was in exactly the same position, that is to say, as Charles Urban had been wih regard to <a.not-active href="int03psc.html#nh">natural 
+history films in 1903</a>. At that time Pathé had paid little attention to Urban but the situation had changed, first with Urban's 
+establishment of a French subsidiary in 1906 (Éclipse), then his association with travel expeditions and hunting films (in parallel 
+with the activities of the Danish company Nordisk) and the evidence, despite the MPPC, of his increasing success in the US market 
+(1907-1910), on which he was clearly intent on capitalising with his new companies, The Natural Colour Kinematograph and Kineto, had 
+all made Urban an important rival/nuisance in the eyes of Pathé. The eye of Sauron had finally fallen upon the Shire and the hiring 
+in 1909 of Pike, following that of Camondon, was an important part of Pathé's response.  
+<br><br>
+<div class="dropright"><img class="purple" style="float: right; margin: 5px" src="images/stills/glimpses.jpg" height=150 width=180 border=2 alt="glimpses" title="glimpses">
+Oliver G. Pike, <i>Les Hôtes de l'air</i> (Pathé, 1910)<div class="dropdown-content"></div></div>
+Pike, who had begun to work for Pathé <a.not-active href="int09psc#nhis">in 1909</a>, produced just two more films for Pathé in 1910. One was 
+<i>Les Hôtes de l'air</i> (<i>Sea Birds in Their Haunts</i>), a seven-minute film largely in colour. shot in the Farne Islands and 
+in the Orkney and Shetland Isles. It first appeared in April-May 1910 and was shown in the US on 20 January 1911. The <i>Moving Picure 
+World</i> description is fuller than that in the Pathé catalogue:
+<br><br>
+<blockquote>
+Amongst the scenes shown, which are all taken at close quarters, is a colony of Guillemots packed so tightly that returning birds 
+have to alight on the backs of their companions. Lesser Black Backed Gulls, Gannets, to obtain which the photographer descended 
+80 feet down a rope and dangles over a sheer precipice having a drop of 300 feet. Puffins, Kittiwakes, Wild Raves, Richardson's 
+Suka. Buzzard feeding its young, to take which the photographer waited for three days in a crouching position. Young Kestrels 
+and a Reed Warbler feeding a young Cuckoo.
+</blockquote>
+<br><br>
+A copy of this film (curiously retitled <i>Glimpses of Bird Life</i>) is held by the BFI but, as is commonly the case with such 
+institutions in Britain, they are inclined to forget that they are merely custodians of these films on behalf of the public, and 
+so it is not unfortunately publicly available as it should be. Other Pathé films made by Pike held by the BFI are equally only available 
+in brief excerpts, a short-sighted restrictive practice that does nothing to promote the reputation of an important English film-maker.
+<br><br>
+<i>Les Oiseaux dans leurs nids</i> (<i>Birds in their Nests</i>), was shown in the US as part of split-reel with a comedy on 6 July 
+1911 butI have only the French catalogue-description. It ilustrates well an aspect that Pike would continue to develop in his later 
+Pathé films - the emphasis on the intimate family life of the birds filmed, which had implications too for the particular form of 
+"voyeuristic", and technically complicated, cinematography required to capture such private moments in the subjects' lives. This 
+film too, just short of seven minutes, was in colour.
+<br><br>
+<blockquote>
+Pris sur le vif, dans leur vie intime, les différentes espèces d’oiseaux photographiés dans ce film, forment des groupes 
+d’un effet artistique et charmant. Loin des villes et de l’homme, les oiseaux des marais vivent en paisibles républiques. 
+Le Pétrel aventureux niche dans les anfractuosités inaccessibles de la falaise. Le cygne sauvage construit pour sa progéniture 
+un nid qui est à la fois un radeau et un berceau. Le grèbe huppé se livre à sa pêche quotidienne et les petits faisandeaux, 
+guidés par leurs parents, vont à la promenade, becquetant par ci, par là. La fauvette traîne-buisson choisit pour établir sa 
+couvée la branche pendante d’un vieux pin et si un jeune imprudent tombé du nid, ne peut y remonter, elle vient, comme à ses 
+frères, lui donner la becquée. Le pinson se fait un nid coquet dans les ronces&nbsp;; la mère grive se dresse en sentinelle vigilante 
+au-dessus de sa couvée, tandis que, bien à l’abri derrière une clôture de roseaux, les petits affamés du merle accueillent joyeusement 
+le retour de leur mère. N’importe où au bord de la rivière c’est le nid de la gracieuse bergeronnette lavandière. 
+<br><br>
+<div class="tab">
+      <input id="tab-6" type="checkbox" name="tab">
+      <label for="tab-6">English translation</label>
+      <div class="tab-content">
+<br><br>
+Filmed live, in their rivate life, the different species of birds photographed in this film, form groups to a charming and artistic 
+effect. Far from the towns and from man, the birds of the marshes live in their own peaceful world. The adventruous petrel nests 
+in the inaccessible cracks in the cliffs. The wild swan builds for her young a nest which serves at once as a raft and a cradle. 
+The crested grebe goes off on his daily fishing expedition and the baby pheasants, guided by their parents, go for a walk, pecking 
+here and there. The yellow-rumped warbler chooses for her nest the hanging branch of an old pine and if a careless youngster should 
+fall from the nest and can not climb back, she comes down to give him his beakful just as she does with his siblings. The finch 
+makes itself a pretty nest in the brambles. The mother grebe stands guard over her nest, while, well protected behind a wall of 
+reeds, the hungry little brood of the blackbird greet joyfully the return of their mother. Everywhere beside the river one finds 
+the nest of the gracious white wagtail.
+</div></div>
+</blockquote>
+<br><br>
+The film survives after a fashion (although, alas, not in colour, as part of an unusually eleborate two-part version for the 
+9.5mm Pathé-Baby home-view system under the titie <i>Les Oiseaux et leurs nids</i>. It is, rare amongst Pathé-Baby versions, 
+pretty much the length of Pike's original film. But it does not match the description very well and, as part of the collection 
+put together for schools («&nbsp;Pathé-Baby Scolaire&nbsp;»), is almost certainly a edited compilation of footage from different 
+sources, including Pike's film but, by the looks of it, also including footage shot by Livier, another Pathé bird specialist 
+who was filming in Africa 1917-1919. The two parts are respectively «&nbsp;Oiseaux familiers&nbsp;» (largely the work of Pike) 
+and «&nbsp;Oiseaux sauvagess&nbsp;» (which may include footage by others).
+<br><br>
+<div align="center">
+<video width="320" height="240" controls>
+  <source src="videos/nids1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> 
+<video width="320" height="240" controls>
+  <source src="videos/nids2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+<br><br>
+It seems almost certain that Pike was also involved in the making of <a href="int10trav#stkild">a 1910 Pathé film on St. Kilda</a> 
+- he is known to have made a second visit there that year - and he evidently returned to film in the Scottish mountains for Pathé 
+<a.not-active href="int14psc.html#nh">once again in 1914</a>.
+<br><br>
+<div align="center">
+<table>
+    <tr>
+    <th><img class="blue" src="images/stills/axolotlpath1910.jpg" height=263 width=427 border=2 alt="Axolotl" title="Axolotl	">
+    <caption>Dr. Jean Comandon and Raymonnd L. Ditmars (?), <i>L'Axolotl</i> (Pathé, 1910)</caption></th>
+    </tr>
+</table>
+</div>
+<br><br>
+Apart from the bird films of Pike, Pathé made little else in the way of natural history films in 1910. The five-minute One film, 
+<i>L'Axolotl</i> (<i>The Axolotl</i> (in September and 15 February 1911, a study of the Mexican salamander, is sometimes credited 
+to Comandon but this seems unlikely. It bears no resemblance to his other films. He was responsible for the film no doubt as the 
+head of the Pathé «&nbsp;service scientfique&nbsp;» but the film is much more likely to be the work of US herpetologist and zoo-keeper 
+Raymond L. Ditmars who was certainly working for Pathé <a.not-active href=int11psc.html#ditmars">by 1911</i>. Although Ditmars would come 
+to France in 1911 to shoot a "marine series" at the Musée océanograhpique in Monaco, this films was more probably made in the US, 
+a presumption increased by the fact that it appeared there  on a split-reel with a western, an "American Kinema" film produced 
+by Pathé's US susbsidiary. Not much "axolotl" appears to be visible in this particular still.
+<br><br>
+<div align="center">
+<table>
+    <tr>
+    <th><img class="blue" src="images/stills/hbut1910.jpg" height=263 width=427 border=2 alt="History of a Butterfly" title="History of a Butterfly">
+    <caption>James Williamson, <i>History of a Butterfly: A Romance of the Insect World</i> (1910)</caption></th>
+    </tr>
+</table>
+</div>
+<br><br>
+Another factor encouraging the making of such films and which added significantly to their popularity were improved camera techniques. 
+The work of microcinematography begun by F. Martin Duncan <a.not-active href="int03psc.html">in 1903</a> had been continued by Dr. Jean 
+Comandon at Pathé from 1908-1909. In France too the work of developing effective slow-motion and rapid-motion cinematography 
+formed the basis of the work of <a.not-active href="int04psc.html">Lucien Bull at the Institut Marey</a> and of Comandon's colleague in 
+the Pathé «&nbsp;service scientfique&nbsp;», Émile Labrély. <a.not-active href="int08psc.html#nh">In 1908</a> British film-maker James Williamson 
+had availed himself of the services of expert microscopist E.J. Spitta for the film <i>Nature's Hidden Beauties: Pond Life</i></a>. 
+In 1910 Williamson produced another nature film, <i>History of a Butterfly: A Romance of the Insect World</i>, a film where 
+Caterpillars are seen hatching, feeding and ready for pupation and where three caterpillars are shown changing into chrysales 
+and finally the birth of a peacock butterfly. The film contains an early use of time-lapse photography to show the caterpillars 
+emerging from theiir pupae, the technique that F. Percy Smith would use so effectively this same year for his <i>Birth of a Flower</i>. 
+The Williamson films survive in the BFI archivs but have unfortunately not been made fully publicly avaiiable as they should 
+have been and are not therefore as well known as they should be. Other later films on the same subject showed, alas, less skill 
+and resourcefulness. This film would appear to be <i>Birth of a Butterfly</i> made by the US company Selig in 1913.
+<div align="center">
+<br><br>
+<table>
+  <caption><i>Birth of a Butterfly</i> (Selig, 1913)</caption>
+  <tr>
+    <th><iframe width="320" height="240" src="http://www.youtube.com/embed/6DsoZpoYAzE?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></th>
+</tr>
+</table>
+</div>
+</article>
+<footer>Copyright &copy; kekseksa.com</footer>
+</div>
+</body>
+</html>
